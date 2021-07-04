@@ -1,0 +1,28 @@
+[
+    {
+        "groups": {
+            "whatsapp": "https://docs.google.com/spreadsheets/d/1SdH8dDhQbzuJUDj2p4BMDqmdnbAWShmY076_yCS6AdQ/edit#gid=894342696",
+            "telegram": "https://docs.google.com/spreadsheets/d/1SdH8dDhQbzuJUDj2p4BMDqmdnbAWShmY076_yCS6AdQ/edit#gid=0"
+        },
+        "storage": {
+            "mega": "https://mega.nz/folder/iFlR2TgY#7a07KulhBgsFOZHNf1vQqg/folder/6Q8FSZwI"
+        },
+        "itineraries": [
+            {
+                "name": "Ingeniería de computadores"
+            },
+            {
+                "name": "Ingeniería del software"
+            },
+            {
+                "name": "Computación"
+            },
+            {
+                "name": "Tecnologías de la información"
+            },
+            {
+                "name": "Sistemas de información"
+            }
+        ]
+    }
+]
