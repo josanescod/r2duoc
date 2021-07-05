@@ -1,11 +1,9 @@
 const { Markup } = require("telegraf");
 const superheroes = require("superheroes");
-const bot = require('../bot/bot');
-const dataInfo = require('../data/dataInfo.json');
+const bot = require('./bot');
+const dataInfo = require('./dataInfo.json');
 
 bot.command(["whatsapp", "telegram", "mega", "itineraries"], (ctx) => {
-    //console.log(ctx.message.text);
-
     let option = ctx.message.text;
     if (option === "/whatsapp") {
         ctx.reply(dataInfo[0].groups.whatsapp);

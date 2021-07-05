@@ -1,4 +1,4 @@
-/*
+
 Simple telegram bot designed to consult information about the degree in Computer Engineering at the UOC.
 
 In the future it will be integrated with an api that will consult subjects, number of credits, itineraries, minors 
@@ -20,20 +20,4 @@ July 2021
 v 0.1
 
 compiuoc
-*/
-
-require("dotenv").config();
-const { Telegraf, Markup } = require("telegraf");
-const bot = new Telegraf(process.env.TOKEN);
-bot.launch()
-// Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'))
-process.once('SIGTERM', () => bot.stop('SIGTERM'))
-module.exports = bot;
-
-
-
-
-
-
 
