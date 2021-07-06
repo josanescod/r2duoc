@@ -2,6 +2,7 @@ const { Markup } = require("telegraf");
 const superheroes = require("superheroes");
 const bot = require('./bot');
 const dataInfo = require('./dataInfo.json');
+const path = require('path')
 
 
 
@@ -17,27 +18,25 @@ bot.command(["whatsapp", "telegram", "mega", "itineraries"], (ctx) => {
         ctx.reply(dataInfo[0].storage.mega);
 
     } else if (option === "/itineraries") {
-        ///home/josan/proyectos_web/node-tel-bot/src/bot../assets/img/itineraries.png
-        __dirname = "/home/josan/proyectos_web/node-tel-bot/src/"
-        console.log(__dirname);
-        let photo = __dirname +  'assets/img/itineraries.png'
-        //let photo = '/home/josan/proyectos_web/node-tel-bot/src/assets/img/itineraries.png'
-        ctx.reply("Create a scene o stage?");
-        ctx.replyWithPhoto({ source:photo });
 
-        setTimeout(function(){
+        let tempPath = path.join(__dirname, '../') ;
+        let photo = tempPath + "assets/img/itineraries.png";
+        //ctx.reply("Create a scene o stage?");
+        ctx.replyWithPhoto({ source: photo });
+
+        setTimeout(function () {
             let listItineraris = "";
             let obj = dataInfo[0].itineraries;
             for (let key in obj) {
-             if (obj.hasOwnProperty(key)) {
-                let val = obj[key];
-                console.log(val.name);
-                listItineraris = val.name + "\n" + listItineraris;
+                if (obj.hasOwnProperty(key)) {
+                    let val = obj[key];
+                    console.log(val.name);
+                    listItineraris = val.name + "\n" + listItineraris;
+                }
             }
-        }
-        ctx.reply(listItineraris+"\nhttp://www.josanweb.com");
-         }, 500);
-        
+            ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
+        }, 500);
+
     }
 })
 
@@ -127,7 +126,6 @@ bot.command('quiz', (ctx) =>
 
 
 //Test to delete user messages
-
 bot.command('delete', (ctx) => {
 
     for (let i = 0; i <= (messages.length - 1); i++) {
