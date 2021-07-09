@@ -4,42 +4,6 @@ const bot = require('./bot');
 const dataInfo = require('./dataInfo.json');
 const path = require('path')
 
-
-
-bot.command(["whatsapp", "telegram", "mega", "itineraries"], (ctx) => {
-    let option = ctx.message.text;
-    if (option === "/whatsapp") {
-        ctx.reply(dataInfo[0].groups.whatsapp);
-
-    } else if (option === "/telegram") {
-        ctx.reply(dataInfo[0].groups.telegram);
-
-    } else if (option === "/mega") {
-        ctx.reply(dataInfo[0].storage.mega);
-
-    } else if (option === "/itineraries") {
-
-        let tempPath = path.join(__dirname, '../') ;
-        let photo = tempPath + "assets/img/itineraries.png";
-        //ctx.reply("Create a scene o stage?");
-        ctx.replyWithPhoto({ source: photo });
-
-        setTimeout(function () {
-            let listItineraris = "";
-            let obj = dataInfo[0].itineraries;
-            for (let key in obj) {
-                if (obj.hasOwnProperty(key)) {
-                    let val = obj[key];
-                    console.log(val.name);
-                    listItineraris = val.name + "\n" + listItineraris;
-                }
-            }
-            ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
-        }, 500);
-
-    }
-})
-
 bot.hears("!algebra", (ctx) => {
     ctx.reply("estos son todos los recursos de algebra que tengo");
     ctx.reply("toma nota:");
@@ -84,9 +48,9 @@ bot.mention(["Botfather", "botfather"], (ctx) => {
     ctx.reply("Has mencionado a Botfather ;)");
 })
 
-bot.mention(["sisebutohelp", "Sisebuto"], (ctx) => {
+/*bot.mention(["sisebutohelp", "Sisebuto"], (ctx) => {
     ctx.reply("Ei en que te puedo ayudar? ;)");
-})
+})*/
 
 
 bot.hashtag("programming", ctx => {

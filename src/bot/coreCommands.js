@@ -71,7 +71,7 @@ bot.start((ctx) => {
 });
 
 bot.help((ctx) => {
-    ctx.replyWithMarkdown(`${menu.help}
+    ctx.replyWithMarkdown(`${menu.help}🤖
  `);
 
 });
@@ -110,6 +110,11 @@ bot.command(["whatsapp", "telegram", "mega", "itinerarios"], (ctx) => {
 
     }
 })
+
+bot.mention(["sisebutohelp", "Sisebuto"], (ctx) => {
+    ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
+})
+
 
 bot.on("text", ctx => {
     ctx.reply("comando incorrecto, /help para ver las opciones.");
