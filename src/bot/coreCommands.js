@@ -5,25 +5,56 @@ const menu = require('./menu');
 const middleware = require('../middleware/middleware')
 
 bot.command("itinerario", (ctx) => {
-
+    let listSubjectsItineraries = "";
     middleware.parseCommand(ctx);
 
     let arg = ctx.state.command.args[0];
+    let obj;
     switch (arg) {
         case "si":
-            ctx.reply("Has elegido el itinerario de Sistemas de información")
-            break;
+        case "sistemas":
+            obj = dataInfo[0].itineraries[4].subjects;
+            for (i = 0; i < obj.length ; i++) {                
+                listSubjectsItineraries = obj[i]  + "\n" +listSubjectsItineraries 
+            }            
+            ctx.replyWithMarkdown(`*Sistemas de información:*\n${listSubjectsItineraries}
+            `);           
+            break;       
         case "ti":
-            ctx.reply("Has elegido el itinerario de Tecnologías de la información")
+        case "tecnologias":            
+            obj = dataInfo[0].itineraries[3].subjects;
+            for (i = 0; i < obj.length ; i++) {                
+                listSubjectsItineraries = obj[i]  + "\n" +listSubjectsItineraries 
+            }            
+            ctx.replyWithMarkdown(`*Tecnologías de la información:*\n${listSubjectsItineraries}
+            `);           
             break;
         case "c":
-            ctx.reply("Has elegido el itinerario de Computación")
+        case "computacion":
+            obj = dataInfo[0].itineraries[2].subjects;
+            for (i = 0; i < obj.length ; i++) {                
+                listSubjectsItineraries = obj[i]  + "\n" +listSubjectsItineraries 
+            }            
+            ctx.replyWithMarkdown(`*Computación:*\n${listSubjectsItineraries}
+            `);           
             break;
         case "is":
-            ctx.reply("Has elegido el itinerario de Ingenieria de software")
+        case "software":
+            obj = dataInfo[0].itineraries[1].subjects;
+            for (i = 0; i < obj.length ; i++) {                
+                listSubjectsItineraries = obj[i]  + "\n" +listSubjectsItineraries 
+            }            
+            ctx.replyWithMarkdown(`*Ingenieria del software:*\n${listSubjectsItineraries}
+            `);           
             break;
         case "ic":
-            ctx.reply("Has elegido el itinerario de Ingenieria de computadores")
+        case "computadores":
+            obj = dataInfo[0].itineraries[0].subjects;
+            for (i = 0; i < obj.length ; i++) {                
+                listSubjectsItineraries = obj[i]  + "\n" +listSubjectsItineraries 
+            }            
+            ctx.replyWithMarkdown(`*Ingenieria de computadores:*\n${listSubjectsItineraries}
+            `);           
             break;
         default:
             ctx.reply(`porfavor elige un itinerario válido [SI-TI-C-IS-IC].`);
@@ -34,7 +65,7 @@ bot.command("itinerario", (ctx) => {
 bot.start((ctx) => {
     console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
-    ctx.reply(`Hola amijo ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
+    ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
     \nSi quieres saber que puedo hacer por ti, escribe /help.
     `)
 });
