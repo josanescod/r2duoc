@@ -1,44 +1,6 @@
 const bot = require('./bot');
 const fetch = require("node-fetch");
 
-/*bot.start((ctx) => {
-    console.log("chat id " + ctx.chat.id);
-    let emoji = "😏";
-    ctx.reply(`Hola amijo ${ctx.from.username}, soy ${ctx.botInfo.first_name} a sus ordenes  ${emoji} 
-    \nSi quieres saber que puedo hacer por ti, escribe /help.
-    `)
-
-
-});*/
-
-
-bot.help((ctx) => {
-    ctx.replyWithMarkdown(`
-*Ayuda*
-/canta - canta una cancion
-/delete - borra todos los mensajes
-/help - comando de ayuda
-/itineraries - list of itineraries
-/api - muestra frase random
-/poll - encuesta de prueba
-/start - mensaje inicio
-/settings - configuraciones
-
-*Links*
-/whatsapp - grupos de cada asignatura 
-/telegram - grupos de cada asignatura
-/mega - repo con materiales 
-/discord -
-
-
-*Test Hears*
-!hola - saluda
-!poweroff - apaga el bot
-    `);
-
-});
-
-
 bot.settings((ctx) => {
     ctx.reply("Settings!")
 });

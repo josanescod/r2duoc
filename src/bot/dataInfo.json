@@ -9,19 +9,19 @@
         },
         "itineraries": [
             {
-                "name": "Ingeniería de computadores"
+                "name": "Ingeniería de computadores - IC"
             },
             {
-                "name": "Ingeniería del software"
+                "name": "Ingeniería del software - IS"
             },
             {
-                "name": "Computación"
+                "name": "Computación - C "
             },
             {
-                "name": "Tecnologías de la información"
+                "name": "Tecnologías de la información - TI"
             },
             {
-                "name": "Sistemas de información"
+                "name": "Sistemas de información - SI"
             }
         ]
     }
