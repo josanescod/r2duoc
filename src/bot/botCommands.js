@@ -1,7 +1,7 @@
 const bot = require('./bot');
 const fetch = require("node-fetch");
 
-bot.start((ctx) => {
+/*bot.start((ctx) => {
     console.log("chat id " + ctx.chat.id);
     let emoji = "😏";
     ctx.reply(`Hola amijo ${ctx.from.username}, soy ${ctx.botInfo.first_name} a sus ordenes  ${emoji} 
@@ -9,7 +9,7 @@ bot.start((ctx) => {
     `)
 
 
-});
+});*/
 
 
 bot.help((ctx) => {
