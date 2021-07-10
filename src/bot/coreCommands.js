@@ -111,7 +111,7 @@ bot.command(["whatsapp", "telegram", "mega", "itinerarios"], (ctx) => {
     }
 })
 
-bot.mention(["sisebutohelp", "Sisebuto"], (ctx) => {
+bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
 })
 
