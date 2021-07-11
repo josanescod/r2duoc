@@ -1,8 +1,6 @@
 const { Markup } = require("telegraf");
 const superheroes = require("superheroes");
 const bot = require('./bot');
-//const dataItineraries = require('./dataItineraries.json');
-const path = require('path')
 
 bot.hears("!algebra", (ctx) => {
     ctx.reply("estos son todos los recursos de algebra que tengo");

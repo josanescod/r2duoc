@@ -1,4 +1,4 @@
-let help = `*Info*
+const help = `*Info*
 /tramites - informacion sobre trámites
 /itinerarios - listado de itinerarios
 /itinerario \\[itinerario\] - información sobre un itinerario
@@ -11,8 +11,9 @@ let help = `*Info*
 /whatsapp \\[grupo\]- enlace al grupo de whatsapp 
 
 *Recursos*
-/mega - repo con materiales 
+/mega - cuenta en la nube con materiales 
 /discord - servidores discord de estudiantes
+/github - repositorio con materiales
 `
 
 module.exports = {

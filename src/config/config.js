@@ -1,4 +1,8 @@
 require("dotenv").config();
 const token = process.env.TOKEN;
+const itinerarieImg = process.env.ITINERARIE_IMG
 
-exports.token = token;
+module.exports = {
+    token,
+    itinerarieImg
+}

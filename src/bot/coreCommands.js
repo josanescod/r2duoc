@@ -4,10 +4,12 @@ const path = require('path');
 const menu = require('./menu');
 const middleware = require('../middleware/middleware')
 const fetch = require("node-fetch");
-
+const config = require("../config/config");
 
 bot.start((ctx) => {
-    console.log("chat id " + ctx.chat.id);
+    console.log(config.itinerarieImg);
+    console.log(config.token);
+    //console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
     \nSi quieres saber que puedo hacer por ti, escribe /help.
@@ -15,26 +17,16 @@ bot.start((ctx) => {
 });
 
 bot.help((ctx) => {
-    ctx.replyWithMarkdown(`${menu.help}🤖
- `);
-
+    ctx.replyWithMarkdown(`${menu.help}`);
 });
 
-bot.command("/whatsapp", (ctx) => {
-    ctx.reply(dataItineraries[0].groups.whatsapp);
-});
-
-bot.command("/telegram", (ctx) => {
-    ctx.reply(dataItineraries[0].groups.telegram);
-});
-
-bot.command("/mega", (ctx) => {
-    ctx.reply(dataItineraries[0].storage.mega);
+bot.command("/tramites", (ctx) => {
+    ctx.reply("tramites");
 });
 
 bot.command("/itinerarios", (ctx) => {
-    let tempPath = path.join(__dirname, '../');
-    let photo = tempPath + "assets/img/itineraries.png";
+    let tempPath = path.join(__dirname, '../');    
+    let photo = tempPath + `${config.itinerarieImg}`;  
     //ctx.reply("Create a scene o stage?");
     ctx.replyWithPhoto({ source: photo });
     setTimeout(function () {
@@ -42,8 +34,7 @@ bot.command("/itinerarios", (ctx) => {
         let obj = dataItineraries[0].itineraries;
         for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
-                let val = obj[key];
-                console.log(val.name);
+                let val = obj[key];                
                 listItineraris = val.name + "\n" + listItineraris;
             }
         }
@@ -110,6 +101,38 @@ bot.command("/itinerario", (ctx) => {
     }
 });
 
+bot.command("/asignaturas", (ctx) => {
+    ctx.reply("listado de asignaturas");
+});
+
+bot.command("/asignatura", (ctx) => {
+    ctx.reply("info de asignatura");
+});
+
+bot.command("/plan", (ctx) => {
+    ctx.reply("info plan de estudios");
+});
+
+bot.command("/telegram", (ctx) => {
+    ctx.reply(dataItineraries[0].groups.telegram);
+});
+
+bot.command("/whatsapp", (ctx) => {
+    ctx.reply(dataItineraries[0].groups.whatsapp);
+});
+
+
+bot.command("/mega", (ctx) => {
+    ctx.reply(dataItineraries[0].storage.mega);
+});
+
+bot.command("/discord", (ctx) => {
+    ctx.reply("servidores discord");
+});
+
+bot.command("/github", (ctx) => {
+    ctx.reply("enlace github");
+});
 
 
 bot.command("/api", (ctx) => {
@@ -132,7 +155,6 @@ bot.command("/api", (ctx) => {
 bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
 });
-
 
 bot.on("text", ctx => {
     ctx.reply("comando incorrecto, /help para ver las opciones.");
