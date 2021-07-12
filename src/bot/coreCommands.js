@@ -39,7 +39,7 @@ bot.command("/itinerarios", (ctx) => {
             }
         }
         ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
-    }, 500);
+    }, 1000);
 
 });
 
@@ -96,7 +96,7 @@ bot.command("/itinerario", (ctx) => {
             `);
             break;
         default:
-            ctx.reply(`porfavor elige un itinerario válido [SI-TI-C-IS-IC].`);
+            ctx.reply(`porfavor elige un itinerario válido [ si-ti-c-is-ic ].`);
             break;
     }
 });
@@ -131,7 +131,7 @@ bot.command("/discord", (ctx) => {
 });
 
 bot.command("/github", (ctx) => {
-    ctx.reply("enlace github");
+    ctx.reply(dataItineraries[0].storage.github);
 });
 
 
