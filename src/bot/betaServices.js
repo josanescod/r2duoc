@@ -94,3 +94,5 @@ bot.on('message', (msg) => {
     messages.push(msg.update.message.message_id);
     console.log(messages, "number of messages: " + messages.length);
 });
+
+//Test keyboard options

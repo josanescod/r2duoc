@@ -1,14 +1,12 @@
 const bot = require('./bot');
-const dataItineraries = require('./dataItineraries.json');
+const dataDegree = require('./dataDegree.json');
 const path = require('path');
 const menu = require('./menu');
 const middleware = require('../middleware/middleware')
 const fetch = require("node-fetch");
 const config = require("../config/config");
 
-bot.start((ctx) => {
-    console.log(config.itinerarieImg);
-    console.log(config.token);
+bot.start((ctx) => {    
     //console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
@@ -31,7 +29,7 @@ bot.command("/itinerarios", (ctx) => {
     ctx.replyWithPhoto({ source: photo });
     setTimeout(function () {
         let listItineraris = "";
-        let obj = dataItineraries[0].itineraries;
+        let obj = dataDegree.itineraries;
         for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
                 let val = obj[key];                
@@ -52,7 +50,7 @@ bot.command("/itinerario", (ctx) => {
     switch (arg) {
         case "si":
         case "sistemas":
-            obj = dataItineraries[0].itineraries[4].subjects;
+            obj = dataDegree.itineraries[4].subjects;
             for (i = 0; i < obj.length; i++) {
                 listSubjectsItineraries = obj[i] + "\n" + listSubjectsItineraries
             }
@@ -61,7 +59,7 @@ bot.command("/itinerario", (ctx) => {
             break;
         case "ti":
         case "tecnologias":
-            obj = dataItineraries[0].itineraries[3].subjects;
+            obj = dataDegree.itineraries[3].subjects;
             for (i = 0; i < obj.length; i++) {
                 listSubjectsItineraries = obj[i] + "\n" + listSubjectsItineraries
             }
@@ -70,7 +68,7 @@ bot.command("/itinerario", (ctx) => {
             break;
         case "c":
         case "computacion":
-            obj = dataItineraries[0].itineraries[2].subjects;
+            obj = dataDegree.itineraries[2].subjects;
             for (i = 0; i < obj.length; i++) {
                 listSubjectsItineraries = obj[i] + "\n" + listSubjectsItineraries
             }
@@ -79,7 +77,7 @@ bot.command("/itinerario", (ctx) => {
             break;
         case "is":
         case "software":
-            obj = dataItineraries[0].itineraries[1].subjects;
+            obj = dataDegree.itineraries[1].subjects;
             for (i = 0; i < obj.length; i++) {
                 listSubjectsItineraries = obj[i] + "\n" + listSubjectsItineraries
             }
@@ -88,7 +86,7 @@ bot.command("/itinerario", (ctx) => {
             break;
         case "ic":
         case "computadores":
-            obj = dataItineraries[0].itineraries[0].subjects;
+            obj = dataDegree.itineraries[0].subjects;
             for (i = 0; i < obj.length; i++) {
                 listSubjectsItineraries = obj[i] + "\n" + listSubjectsItineraries
             }
@@ -114,16 +112,16 @@ bot.command("/plan", (ctx) => {
 });
 
 bot.command("/telegram", (ctx) => {
-    ctx.reply(dataItineraries[0].groups.telegram);
+    ctx.reply(dataDegree[0].groups.telegram);
 });
 
 bot.command("/whatsapp", (ctx) => {
-    ctx.reply(dataItineraries[0].groups.whatsapp);
+    ctx.reply(dataDegree[0].groups.whatsapp);
 });
 
 
 bot.command("/mega", (ctx) => {
-    ctx.reply(dataItineraries[0].storage.mega);
+    ctx.reply(dataDegree[0].storage.mega);
 });
 
 bot.command("/discord", (ctx) => {
@@ -131,7 +129,7 @@ bot.command("/discord", (ctx) => {
 });
 
 bot.command("/github", (ctx) => {
-    ctx.reply(dataItineraries[0].storage.github);
+    ctx.reply(dataDegree[0].storage.github);
 });
 
 
