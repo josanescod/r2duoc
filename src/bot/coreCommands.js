@@ -6,7 +6,7 @@ const middleware = require('../middleware/middleware')
 const fetch = require("node-fetch");
 const config = require("../config/config");
 
-bot.start((ctx) => {    
+bot.start((ctx) => {
     //console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
@@ -23,8 +23,8 @@ bot.command("/tramites", (ctx) => {
 });
 
 bot.command("/itinerarios", (ctx) => {
-    let tempPath = path.join(__dirname, '../');    
-    let photo = tempPath + `${config.itinerarieImg}`;  
+    let tempPath = path.join(__dirname, '../');
+    let photo = tempPath + `${config.itinerarieImg}`;
     //ctx.reply("Create a scene o stage?");
     ctx.replyWithPhoto({ source: photo });
     setTimeout(function () {
@@ -32,7 +32,7 @@ bot.command("/itinerarios", (ctx) => {
         let obj = dataDegree.itineraries;
         for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
-                let val = obj[key];                
+                let val = obj[key];
                 listItineraris = val.name + "\n" + listItineraris;
             }
         }
@@ -99,12 +99,41 @@ bot.command("/itinerario", (ctx) => {
     }
 });
 
+// todas o basicas, obligatorias optativas
 bot.command("/asignaturas", (ctx) => {
-    ctx.reply("listado de asignaturas");
+
+    let listAsignaturas = "";
+    let obj = dataDegree.asignaturas;
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            let val = obj[key];
+            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+            listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+        }
+    }
+    ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
 });
 
 bot.command("/asignatura", (ctx) => {
-    ctx.reply("info de asignatura");
+    //ctx.reply("info de asignatura");
+    var selectedSubject = "";
+    middleware.parseCommand(ctx);
+    let arg = ctx.state.command.args[0];
+    let obj = dataDegree.asignaturas;
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            var val = obj[key];
+            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+            if (val.nombre === arg) {
+                //console.log(val.nombre)
+                selectedSubject = val.descripcion;
+            }
+        }
+    }
+    ctx.reply(selectedSubject);
+    //console.log(typeof (selectedSubject));
+
 });
 
 bot.command("/plan", (ctx) => {
@@ -112,16 +141,15 @@ bot.command("/plan", (ctx) => {
 });
 
 bot.command("/telegram", (ctx) => {
-    ctx.reply(dataDegree[0].groups.telegram);
+    ctx.reply(dataDegree.groups.telegram);
 });
 
 bot.command("/whatsapp", (ctx) => {
-    ctx.reply(dataDegree[0].groups.whatsapp);
+    ctx.reply(dataDegree.groups.whatsapp);
 });
 
-
 bot.command("/mega", (ctx) => {
-    ctx.reply(dataDegree[0].storage.mega);
+    ctx.reply(dataDegree.storage.mega);
 });
 
 bot.command("/discord", (ctx) => {
@@ -129,9 +157,8 @@ bot.command("/discord", (ctx) => {
 });
 
 bot.command("/github", (ctx) => {
-    ctx.reply(dataDegree[0].storage.github);
+    ctx.reply(dataDegree.storage.github);
 });
-
 
 bot.command("/api", (ctx) => {
     async function fetchData() {
