@@ -159,22 +159,32 @@ bot.command("/plan", (ctx) => {
 
 bot.command("/telegram", (ctx) => {
     ctx.reply(dataDegree.groups.telegram);
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/whatsapp", (ctx) => {
     ctx.reply(dataDegree.groups.whatsapp);
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/mega", (ctx) => {
     ctx.reply(dataDegree.storage.mega);
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/discord", (ctx) => {
     ctx.reply("servidores discord");
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/github", (ctx) => {
     ctx.reply(dataDegree.storage.github);
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/api", (ctx) => {
@@ -192,6 +202,8 @@ bot.command("/api", (ctx) => {
         ctx.reply("frase: " + abc.activity);
     }
     main();
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 })
 
 bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
