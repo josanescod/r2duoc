@@ -21,16 +21,21 @@ function parseCommand(ctx) {
   }
 }
 
-function clearHistory(ctx,numMessages) {
-  let k = 0;
-  //si agregamos un numMessages de clear falla
-  //asi parece que funcione
-  for(let i = 0; i <= numMessages; i++ ){
-        k =  ctx.message.message_id-i;
-        ctx.deleteMessage(k)      
+function clearHistory(ctx, numMessages) {
+  if (numMessages > 0) {
+    let k = 0;
+    //si agregamos un numMessages de clear falla
+    //asi parece que funcione
+    for (let i = 0; i <= numMessages; i++) {
+      k = ctx.message.message_id - i;
+      ctx.deleteMessage(k)
     }
-  
-    return numMessages = 0;
+  } else {
+    ctx.deleteMessage(ctx.message.message_id)
+    console.log('borrar solo /clear');
+
+  }
+  return numMessages = 0;
 }
 
 module.exports = { parseCommand, clearHistory }

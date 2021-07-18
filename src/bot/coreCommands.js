@@ -212,5 +212,7 @@ bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
 
 bot.on("text", ctx => {
     ctx.reply("comando incorrecto, /help para ver las opciones.");
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
