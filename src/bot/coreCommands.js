@@ -6,17 +6,34 @@ const middleware = require('../middleware/middleware')
 const fetch = require("node-fetch");
 const config = require("../config/config");
 
+let numMessages = 0;
+console.log(numMessages)
+
 bot.start((ctx) => {
     //console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
     \nSi quieres saber que puedo hacer por ti, escribe /help.
-    `)
+    `);      
+    numMessages= numMessages + 2;
+    console.log(numMessages)
+
 });
 
 bot.help((ctx) => {
-    ctx.replyWithMarkdown(`${menu.help}`);
+    ctx.replyWithMarkdown(`${menu.help}`); 
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 });
+
+bot.command("/clear",(ctx)=>{
+    //numMessages ++;
+    console.log(numMessages)
+    numMessages = middleware.clearHistory(ctx,numMessages);
+   // numMessages = 0;
+    console.log(numMessages);
+    
+})
 
 bot.command("/tramites", (ctx) => {
     ctx.reply("tramites");

@@ -21,4 +21,16 @@ function parseCommand(ctx) {
   }
 }
 
-module.exports = { parseCommand }
+function clearHistory(ctx,numMessages) {
+  let k = 0;
+  //si agregamos un numMessages de clear falla
+  //asi parece que funcione
+  for(let i = 0; i <= numMessages; i++ ){
+        k =  ctx.message.message_id-i;
+        ctx.deleteMessage(k)      
+    }
+  
+    return numMessages = 0;
+}
+
+module.exports = { parseCommand, clearHistory }
