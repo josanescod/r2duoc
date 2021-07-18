@@ -149,12 +149,16 @@ bot.command("/asignatura", (ctx) => {
         }
     }
     ctx.reply(selectedSubject);
+    numMessages= numMessages + 2;
+    console.log(numMessages)
     //console.log(typeof (selectedSubject));
 
 });
 
 bot.command("/plan", (ctx) => {
     ctx.reply("info plan de estudios");
+    numMessages= numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/telegram", (ctx) => {
