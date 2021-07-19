@@ -17,8 +17,23 @@ bot.start((ctx) => {
     chat_id = ctx.chat.id
     console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
-    ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
-    \n${language[idioma].start}`);
+    switch (idioma) {
+        case 0:
+            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
+            \n${language[idioma].start}`);
+            break;
+        case 1:
+            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji} 
+            \n${language[idioma].start}`);
+            break;
+        case 2:
+            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji} 
+            \n${language[idioma].start}`);
+            break;
+        default:
+            console.log("language error");
+    }
+
 
     numMessages = numMessages + 2;
     console.log(numMessages)
@@ -242,7 +257,7 @@ bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
 });
 
 bot.on("text", ctx => {
-    ctx.reply("comando incorrecto, /help para ver las opciones.");
+    ctx.reply(`${language[idioma].wrontText}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
