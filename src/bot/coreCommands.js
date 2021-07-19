@@ -46,6 +46,12 @@ bot.help((ctx) => {
     console.log(numMessages)
 });
 
+bot.command(["/help","/ayuda","/ajuda"],(ctx) => {
+    ctx.replyWithMarkdown(`${menu.help}`);
+    numMessages = numMessages + 2;
+    console.log(numMessages)
+});
+
 bot.command("/clear", (ctx) => {
     //numMessages ++;
     console.log(numMessages)
@@ -259,8 +265,13 @@ bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
 });
 
+bot.hears(["help","ayuda","ajuda"], (ctx) => {    
+    ctx.reply(`${language[idioma].help}`);
+    
+});
+
 bot.on("text", ctx => {
-    ctx.reply(`${language[idioma].wrontText}`);
+    ctx.reply(`${language[idioma].wrongText}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });

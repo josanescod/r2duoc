@@ -1,42 +1,9 @@
 const { Markup } = require("telegraf");
-const superheroes = require("superheroes");
 const bot = require('./bot');
-
-bot.hears("!algebra", (ctx) => {
-    ctx.reply("estos son todos los recursos de algebra que tengo");
-    ctx.reply("toma nota:");
-    setTimeout(() => {
-        ctx.reply("http://josanweb.com");
-    }, 1000);
-
-});
-
-bot.hears("!stop", (ctx) => {
-    clearInterval(saludador);
-});
-
-bot.hears("!poweroff", (ctx) => {
-    // Enable graceful stop
-    ctx.reply("apagando...");
-    bot.stop('SIGINT')
-    bot.stop('SIGTERM')
-});
-
-bot.hears("!computer", (ctx) => {
-    ctx.reply("Ei yo vendo computadoras lo sabias?");
-});
 
 bot.hears("!miweb", (ctx) => {
     ctx.reply("mi web es:");
     bot.url("mi web", "www.josanweb.com");
-});
-
-bot.hears("!hola", (ctx) => {
-    let emoji = "😏";
-    let superName = superheroes.random();
-    ctx.reply(`Ei hola! ${ctx.from.username}  ${emoji}`);
-    ctx.reply(`Tu nombre de superheroe es: ${superName}`);
-
 });
 
 bot.hashtag("programming", ctx => {
