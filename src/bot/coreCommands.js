@@ -14,25 +14,25 @@ bot.start((ctx) => {
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
     \nSi quieres saber que puedo hacer por ti, escribe /help.
-    `);      
-    numMessages= numMessages + 2;
+    `);
+    numMessages = numMessages + 2;
     console.log(numMessages)
 
 });
 
 bot.help((ctx) => {
-    ctx.replyWithMarkdown(`${menu.help}`); 
+    ctx.replyWithMarkdown(`${menu.help}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
-bot.command("/clear",(ctx)=>{
+bot.command("/clear", (ctx) => {
     //numMessages ++;
     console.log(numMessages)
-    numMessages = middleware.clearHistory(ctx,numMessages);
-   // numMessages = 0;
+    numMessages = middleware.clearHistory(ctx, numMessages);
+    // numMessages = 0;
     console.log(numMessages);
-    
+
 })
 
 bot.command("/tramites", (ctx) => {
@@ -149,7 +149,7 @@ bot.command("/asignatura", (ctx) => {
         }
     }
     ctx.reply(selectedSubject);
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
     //console.log(typeof (selectedSubject));
 
@@ -157,37 +157,37 @@ bot.command("/asignatura", (ctx) => {
 
 bot.command("/plan", (ctx) => {
     ctx.reply("info plan de estudios");
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/telegram", (ctx) => {
     ctx.reply(dataDegree.groups.telegram);
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/whatsapp", (ctx) => {
     ctx.reply(dataDegree.groups.whatsapp);
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/mega", (ctx) => {
     ctx.reply(dataDegree.storage.mega);
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/discord", (ctx) => {
     ctx.reply("servidores discord");
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/github", (ctx) => {
     ctx.reply(dataDegree.storage.github);
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
@@ -206,7 +206,7 @@ bot.command("/api", (ctx) => {
         ctx.reply("frase: " + abc.activity);
     }
     main();
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 })
 
@@ -216,7 +216,7 @@ bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
 
 bot.on("text", ctx => {
     ctx.reply("comando incorrecto, /help para ver las opciones.");
-    numMessages= numMessages + 2;
+    numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
