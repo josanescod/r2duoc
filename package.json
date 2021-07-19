@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.1",
-    "superheroes": "^3.0.0",
     "telegraf": "^4.3.0"
   },
   "devDependencies": {
