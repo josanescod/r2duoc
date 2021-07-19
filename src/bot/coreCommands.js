@@ -5,16 +5,21 @@ const menu = require('./menu');
 const middleware = require('../middleware/middleware')
 const fetch = require("node-fetch");
 const config = require("../config/config");
+const language = require("./language");
 
+let idioma = 0 //0 ,1,2
+let chat_id = ""
 let numMessages = 0;
-console.log(numMessages)
+console.log("numMessages:", numMessages, "idioma: ", idioma,
+    "chat_id: ", chat_id);
 
 bot.start((ctx) => {
-    //console.log("chat id " + ctx.chat.id);
+    chat_id = ctx.chat.id
+    console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
-    \nSi quieres saber que puedo hacer por ti, escribe /help.
-    `);
+    \n${language[idioma].start}`);
+
     numMessages = numMessages + 2;
     console.log(numMessages)
 
@@ -111,7 +116,7 @@ bot.command("/itinerario", (ctx) => {
             `);
             break;
         default:
-            ctx.reply(`porfavor elige un itinerario válido [ si-ti-c-is-ic ].`);
+            ctx.reply(`porfavor elige un itinerario válido [ si | ti | c | is | ic ]`);
             break;
     }
 });
@@ -154,6 +159,28 @@ bot.command("/asignatura", (ctx) => {
     //console.log(typeof (selectedSubject));
 
 });
+
+bot.command(["/idioma", "/language"], (ctx) => {
+    middleware.parseCommand(ctx);
+    let arg = ctx.state.command.args[0];
+    switch (arg) {
+        case "es":
+            ctx.reply(`idioma: es`);
+            idioma = 0;
+            break;
+        case "ca":
+            ctx.reply(`idioma: ca`);
+            idioma = 1;
+            break;
+        case "en":
+            ctx.reply(`language: en`);
+            idioma = 2;
+            break;
+        default:
+            ctx.reply(`${language[idioma].helpLang}`);
+            break;
+    }
+})
 
 bot.command("/plan", (ctx) => {
     ctx.reply("info plan de estudios");

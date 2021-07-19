@@ -6,6 +6,7 @@ const help = `*Info*
 /asignatura \\[ asignatura \] - información sobre una asignatura
 /plan - muestra el plan de estudios
 /clear - borra el historial
+/idioma \\[es | ca | en \]
 
 *Grupos*
 /telegram \\[ grupo \] - enlace al grupo de telegram
