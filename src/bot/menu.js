@@ -1,5 +1,6 @@
+
+
 const help = `*Info*
-/tramites - informacion sobre trámites
 /itinerarios - listado de itinerarios
 /itinerario \\[ itinerario \] - información sobre un itinerario
 /asignaturas - listado asignaturas con sus siglas

@@ -180,25 +180,28 @@ bot.command(["/idioma", "/language"], (ctx) => {
     let arg = ctx.state.command.args[0];
     switch (arg) {
         case "es":
-            ctx.reply(`idioma: es`);
+            ctx.reply(`idioma: es [OK]`);
             idioma = 0;
             break;
         case "ca":
-            ctx.reply(`idioma: ca`);
+            ctx.reply(`idioma: ca [OK]`);
             idioma = 1;
             break;
         case "en":
-            ctx.reply(`language: en`);
+            ctx.reply(`language: en [OK]`);
             idioma = 2;
             break;
         default:
             ctx.reply(`${language[idioma].helpLang}`);
             break;
     }
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 })
 
 bot.command("/plan", (ctx) => {
-    ctx.reply("info plan de estudios");
+    ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
+    //ctx.replyWithMarkdown(`*algebra*\n[grupo de algebra](https://www.google.com)`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
