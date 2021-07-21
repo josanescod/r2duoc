@@ -7,7 +7,7 @@ const fetch = require("node-fetch");
 const config = require("../config/config");
 const language = require("./language");
 
-let idioma = 0 //0 ,1,2
+let idioma = 0 //0,1,2
 let chat_id = ""
 let numMessages = 0;
 console.log("numMessages:", numMessages, "idioma: ", idioma,
@@ -33,8 +33,6 @@ bot.start((ctx) => {
         default:
             console.log("language error");
     }
-
-
     numMessages = numMessages + 2;
     console.log(numMessages)
 
@@ -53,10 +51,8 @@ bot.command(["/help","/ayuda","/ajuda"],(ctx) => {
 });
 
 bot.command("/clear", (ctx) => {
-    //numMessages ++;
     console.log(numMessages)
-    numMessages = middleware.clearHistory(ctx, numMessages);
-    // numMessages = 0;
+    numMessages = middleware.clearHistory(ctx, numMessages);    
     console.log(numMessages);
 
 })
@@ -149,16 +145,14 @@ bot.command("/asignaturas", (ctx) => {
     let obj = dataDegree.asignaturas;
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
-            let val = obj[key];
-            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+            let val = obj[key];            
             listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
         }
     }
     ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
 });
 
-bot.command("/asignatura", (ctx) => {
-    //ctx.reply("info de asignatura");
+bot.command("/asignatura", (ctx) => {   
     var selectedSubject = "";
     middleware.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -177,8 +171,6 @@ bot.command("/asignatura", (ctx) => {
     ctx.reply(selectedSubject);
     numMessages = numMessages + 2;
     console.log(numMessages)
-    //console.log(typeof (selectedSubject));
-
 });
 
 bot.command(["/idioma", "/language"], (ctx) => {
