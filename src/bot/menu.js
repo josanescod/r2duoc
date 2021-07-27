@@ -10,8 +10,8 @@ const help = `*Info*
 /idioma \\[es | ca | en \]
 
 *Grupos*
-/telegram \\[ grupo \] - enlace al grupo de telegram
-/whatsapp \\[ grupo \]- enlace al grupo de whatsapp 
+/telegram \\[ grupo | all \] - lista grupo(s) de telegram
+/whatsapp \\[ grupo | all \] - lista grupo(s) de whatsapp 
 
 *Recursos*
 /mega - cuenta en la nube con materiales 

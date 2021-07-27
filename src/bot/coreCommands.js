@@ -44,7 +44,7 @@ bot.help((ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/help","/ayuda","/ajuda"],(ctx) => {
+bot.command(["/help", "/ayuda", "/ajuda"], (ctx) => {
     ctx.replyWithMarkdown(`${menu.help}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
@@ -52,7 +52,7 @@ bot.command(["/help","/ayuda","/ajuda"],(ctx) => {
 
 bot.command("/clear", (ctx) => {
     console.log(numMessages)
-    numMessages = middleware.clearHistory(ctx, numMessages);    
+    numMessages = middleware.clearHistory(ctx, numMessages);
     console.log(numMessages);
 
 })
@@ -145,14 +145,14 @@ bot.command("/asignaturas", (ctx) => {
     let obj = dataDegree.asignaturas;
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
-            let val = obj[key];            
+            let val = obj[key];
             listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
         }
     }
     ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
 });
 
-bot.command("/asignatura", (ctx) => {   
+bot.command("/asignatura", (ctx) => {
     var selectedSubject = "";
     middleware.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -205,13 +205,38 @@ bot.command("/plan", (ctx) => {
 });
 
 bot.command("/telegram", (ctx) => {
-    ctx.reply(dataDegree.groups.telegram);
+    middleware.parseCommand(ctx);
+    let arg = ctx.state.command.args[0];
+
+    if (arg === "all") {
+        ctx.reply(dataDegree.groups.telegram);
+    } else if (arg === undefined) {
+        ctx.reply(`parametros válidos: nombre_asignatura/all`)
+
+    }
+    else {
+        //buscará si el argumento coincide con un grupo/asignatura de telegram
+        ctx.reply(`enlace a la asignatura ${arg}`)
+    }//faltaria una tercera condicion si no existe la asignatura.    
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
 bot.command("/whatsapp", (ctx) => {
-    ctx.reply(dataDegree.groups.whatsapp);
+    middleware.parseCommand(ctx);
+    let arg = ctx.state.command.args[0];
+    if (arg === "all") {
+        ctx.reply(dataDegree.groups.whatsapp);
+    } else if (arg === undefined) {
+        ctx.reply(`parametros válidos: nombre_asignatura/all`)
+
+    }
+    else {
+        //buscará si el argumento coincide con un grupo/asignatura de whatsapp
+        ctx.reply(`enlace a la asignatura ${arg}`)
+    }//faltaria una tercera condicion si no existe la asignatura.    
+
+
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -257,9 +282,9 @@ bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
 });
 
-bot.hears(["help","ayuda","ajuda"], (ctx) => {    
+bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
     ctx.reply(`${language[idioma].help}`);
-    
+
 });
 
 bot.on("text", ctx => {
