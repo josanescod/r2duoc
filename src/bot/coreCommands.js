@@ -1,10 +1,11 @@
+const fetch = require("node-fetch");
+require('dotenv').config();
+const _ = require("lodash");
 const bot = require('./bot');
 const dataDegree = require('./dataDegree.json');
 const path = require('path');
 const menu = require('./menu');
 const helper = require('../helpers/helpers')
-const fetch = require("node-fetch");
-require('dotenv').config()
 const language = require("./language");
 
 let idioma = 0 //0,1,2
@@ -19,13 +20,16 @@ bot.start((ctx) => {
     let emoji = "🤖";
     switch (idioma) {
         case 0:
-            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} `);
+            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
+${language[idioma].start}`);
             break;
         case 1:
-            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}`);
+            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}
+${language[idioma].start}`);
             break;
         case 2:
-            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}`);
+            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}
+${language[idioma].start}`);
             break;
         default:
             console.log("language error");
@@ -147,7 +151,7 @@ bot.command("/asignatura", (ctx) => {
                 for (let key in obj) {
                     if (obj.hasOwnProperty(key)) {
                         let val = obj[key];
-                        listAsignaturas = `${val.nombre} -> [ ${val.referencia} ] \n ${listAsignaturas}`;
+                        listAsignaturas = `${val.nombre} -> [ ${val.referencia} ] \n${listAsignaturas}`;
                     }
                 }
                 ctx.replyWithMarkdown(`*Asignatura* - *codigo*                
@@ -156,15 +160,48 @@ http://www.josanweb.com`);
                 break;
             case "basica":
             case "ba":
-                ctx.reply("basica")
+                let listBasicas = "";
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        let val = obj[key];
+                        if (val.tipo === "Básica") {
+                            listBasicas = `${val.nombre} -> [ ${val.referencia} ] \n${listBasicas}`;
+                        }
+
+                    }
+                }
+                ctx.replyWithMarkdown(`*Básicas*                
+${listBasicas}`)
                 break;
             case "obligatoria":
             case "ob":
-                ctx.reply("obligatoria")
+                let listObligatorias = "";
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        let val = obj[key];
+                        if (val.tipo === "Obligatoria") {
+                            listObligatorias = `${val.nombre} -> [ ${val.referencia} ] \n${listObligatorias}`;
+                        }
+
+                    }
+                }
+                ctx.replyWithMarkdown(`*Obligatorias*                
+${listObligatorias}`)
                 break;
             case "optativa":
             case "opt":
-                ctx.reply("optativa")
+                let listOptativas = "";
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        let val = obj[key];
+                        if (val.tipo === "Optativa") {
+                            listOptativas = `${val.nombre} -> [ ${val.referencia} ] \n${listOptativas}`;
+                        }
+
+                    }
+                }
+                ctx.replyWithMarkdown(`*Optativas*                
+${listOptativas}`)
                 break;
             default:
                 for (let key in obj) {
