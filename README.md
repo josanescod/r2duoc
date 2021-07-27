@@ -19,5 +19,8 @@ This bot is part of a set of tools that collects information through web scrappi
 July 2021
 v 0.1
 
-compiuoc
+buoc - buddyuoc
 
+
+
+ideas: use cron npm package to schedule tasks?

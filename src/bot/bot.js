@@ -1,12 +1,16 @@
 
-const config = require("../config/config");
+require('dotenv').config()
 const { Telegraf } = require("telegraf");
-const bot = new Telegraf(config.token);
+const bot = new Telegraf(process.env.TOKEN);
 
 bot.launch()
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
+
+
+
+
 module.exports = bot;
 
 

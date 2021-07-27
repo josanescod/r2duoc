@@ -4,8 +4,9 @@ const path = require('path');
 const menu = require('./menu');
 const helper = require('../helpers/helpers')
 const fetch = require("node-fetch");
-const config = require("../config/config");
+require('dotenv').config()
 const language = require("./language");
+
 
 let idioma = 0 //0,1,2
 let chat_id = ""
@@ -13,22 +14,20 @@ let numMessages = 0;
 console.log("numMessages:", numMessages, "idioma: ", idioma,
     "chat_id: ", chat_id);
 
+
 bot.start((ctx) => {
     chat_id = ctx.chat.id
     console.log("chat id " + ctx.chat.id);
     let emoji = "🤖";
     switch (idioma) {
         case 0:
-            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} `
-            );
+            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} `);
             break;
         case 1:
-            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}`
-            );
+            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}`);
             break;
         case 2:
-            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}`
-            );
+            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}`);
             break;
         default:
             console.log("language error");
@@ -63,7 +62,7 @@ bot.command("/tramites", (ctx) => {
 
 bot.command("/itinerarios", (ctx) => {
     let tempPath = path.join(__dirname, '../');
-    let photo = tempPath + `${config.itinerarieImg}`;
+    let photo = tempPath + `${process.env.ITINERARIE_IMG}`;
     //ctx.reply("Create a scene o stage?");
     ctx.replyWithPhoto({ source: photo });
     setTimeout(function () {
@@ -150,7 +149,7 @@ bot.command("/asignaturas", (ctx) => {
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
             let val = obj[key];
-            listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+            listAsignaturas = `${val.nombre} - [ ${val.referencia} ] \n ${listAsignaturas}`;
         }
     }
     ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
@@ -168,7 +167,7 @@ bot.command("/asignatura", (ctx) => {
             var val = obj[key];
             //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
             //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
-            if (val.nombre === arg) {
+            if (val.referencia === arg) {
                 //console.log(val.nombre)
                 selectedSubject = val.descripcion;
             }
@@ -223,21 +222,21 @@ bot.command("/telegram", (ctx) => {
     else {
         let obj = dataDegree.asignaturas;
         let selectedTelegram = "";
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            var val = obj[key];
-            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
-            if (val.referencia === arg) {
-                //console.log(val.nombre)
-                selectedTelegram = val.telegram;
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                var val = obj[key];
+                //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+                //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+                if (val.referencia === arg) {
+                    //console.log(val.nombre)
+                    selectedTelegram = val.telegram;
+                }
+            } else {
+                selectedTelegram = "No existe esa asignatura"
             }
-        }else {
-            selectedTelegram = "No existe esa asignatura"
         }
-    }
-    ctx.reply(`enlace a la asignatura ${arg}: ${selectedTelegram}`);    
-     
+        ctx.reply(`enlace a la asignatura ${arg}: ${selectedTelegram}`);
+
     }//faltaria una tercera condicion si no existe la asignatura.    
     numMessages = numMessages + 2;
     console.log(numMessages)
@@ -255,22 +254,22 @@ bot.command("/whatsapp", (ctx) => {
     else {
         let obj = dataDegree.asignaturas;
         let selectedWhatsapp = "";
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            var val = obj[key];
-            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
-            if (val.referencia === arg) {
-                //console.log(val.nombre)
-                selectedWhatsapp = val.whatsapp;
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                var val = obj[key];
+                //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+                //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+                if (val.referencia === arg) {
+                    //console.log(val.nombre)
+                    selectedWhatsapp = val.whatsapp;
+                }
+            } else {
+                selectedWhatsapp = "No existe esa asignatura"
             }
-        }else {
-            selectedWhatsapp = "No existe esa asignatura"
         }
+        ctx.reply(`enlace a la asignatura ${arg}: ${selectedWhatsapp}`);
+
     }
-    ctx.reply(`enlace a la asignatura ${arg}: ${selectedWhatsapp}`);    
-     
-    }  
 
 
     numMessages = numMessages + 2;
@@ -314,7 +313,7 @@ bot.command("/api", (ctx) => {
     console.log(numMessages)
 })
 
-bot.mention(["sisebuto", "Sisebuto"], (ctx) => {
+bot.mention(["Pacobot", "pacobot"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
 });
 
