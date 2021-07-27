@@ -60,7 +60,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura es el punto de inicio a las técnicas de programación. La profundización se hará cursando las asignaturas siguientes del plan de estudios: Prácticas de Programación y Diseño y Programación Orientada a Objetos.La práctica de programación en lenguaje C permite adquirir unos conocimientos que son imprescindibles para otras asignaturas del grado.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75555",
@@ -69,16 +72,22 @@
 			"creditos": "6",
 			"descripcion": "En la asignatura de Fundamentos de Programación habéis adquirido los conceptos básicos de programación dentro del paradigma clásico o procedimental. En esta asignatura se busca ayudar al estudiante a asentar estos conceptos básicos, profundizando en algunos de ellos. Hasta el momento, los problemas propuestos se podían resolver con la utilización de herramientas y conceptos teóricos explicados en los módulos de teoría, siguiendo unas guías de buenas prácticas de programación. El objetivo final del estudiante era obtener un codigo que solucionara el problema dado. En la resolución de problemas reales, la obtención de soluciones informáticas a problemas concretos es una tarea de ingeniería, donde la creatividad i la pericia del programador puede ser la diferencia entre conseguir una solución o que el proyecto fracase. No existen recetas mágicas para encontrar soluciones factibles a todos los problemas a los que un programador se puede enfrontar al largo de su vida profesional. La única forma de que el estudiante adquiera las capacidades de abstracción de problemas y planteamiento eficiente de soluciones, es por medio de la creación de sus propios mecanismos, lo que solo se consigue a base de práctica. Por consiguiente, esta será una asignatura mayoritariamente práctica, donde el estudiante deberá enfrentarse a problemas más complejos y tener en cuenta aspectos de optimización de codigo para encontrar soluciones que no solo funcionen, sino que también sean eficientes en términos de velocidad y utilización de la memoria.Siguiendo con lo que se ha iniciado en la asignatura de Fundamentos de Programación, esta asignatura utilizará el lenguaje de programación C para codificar las soluciones a los problemas propuestos.",
 			"requisitos": "los adquiridos en Fundamentos de programación",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
-			"codigo": "75556",
+			"codigo": "75556",			
 			"nombre": "Administración y gestión de organizaciones",
 			"tipo": "Básica",
 			"creditos": "6",
 			"descripcion": "La asignatura Administración y Gestión de Organizaciones pretende iniciar al estudiante en el mundo de las organizaciones (en general: empresas, administraciones públicas, entidades sin ánimo de lucro...) que constituyen el entorno en el que (o para el que) el estudiante desarrollará su actividad profesional. Así, intenta proporcionar un marco global que explique su funcionamiento interno, pero también sus interacciones con el exterior. A pesar de no ser una asignatura tecnológica, pretende dar esta aproximación al mundo de las organizaciones desde la perspectiva del profesional de las tecnologías de la información y la comunicación. Así los ejemplos y algunos de sus contenidos están claramente enfocados desde esta perspectiva.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "ago",
+			"whatsapp":"https://chat.whatsapp.com/5FO7lAIpClK8CqZcz5RPUl",
+			"telegram":"https://t.me/joinchat/WqECtXVCmRJiYTNk"
 		},
 		{
 			"codigo": "75557",
@@ -87,7 +96,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura pretende proporcionar al/la estudiante una formación básica sobre temas de álgebra, los cuales son instrumentales para otras materias más directamente relacionadas con el mundo de las telecomunicaciones, la informática u otras ingenierías. Por otro lado, como asignatura de matemáticas que es, tiene que ayudar al/la estudiante en su formación científico-técnica, aportando un lenguaje y metodologías propios de las disciplinas matemáticas y científicas.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75558",
@@ -96,7 +108,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura Análisis Matemático proporciona los conceptos y métodos de cálculo necesarios para la formación de un ingeniero en Informática. Muchos procesos de la ingeniería se pueden describir mediante magnitudes que varían en relación con otras, es decir, son explicables a través de funciones. Esta asignatura presenta una revisión de las funciones de variable real, profundiza en la comprensión de los conceptos de derivada e integral y se focaliza en temas concretos como el polinomio de Taylor y la integración impropia.",
 			"requisitos": "se aconseja cursar IMI o tener recientes los conocimientos previos de derivación e integración de Bachillerato o equivalente",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75570",
@@ -105,7 +120,10 @@
 			"creditos": "6",
 			"descripcion": "La lógica impregna todo el mundo científico y le aporta directamente o indirectamente todo el rigor que requiere y que lo caracteriza. Es, sin duda, un conocimiento básico para todas las disciplinas científicas. También y en grado elevado, para la informática, tanto en su vertiente más teórica como en la más práctica y aplicada. No es exagerado decir que la lógica es a la informática lo que el cálculo es a la arquitectura y a otras ingenierías. Los fundamentos lógicos que esta asignatura quiere proporcionar se proyectan hacia otras asignaturas de las titulaciones en Informática y hacia la actividad profesional propia del informático. Dado este carácter fundamental, la lógica se situa en los niveles iniciales de estas titulaciones, cerca de otras asignaturas fundamentales como álgebra y cálculo, y cerca también de las asignaturas de las áreas de programación o de arquitectura de computadores.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75568",
@@ -114,7 +132,10 @@
 			"creditos": "6",
 			"descripcion": "El análisis de datos o estadística aplicada es una ciencia que se dedica a obtener, analizar, interpretar, explicar y representar datos. Los métodos propios del análisis de datos pueden usarse para resumir o describir un conjunto de datos -es lo que se conoce con el nombre de estadística descriptiva-, y también para modelar patrones de comportamientos de los datos observados (o disponibles), de forma que se puedan considerar efectos aleatorios o de incertidumbre, y después hacer uso de estos modelos para obtener información sobre el conjunto de todos los datos, los observados y los no observados -es lo que se denomina inferencia estadística. En la Sociedad de la Información, dónde los datos son abundantes, los conceptos y técnicas propios del análisis de datos constituyen un elemento clave a la hora de transformar los datos en información útil, facilitando de esta manera la generación de conocimiento y la toma de decisiones en los escenarios de incertidumbre en los que a a menudo trabajan las organizaciones, los sistemas y los procesos. DATOS + ANÁLISIS ESTADÍSTICO >> INFORMACIÓN >> CONOCIMIENTO",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75561",
@@ -123,7 +144,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura Competencias TIC, transversal de la universidad, tiene como principal finalidad iniciaros de forma gradual e integrada en la adquisición de la competencia propia de la UOC Uso y aplicación de las TIC en el ámbito académico y profesional. Esta competencia comprende el uso racional y crítico de las TIC para trabajar y estudiar en la sociedad de la información que va más allá del conocimiento instrumental de las herramientas. Entendemos esta competencia en línea de la definición que hace la comisión europea de competencias digitales como un conjunto de conocimientos, habilidades, actitudes, estrategias y sensibilización que se requieren cuando se utilizan las TIC y los medios digitales para realizar tareas, resolver problemas, comunicarse, gestionar información, colaborar, crear y compartir contenidos, construir conocimiento de manera efectiva, eficiente, adecuada, de manera crítica, creativa, autónoma, flexible, ética, reflexiva para el trabajo, el ocio, la participación, el aprendizaje, la socialización, el consumo y el empoderamiento. La asignatura, de 6 créditos ECTS, y que forma parte del bloque de materias de formación básica del Grado, se basa la metodología de trabajo por proyectos en red, aplicando la metodología ágil. Mediante la realización de un proyecto digital en grupo, sobre un tema vinculado al ámbito del Grado, se pretende trabajar de forma integrada un conjunto de competencias específicas en TIC que ireis profundizando en otras asignaturas a lo largo del Grado y que consolidaréis en el trabajo/proyecto final de carrera.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75562",
@@ -132,7 +156,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura es el punto de entrada al conocimiento de la arquitectura de los computadores. Es por eso que no se presupone ningún conocimiento previo de esta disciplina ni de ninguna otra asignatura de estos estudios.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75611",
@@ -141,7 +168,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura es una introducción a varios aspectos fundamentales de la física que pueden ser útiles a un ingeniero informático a lo largo de su carrera profesional. En ella se tratan aspectos fundamentales del análisis de circuitos y del electromagnetismo; pero también se hace una introducción a la fotónica puesto que ciertos dispositivos fotónicos están llamados a jugar un papel central en el futuro de la informática.",
 			"requisitos": "Álgebra y Análisis matemático",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75564",
@@ -150,7 +180,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura tiene como principal objetivo la comprensión de los conceptos generales del paradigma de la programación orientada a objetos (POO) y su puesta en práctica mediante el desarrollo de aplicaciones con lenguajes de programación orientados a objetos. Los elementos del paradigma de la POO se enseñan desvinculados de cualquier lenguaje con el objetivo de que el estudiante comprenda los conceptos de manera pura. No obstante, durante el semestre se intenta mostrar/comparar cómo los lenguajes más utilizados ponen en práctica los diferentes conceptos de la POO. A lo largo de la asignatura se enseña cómo diseñar/modelar programas (apoyándose en el Lenguaje de Modelado Unificado, UML), para posteriormente implementar el diseño creado mediante un lenguaje de programación concreto, en nuestro caso, Java. Así pues, el enfoque de la asignatura es fundamentalmente práctico, orientado a la resolución de ejercicios, lo cual requiere una dedicación especial por parte del estudiante.",
 			"requisitos": "Fundamentos de Programación y prácticas de programación ",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75565",
@@ -159,7 +192,10 @@
 			"creditos": "6",
 			"descripcion": "La ingeniería del software es la aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento de software. Este enfoque se adopta con el fin de lograr los niveles de calidad, productividad y control de costes del resto de ingenierías. El software, pero, a diferencia otros productos, es intangible y, por lo tanto, su producción no consume materias primeras. Por otro lado, no se manufactura (todas las copias son idénticas y el coste de crear una es prácticamente nulo) ni se desgasta pero queda obsoleto rápidamente. La aplicación de la ingeniería del software implica seguir un método que describa las características del proceso disciplinado que utilizamos. Más concretamente, este método nos dirá qué tareas se tienen que llevar a cabo, quién las tiene que llevar a cabo (los roles) y qué artefactos serán las entradas y resultados de cada tarea. Las tareas definidas por un método pueden pertenecer a ámbitos varios como por ejemplo la gestión del proyecto, la identificación y gestión de requisitos, la modelización, la construcción del software, las pruebas, la gestión de la calidad, el mantenimiento o la ingeniería inversa. Cada método puede definir roles diferentes, como la persona responsable del proyecto, la persona experta en el dominio, la analista funcional, la arquitecta, el equipo encargado de la programación, etc., a pesar de que hay ciertos roles que acostumbran a aparecer con uno u otro nombre en la mayoría de métodos. Por último, la ingeniería del software también nos proporciona un conjunto de técnicas y herramientas que nos ayudan a poner en práctica los métodos que hayamos escogido para desarrollar nuestro proyecto de software. Esta asignatura se enfoca partiendo de la base que la mayor parte de su contenido es de aplicación directa en el futuro trabajo profesional del estudiantado; así, se pone énfasis en los conceptos más prácticos. Además, las actividades de tipo práctico tienen un peso importante dentro del tiempo que hay que dedicar a la asignatura.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75590",
@@ -168,7 +204,10 @@
 			"creditos": "6",
 			"descripcion": "Para elaborar cualquier producto multimedia interactivo es necesario previamente construir un guión. En el guión es donde nuestra idea inicial se perfecciona y toma forma. En la asignatura Narrativa interactiva, veremos primero las nociones y estructuras que se utilizan en la escritura de guiones para el cine y la televisión. Al estudiarlas no tendremos más remedio que hacer referencia a la tradición narrativa occidental. Tradición que nace en los mitos de la Grecia clásica y llega hasta las vanguardias del siglo XX. Una vez conocidas las herramientas que se emplean en el audiovisual secuencial (cine, televisión, ¿), estudiaremos las posibilidades que nos ofrece la tecnología y sobre todo la capacidad de interacción. Es decir: el usuario o lector tiene la capacidad de intervenir en el desarrollo del relato. Veremos cómo este cambio de paradigma afectará claramente en los usos cotidianos de la comunicación y en los medios a través de los que se establece. Analizaremos estos nuevos recursos y definiremos los ejes sobre los que construir el guión de un producto interactivo. Esta asignatura, como se verá, ofrece unos fundamentos teóricos fuertes. Pero lo hace con la intención clara de utilizarlos rápidamente en su vertiente más práctica. Se trata de sumergirse en el trabajo de los guionistas, de entender los secretos de la confección profesional de guiones interactivos multimedia y finalmente de ponerlo en práctica.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75567",
@@ -177,7 +216,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura tiene como objetivo fundamental introducir a los estudiantes en el ámbito de las Bases de datos (BD). Se trata de una asignatura obligatoria tanto en el grado de Ingeniería Informática, como en el grado de Tecnologías de la Telecomunicación. En el primer caso, la asignatura se denomina Uso de Bases de Datos, mientras que en el segundo la asignatura recibe el nombre de Bases de Datos. A pesar de esta dicotomía en la denominación, las asignaturas son equivalentes a efectos docentes. Cuando sea necesario realizar alguna puntualización en relación a los grados, se hará constar convenientemente en este Plan Docente. Las BD son el mecanismo más habitual que las organizaciones utilizan para almacenar grandes volúmenes de datos de manera permanente. A su vez, las BD son gestionadas y manipuladas mediante un software altamente especializado y complejo denominado Sistema Gestor de Bases de Datos (SGBD). La información que se deriva de los datos guardados en las BD constituye un recurso de importancia primordial a todas las organizaciones, con independencia de cuáles sean sus ámbitos de negocio o actuación. Por todo esto, los conocimientos adquiridos en esta asignatura serán aplicables en la mayoría de salidas profesionales. Para poder guardar la información de interés de una organización, hay que disponer de algún modelo de datos que permita su representación en un ordenador en forma de BD. Este modelo de datos tiene que permitir, por un lado, definir la estructura de la BD y las reglas de integridad que garantizan que la BD es consistente. Por otro lado, el modelo de datos también tiene que proporcionar operaciones que permitan la consulta y actualización de la BD. A pesar de que existen diferentes modelos de datos, nosotros nos centraremos en el estudio del modelo de datos relacional, dado que es el más utilizado. Además de estudiar los fundamentos de este modelo de datos, también nos centraremos en la creación y manipulación de BD relacionales, estudiando para ello el álgebra relacional y SQL. El álgebra relacional es el lenguaje con el que internamente trabajan los SGBD relacionales. Su estudio, además, también permite entender ciertos constructores de SQL, que es el lenguaje estándar que nos permite, como usuarios, interaccionar con una BD relacional. En el caso de SQL estudiaremos, en primer lugar, SQL interactivo. En segundo lugar, estudiaremos una técnica (en concreto JDBC) que permite incorporar codigo SQL dentro de programas de aplicación desarrollados mediante el lenguaje de programación Java. Además de los contenidos previamente indicados, en la asignatura también se estudiarán los problemas que se derivan del acceso concurrente de varios usuarios a una misma BD y como éstos se pueden resolver. Finalmente, también se estudian modelos de datos alternativos al modelo de datos relacional y los SGBD que les dan soporte.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75585",
@@ -186,7 +228,10 @@
 			"creditos": "6",
 			"descripcion": "Un elemento clave en el desarrollo de sistemas de información son las bases de datos. Concretamente, dentro de este desarrollo, el diseño de la base de datos juega un papel fundamental puesto que condiciona la explotación de datos posterior. Además, el diseño de bases de datos es un proceso complejo, que permite obtener una implementación de una base de datos a partir de los requerimientos iniciales de los usuarios del sistema de información y se abordará en distintas etapas. En esta asignatura se estudiarán las diferentes etapas de diseño de bases de datos y se aplicará al caso concreto de las bases de datos relacionales. Su implementación física se llevará a cabo sobre un sistema de gestión de bases de datos concreto y por lo tanto, será necesaria una adaptación de este diseño a la base de datos en cuestión. Tras la creación de la base de datos se procederá a su explotación y en concreto, estudiaremos el procesamiento de consultas y vistas con el fin de optimizar dicho proceso y conseguir que la explotación de los datos sea lo más eficiente posible. Así pues, en esta asignatura el estudiante aprenderá a realizar el proceso de diseño de las bases de datos, mejorarlo a través del procesamiento de consultas y vistas y asegurar su idoneidad.",
 			"requisitos": "Uso de bases de datos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75575",
@@ -195,7 +240,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura Administración de redes y sistemas operativos tiene un enfoque constructivo; es decir, a través de los materiales diseñamos, construimos y tenemos cuidado de un entorno informático viendo las ventajas, pero también los problemas de llevar a cabo una tarea de estas dimensiones. Aprendemos a hacer la dirección, la gestión y la toma de decisiones para departamentos informáticos de organizaciones. Este enfoque constructivo se basa en la idea de crear un sistema informático desde el inicio. Empezamos por el diseño, después ponemos complementos imprescindibles (seguridad, permisos, web, ...), y finalmente nos preocupamos de la toma de decisiones de alto nivel. Esto lo hacemos siempre desde el punto de vista de Directores de informática y/o administradores de sistemas; el que seremos siempre en esta asignatura. La asignatura, por lo tanto, está orientada a como planificar, administrar y tener cuidado de un sistema informático en red para hacerlo eficiente, y también de cómo podemos hacer funcionar el 'departamento de informática' dentro de la organización de la que forma parte. La información es muy valiosa y no se puede perder ni tener rendijas de seguridad y los usuarios han de estar satisfechos con el sistema. Nuestra responsabilidad será entonces poder conseguir ambas hitos. Hemos querido tener cuidado en especial de dos cuestiones, la vertiente legal y la vertiente de seguridad en la administración y gestión de sistemas, puesto que pensamos que los conocimientos sobre estas áreas son imprescindibles.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75563 ",
@@ -204,7 +252,10 @@
 			"creditos": "6",
 			"descripcion": "Los profesionales de las tecnologías de la información y la comunicación (TIC), además de saber programar un sistema, gestionar redes de telecomunicación o diseñar una aplicación interactiva, tienen la necesidad de comunicarse de manera eficaz con los usuarios y los directivos en sus diferentes ámbitos de actuación. Un ingeniero informático o de telecomunicación, así como un estudiante, tiene que redactar proyectos, presentar informes, elaborar una memoria, describir un sistema y componer diferentes tipos de textos, que tendrá que saber producir con la máxima eficiencia posible. En esta asignatura, pretendemos poner al alcance de los estudiantes las herramientas de que dispone actualmente la lingüística para resolver los principales problemas que se presentan en la redacción de textos especializados del ámbito de las TIC. La orientación teórica, los conceptos, la metodología y las actividades se basan en las aportaciones de la lingüística del texto y del análisis del discurso, que toman el texto como referencia y se centran en el estudio del uso del lenguaje y en las necesidades comunicativas. No solo se estudia la oración, sino el texto como unidad y todo aquello que lo condiciona: el objetivo, los destinatarios y, en general, las circunstancias que configuran la situación de comunicación. Se trata, por lo tanto, de saber utilizar la lengua en situaciones concretas. A partir de los principales problemas detectados en textos de estudiantes, hemos estructurado un programa adecuado a las necesidades comunicativas del futuro profesional de las TIC. La finalidad del curso no es aprender gramática, sino aprovechar los conocimientos de la lingüística más útiles para resolver las dificultades que se tienen que afrontar en la producción de los textos de especialidad. La asignatura se organiza alrededor de tres núcleos temáticos: conceptos básicos relacionados con el texto, caracterización de algunos de los textos más significativos de las TIC y técnicas de producción de textos especializados. Los contenidos se presentan de manera clara, sencilla y breve, y se incide en los aspectos que posibilitan la reflexión sobre la composición de textos, los cuales se introducen y se explican con ejemplos reales, mayoritariamente del ámbito de las TIC, comentados con el fin de reforzar los conceptos más importantes y destacar los aspectos prácticos.",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75569",
@@ -213,7 +264,10 @@
 			"creditos": "6",
 			"descripcion": "Muchas situaciones se pueden describir en forma de jerarquía o red entre diferentes entidades: red social, red de carreteras, cargos en una organización, red de computadores, conexiones en un circuito... Matemáticamente, esta noción de jerarquía o red se denomina grafo. En esta asignatura, estudiaremos el concepto de grafo, sus propiedades y los problemas más usuales que se pueden plantear. Estos conceptos serán de gran aplicación en muchos problemas del campo de la informática. Por otro lado, algunos problemas que nos puede interesar resolver sobre un grafo son computacionalmente complejos: un ordenador necesitaría mucho tiempo de cálculo o espacio de memoria para resolverlos. En la segunda parte de la asignatura estudiaremos los límites prácticos de cálculo de un ordenador a partir de este concepto de dificultad computacional. Definiremos diferentes familias de problemas según su complejidad y presentaremos algunos ejemplos de problemas complejos, dentro y fuera de la teoría de grafos. Veremos que algunos de estos problemas complejos son muy frecuentes en el campo de la informática y que tienen aplicaciones a diferentes ámbitos, como por ejemplo la criptografía.",
 			"requisitos": "sin requisitos, pero recomendable: prácticas de programación y lógica",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75571",
@@ -222,7 +276,10 @@
 			"creditos": "6",
 			"descripcion": "La mayoría de los proyectos donde actualmente participan profesionales de las tecnologías de la información y de la comunicación (TIC) no son estrictamente técnicos, sino que implican diferentes departamentos y habilidades. Además desde un punto de vista técnico, muchos de estos proyectos no son sólo el desarrollo de software, sino que implementan o integran productos existentes. Actualmente, a través de las diferentes áreas de ingeniería, la mayoría de las actividades diarias de las organizaciones, así como sus profesionales, se estructuran en proyectos. Esta asignatura presenta un método general e introductorio para los profesionales de gestión de proyectos (medianos y grandes) en materia de TIC, que tendrían que ser complementados con métodos específicos para cada tipo de especialización y/o proyecto. La asignatura tiene como objetivo proporcionar al alumno los conocimientos básicos y las capacidades de gestión de proyectos para que sea un miembro activo del equipo de un proyecto de TIC, bajo la orientación y supervisión de un jefe de proyecto. El enfoque de esta asignatura, basado en la experiencia del equipo docente y en estudios y manuales de referencia, se centra esencialmente en el enfoque propuesto en el Project Management Body of Knowledge, PMBOK. El PMBOK se está convirtiendo en un estándar de facto dentro de la profesión y los certificados emitidos por el Project Management Institute son cada vez más demandados por las empresas de todo el mundo. Como su nombre indica, el PMBOK es un cuerpo de conocimientos o una guía de buenas prácticas; en definitiva, se trata de una caja de herramientas que un jefe de proyectos con experiencia puede utilizar como sea necesario para cualquier trabajo.",
 			"requisitos": "sin requisitos, recomendable administración y gestión de Organizaciones.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75573",
@@ -231,7 +288,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura completa los conceptos que se han visto a la asignatura de Fundamentos de Computadores. Por lo tanto, se presupone que el estudiante tiene alcanzados unos conocimientos base, como las diversas formas de representar la información dentro del computador, los diferentes tipos de circuitos que lo constituyen y la estructura más básica de un computador sencillo. Estructura de Computadores se adentra un poco más en el interior del computador con la pretensión de dar una visión de la máquina básica desde la perspectiva del programador de lenguajes de bajo nivel. La programación que se realizará será en C haciendo llamadas a funciones en ensamblador con el fin de poder utilizar las funciones de E/S y las estructuras propias de C e incluir llamadas a funciones que estarán programadas en ensamblador. Para un buen seguimiento de la asignatura es recomendable tender unos conocimientos básicos de algorítmica y programación.",
 			"requisitos": "Fundamentos de computadores",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75572",
@@ -240,7 +300,10 @@
 			"creditos": "6",
 			"descripcion": "En esta asignatura se presentan los conceptos básicos de las redes de ordenadores y se describen los principios de funcionamiento y las aplicaciones características de la red Internet, haciendo especial énfasis en la web. También se incluye en esta asignatura las redes multimedia, así como los principios básicos de seguridad en las aplicaciones Internet.",
 			"requisitos": "Sistemas Operativos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75589",
@@ -249,7 +312,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura está básicamente enfocada a conocer los principales conceptos relacionados con los sistemas y aplicaciones distribuidas a escala Internet. Las aplicaciones distribuidas son sistemas formados por algunos, varios o muchos ordenadores interconectados en una red y con procesos que interaccionan entre si de forma compleja, compartiendo recursos y servicios.",
 			"requisitos": "Redes y aplicaciones Internet, sistema operativos, diseño y programaciónorientada a objetos.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75566",
@@ -258,7 +324,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura de Sistemas Operativos, es la primera de un bloque de tres asignaturas (Ampliación de sistemas operativos y Administración de redes y sistemas operativos). En esta primera asignatura se pueden distinguir dos partes bien diferenciadas: una parte teórica donde se presentan posibles soluciones que puede dar un sistema operativo a los diversos problemas planteados en la gestión de procesos, ficheros, memoria y comunicación; y una segunda parte, donde se presentará lo que es un Sistema Operativo (SO) desde la óptica de los usuarios de un sistema informático. Esta visión cubre aspectos que van desde el usuario no especializado de un sistema informático, hasta el técnico encargado de la administración del sistema, pasando por el desarrollador de aplicaciones. Esta visión se centra, desde la óptica de su utilización, en el conocimiento de los principales servicios del sistema, y de sus herramientas asociadas. Para conseguir estos objetivos se combinarán las clases de teoría con clases prácticas basadas en un sistema de la familia UNIX.",
 			"requisitos": "lenguaje C",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75582",
@@ -267,7 +336,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura es una introducción a la Inteligencia Artificial (IA). A lo largo de los 5 módulos en que se ha dividido la asignatura se dará una visión general del campo, se presentarán los métodos y técnicas básicos de la IA y se describirán algunos ejemplos de aplicación, así como también se verá una introducción al aprendizaje computacional. En particular, se verá cómo formalizar un problema y como la formulación permite aplicar los llamados métodos de búsqueda con el fin de encontrar una solución. Se verán algunos de estos métodos de búsqueda. También se estudiarán algunos de los mecanismos para la representación del conocimiento, necesarios para incorporar en un sistema el conocimiento sobre el entorno a aplicación. A lo largo de la asignatura se verá que los temas planteados tienen conexiones con otras asignaturas del grado en informática. En particular, el tema de representación del conocimiento está relacionado, entre de otros, con la asignatura que lleva el mismo nombre (Representación del Conocimiento). Como se verá, no hay un único mecanismo de representación del conocimiento sino que hay diversos (se anunciará que la lógica de primer orden es uno de ellos). Eso plantea el problema de escoger la representación más adecuada para un problema, como sucede a la hora de escoger entre diferentes estructuras de datos. Además, la representación del conocimiento necesita implementaciones eficientes dado que la cantidad de conocimiento que se tiene que representar es habitualmente grande. El tema de búsqueda también está relacionado con la asignatura de Grafos y Complejidad. Allí se vieron los grafos y los recorridos en un grafo. Encontrar la solución a un problema se verá como un recorrido en un grafo. Aún estando relacionada con las dos asignaturas, su superación no es un prerrequisito para cursar IA. La IA tiene una continuación natural en el grado en la asignatura de Aprendizaje Computacional, que cubre los aspectos relacionados con la extracción de características, los modelos de aprendizaje automático (supervisado y no supervisado) sobre un conjunto de datos, y los sistemas basados en agentes. Por este motivo se ha introducido un quinto módulo donde se ve una introducción al Aprendizaje Computacional. El Aprendizaje Computacional es una de les áreas donde más investigación avanzada se está realizando en los últimos años, permitiendo aplicaciones como la conducción automática de vehículos, el diagnóstico automático de enfermedades, el reconocimiento de caras y objetos genéricos, el estudio de grandes volúmenes de datos y redes sociales, y las aplicaciones a la bioinformática y/o estudio del genoma. Todas las técnicas que se utilizan tienen su base en la IA clásica que se introduce en la asignatura de Inteligencia Artificial descrita en este plan docente.",
 			"requisitos": "sin requisitos, recomendable representación del conocimiento y grafos y complejidad",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75559",
@@ -276,7 +348,10 @@
 			"creditos": "6",
 			"descripcion": "Un conocimiento funcional del inglés es básico hoy en día tanto para los estudios universitarios como para la carrera profesional. Idioma Moderno I corresponde a la primera parte del nivel B2 del Marco Común Europeo de Referencia para las Lenguas (MCERL). La asignatura se centra en las destrezas comunicativas efectivas en inglés y utiliza una metodología basada en tareas a realizar individualmente y/o en grupo.",
 			"requisitos": "nivel medio de inglés (equivalente a un B1 del Marco Común Europeo Referencia para las Lenguas).",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75560",
@@ -285,7 +360,10 @@
 			"creditos": "6",
 			"descripcion": "Un conocimiento funcional del inglés es básico hoy en día tanto para los estudios universitarios como para la carrera profesional. Inglés B2.2 es la segunda de dos asignaturas obligatorias de lengua extranjera en los grados de la UOC. La asignatura se centra en las destrezas comunicativas efectivas en inglés y utiliza una metodología basada en tareas a realizar individualmente y/o en grupo.",
 			"requisitos": "Idioma moderno I: Inglés",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 
 		{
@@ -295,7 +373,10 @@
 			"creditos": "6",
 			"descripcion": "Este curso está enfocado al estudio de los patrones de análisis y diseño contemplados desde una perspectiva práctica. Los contenidos se sitúan dentro de la metodología de la orientación a objetos, actualmente la más aceptada, y utilizando la notación UML por la misma razón. Los patrones (de análisis, diseño, arquitectónicos...) son una de las innovaciones que han tenido más impacto sobre el desarrollo orientado al objeto en los últimos años, junto con la aparición del lenguaje UML. Su principal ventaja es que permiten ahorrar tiempo y ganar en calidad a través de aplicar soluciones (que nombramos patrones) ya probadas exhaustivamente por otros diseñadores. Por esta razón, la utilización de patrones se considera una habilidad básica que tienen que adquirir los diseñadores de software orientado a objetos actualmente. Ahora bien, no parece que esta habilidad se pueda adquirir de otra manera que a través de la práctica; en esta práctica normalmente se utiliza la información detallada que se encuentra en los libros - que ya empiezan a ser numerosos - sobre patrones, y esta forma de trabajar es la que se recomienda a los estudiantes para su futuro trabajo profesional. En esta asignatura se proporcionan descripciones resumidas de muchos de los patrones más conocidos y aceptados actualmente, además de unos conceptos generales sobre los patrones y su utilización.",
 			"requisitos": "sin requisitos, recomendable UML, POO, y bases de datos relacionales",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75583",
@@ -304,7 +385,10 @@
 			"creditos": "6",
 			"descripcion": "La motivación principal de esta asignatura es la de dar a conocer el aprendizaje automático y como se sitúa dentro de la Inteligencia Artificial como disciplina y entender que son los agentes y los sistemas multiagente. En Inteligencia Artificial se dio una visión general de la Inteligencia Artificial y se presentaron algunos de los métodos y técnicas llamados clásicos, como son la resolución de problemas, la búsqueda y los sistemas basados en el conocimiento, también se vieron técnicas más avanzadas de razonamiento aproximado. En esta asignatura se profundizará mucho más en el problema del aprendizaje automático (machine learning), cubriendo los temas del aprendizaje no supervisado (clustering) y supervisado (clasificación). En especial, se hará hincapié en algoritmos del estado del arte como Support Vector Machines, ensemble de clasificadores o redes neuronales.",
 			"requisitos": "sin requisitos, recomendable Algebra lineal y estadística",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75607",
@@ -313,7 +397,10 @@
 			"creditos": "6",
 			"descripcion": "Arquitectura de Bases de datos es una asignatura optativa, propuesta dentro del itinerario en Tecnologías de la Información, que pertenece al Grado de Ingeniería Informática. La asignatura profundiza en el conocimiento adquirido en asignaturas previas obligatorias en materia de bases de datos, como por ejemplo, Uso de Bases de datos y Diseño de Bases de datos. La asignatura se inicia estudiando los principales inconvenientes del modelo relacional y presenta algunos modelos alternativos de datos. A continuación, se analizan los principales problemas relacionados con la implantación de sistemas gestores de bases de datos (SGBD), tanto en entornos centralizados como en entornos distribuidos. Finalmente, se introducen conceptos fundamentales sobre el diseño de bases de datos distribuidas. El Grado de Ingeniería Informática tiene el aprendizaje en lenguas extranjeras (en concreto el inglés) como competencia transversal a ser adquirida. Por eso algunas asignaturas tienen el material de aprendizaje en lengua inglesa. Éste es el caso de Arquitectura de Bases de datos, dadas sus características específicas (una asignatura de especialización con un modelo basado en evaluación continua).",
 			"requisitos": "Diseño de bases de datos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75578 ",
@@ -322,7 +409,10 @@
 			"creditos": "6",
 			"descripcion": "En esta asignatura se profundiza en el conocimiento de la arquitectura de los ordenadores introducido en las asignaturas de Fundamentos y Estructura de computadores del Grado de Ingeniería informática.",
 			"requisitos": "Fundamentos de computadores y Estructura de computadores, conocimientos C,Linux, compilación C con gcc",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75592",
@@ -331,7 +421,10 @@
 			"creditos": "6",
 			"descripcion": "En esta asignatura se profundiza en el conocimiento de arquitecturas avanzadas de computadores actuales. Por un lado se ampliarán los conocimientos previos en Fundamentos y Estructura de Computadores y Arquitectura de Computadores. Por otro lado se presentarán distintos modelos de arquitecturas de procesadores actuales. Entre ellos se estudiarán arquitecturas de altas prestaciones, multicores o arquitecturas GPU. No obstante, no sólo se discutirán los aspectos puramente arquitectónicos de dichos sistemas, también se presentarán los distintos paradigmas de programación asociados a dichas arquitecturas.",
 			"requisitos": "Se recomienda cursar Arquitectura de computadores antes de esta asignatura, ya que es la previa en el itinerario 'ingeniería de computadores' dentro del grado.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75579",
@@ -340,7 +433,10 @@
 			"creditos": "6",
 			"descripcion": "Una parte muy importante de la información disponible hoy en día se encuentra disponible en formato textual: páginas web, ficheros de configuración, scripts, programas de ordenador o incluso texto en lenguaje natural. Para que un ordenador pueda utilizar esta información, es necesario que la pueda interpretar según las reglas del lenguaje en que está escrita. En esta asignatura se presentan técnicas básicas para describir la estructura de un lenguaje, las expresiones regulares y las gramáticas libres de contexto. Estas notaciones son las que se usan, por ejemplo, para describir los lenguajes de programación o describir patrones de texto para hacer búsquedas. Además, se presentan los mecanismos que utilizan los ordenadores para reconocer si una sentencia está correctamente formada según la estructura de un lenguaje. En concreto se presentan los autómatas finitos y autómatas con pila. En resumen, esta asignatura proporciona las herramientas básicas para saber tratar información textual con un ordenador.",
 			"requisitos": "La asignatura requiere conocimientos básicos del concepto de grafo, que se ha introducido en la asignatura Grafos y Complejidad. Por otro lado, la asignatura requiere una cierta habilidad con el uso de notación matemática, dado que los lenguajes se describen de manera formal. Por este motivo, se recomienda haber cursado previamente la asignatura de Lógica .",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75604",
@@ -349,7 +445,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura de Comercio electrónico pretende formar a los alumnos en esta nueva disciplina nacida a remolque de las redes de comunicación de utilización general, como por ejemplo Internet. Pese al amplio abanico de disciplinas que a menudo se incluyen dentro de las palabras comercio electrónico (nueva economía, marketing, derecho, comportamiento social, etc.) es importante destacar que al encontrarnos en una asignatura de ingeniería informática, su enfoque es eminentemente tecnológico. De todos modos, el hecho que su enfoque sea tecnológico no quita que incluya diferentes disciplinas dentro de esta vertiente. Así pues, podemos identificar tres grandes áreas de conocimiento en las cuales incidiremos en esta asignatura. De una parte encontramos las bases de datos. En los sistemas de comercio electrónico, el correcto diseño y gestión de las bases de datos es sumamente importante puesto que una de las características que tiene el comercio electrónico es su alto grado de automatización, más que en otros ámbitos. Esto hace que las bases de datos jueguen un papel muy importante. Otro punto relevante en el comercio electrónico lo presentan el sistemas de pago. Como ya es sabido, una de las reticencias que debe superar el comercio electrónico es la desconfianza y por lo tanto se debe poner un énfasis especial en la seguridad. Por último, hay una parte que a menudo se olvida, quizás porque a los consumidores nos afecta poco, o mejor dicho, nos afecta positivamente y es la problemática que presenta el comercio electrónico de productos en soporte digital. La facilidad de copia junto con la exactitud de éstas implica que la piratería hace que sea un problema inherente a este soporte. Esta problemática, que muchas veces frena la venta y distribución de productos por la vía del comercio electrónico, genera en la actualidad importantes esfuerzos de investigación. Veremos distintas posibilidades para frenar la piretaría y qué problemática presentan. El curso quiere darse mediante un enfoque muy práctico, y es por este motivo que se han incluido dos prácticas obligatorias en la asignatura, además de las cuatro PECs. En la primera práctica trabajaremos con las tecnologías básicas de desarrollo web para poner en marcha un comercio electrónico. Por otro lado, en la segunda práctica implementaremos un sistema de comercio electrónico a través de una herramienta de gestión de contenidos (CMS) especializada para comercio electrónico: Prestashop.",
 			"requisitos": "Uso de Bases de Datos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75580",
@@ -358,7 +457,10 @@
 			"creditos": "6",
 			"descripcion": "Los compiladores son herramientas indispensables para cualquier informático, encargadas de traducir información textual de un formato o lenguaje a otro. Por ejemplo, actúan como piezas clave en el proceso la ejecución de un programa: traducen el programa desde el lenguaje de alto nivel utilizado por los programadores hasta un lenguaje de bajo nivel que se puede ejecutar en un ordenador (como el ensamblador o el codigo máquina). Esta asignatura presenta la estructura básica de un compilador: los módulos que lo componen y cómo se comunican entre sí. Nos centraremos en el caso de los lenguajes de programación de propósito general y en el proceso de generación de un ejecutable a partir de un programa en alto nivel. Concretamente, se verá cómo se analiza un programa fuente para obtener sus componentes y se detectan los posibles errores introducidos por el programador. Se introducirá también el concepto de intérprete y su relación con los compiladores. Después se estudiará cómo a partir de los datos obtenidos en la parte de análisis, se genera el codigo objeto y es optimizado para mejorar el rendimiento. Todo eso se pondrá en práctica mediante el uso de herramientas para la construcción de compiladores.",
 			"requisitos": "La asignatura presupone un buenos conocimientos de programación, específicamente en lenguaje Java, por lo que resulta muy recomendable haber cursado las asignaturas de programación y de estructuras de datos correspondientes con anterioridad. Además, para el buen seguimiento de la asignatura se tiene que partir de unos conocimientos básicos en lenguajes, expresiones regulares, autómatas finitos y gramáticas. Y, finalmente, hay que tener conocimientos básicos sobre lenguaje ensamblador y estructura de computadores.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75601",
@@ -367,7 +469,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura de Criptografía tiene como objetivo fundamental formar a los alumnos en el ámbito de la criptografía moderna. Esta disciplina tiene cada vez más importancia en el mundo en que vivimos debido al creciente valor que tiene la información. Por un lado, las técnicas criptográficas son necesarias para proteger la seguridad y la privacidad de los usuarios cuando hacen uso de la tecnología y de las redes de comunicaciones. En especial es importante proteger el usuarios de actividades de vigilancia masiva que pueden llevar a cabo de forma ilegal no sólo empresas privadas sino también algunos organismos gubernamentales que actúan fuera de los circuitos legales. Por otra parte, más allá de la propia protección de los usuarios, las empresas y cualquier entidad que se relacione o utilice la tecnología necesita mecanismos que protejan sus activos digitales que, en ocasiones, pueden ser todos los activos de una compañía. Finalmente, el desarrollo de la criptografía también permite el nacimiento de nuevos paradigmas de relación entre las personas como la creación de nuevas monedas virtuales, las criptomonedas, que no dependen de ninguna entidad centralizada para poder funcionar. El curso quiere dar un enfoque práctico de la criptografía, y es por este motivo que la asignatura se estructura conjuntamente en base a contenidos tanto teóricos como prácticos que son complementados con actividades de programación que permiten conocer los problemas reales que surgen en la implementación de sistemas criptográficos.",
 			"requisitos": "Para hacer el seguimiento de esta asignatura es necesario tener conocimientos básicos de matemáticas a nivel de grado, y conocimientos de algorítmica, programación procedimental y las bases de la programación orientada a objetos.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75600",
@@ -376,7 +481,10 @@
 			"creditos": "6",
 			"descripcion": "La misión de este curso es introducir los estudiantes de Ingeniería Informática y otros planes de estudios en las bases por la comprensión de los usos estratégicos de la tecnologia a las organizaciones y la dirección y planificación estratégica de los sistemas de información. En entornos cada vez más complejos, la gestión de la información y la tecnología representa un aspecto clave para el éxito y el buen funcionamiento de cualquier tipo de organización, ya se trate de empresas privadas o bien de administraciones públicas. Esta es una disciplina bastante nueva, tanto en la teoría académica y la investigación, como en la práctica profesional. El concepto de CIO  (el primer ejecutivo de la compañía responsable de la información y la tecnología) apareció justo a principios de los 1980 y la Asociación de Sistemas de Información (AIS) se estableció el 1994. La dirección de Sistemas de Información implica el diseño, la entrega eficaz, el uso e impacto de la Tecnología de la Información dentro de las organizaciones y en la sociedad. En  palabras de Keen (1987), el foco principal de esta materia es la mejora del diseño y práctica de la gestión (el management), en su sentido más amplio; al final del día, la gestión  de la IT trata de la gestión(Austin y Nolan, 2010). Las  definiciones anteriores describen la naturaleza híbrida de este tema. La tecnología no es un artefacto fuera de su uso en negocios, organizaciones y seres humanos. Los  sistemas de información no son sólo diseño o arquitectura, sino especialmente su implementación eficaz. Y su administración no es sólo sobre tácticas y técnicas (mejorando la organización y procesos del departamento de IT), sino sobre estrategia (la relación con la estrategia empresarial y la obtención de ventajas competitivas). Por eso, cuando decimos gestión estratégica, queremos enfatizar el rol  más proactivo y transformador que la información y las tecnologías tienen para la empresa y la necesidad alinear los sistemas de información y tecnología con la estrategia de la empresa en su conjunto. Además, el volumen y relevancia del gasto en IT forma parte cada vez más de la agenda de los directores generales y del comité de dirección de las empresas y organizaciones. Este curso está diseñado para proporcionar a los estudiantes del Grado de Ingeniería Informática  una visión introductoria de los temas que actualmente enfrenta la empresa y la tecnología y la relación entre los dos y, particularmente, del rol del primer ejecutivo responsable de los sistemas y tecnologías:¿Cuáles son las decisiones estratégicas principales en sistemas de información y como tendrían que ser consideradas y adoptadas? ¿Cómo tendrían que ser dirigidas las TIC  para estar correctamente alineadas con la estrategia global del negocio? ¿Cómo se pueden asegurar relaciones más productivas entre los departamentos de IT y el resto de los departamentos y unidades de negocio? ¿Qué son las mayores contribuciones de los sistemas de información para apoyar, transformar y crear productos nuevos, procesos e incluso negocios? ¿Cómo la información y gestión del conocimiento están transformando la manera de hacer empresarial y la función de la IT? ¿Cómo puede la planificación de IT proporcionar un marco y una hoja de ruta  para cumplir la misión y la visión de la empresa? ¿Cómo se puede implantar? ¿Cómo se puede transformar la organización de la IT con un sentido estratégico? Adicionalmente, en la actualidad, se habla de la transformación digital, el proceso por el cual las organizaciones tienen que rediseñar sus productos y servicios, sus procesos de trabajo y su relación con clientes, proveedores, socios y personal debido a la irrupción de la internet, la movilidad, el núbol y los datos masivos. El director de organización e informática (el CIO, o Chief Information Officer) va cogiendo un nuevo rol como líder, o al menos, socio destacado de esta transformación y se produce también un mayor acercamiento de los usuarios y directivos de negocio a la informática.",
 			"requisitos": "Fundamentos de Sistemas de Información, uso de sistemas de información a las organizaciones, integración de sistemas de Información, gestión funcional de sistemas de Información, gestión de proyectos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75613 ",
@@ -385,7 +493,10 @@
 			"creditos": "6",
 			"descripcion": "En esta asignatura se estudian las diversas estrategias de representación de datos en un ordenador y los criterios para evaluarlas. En función del tipo de tratamiento que se tenga que hacer con esta información (tamaño, criterios de acceso, etc.), se puede seleccionar la estrategia que ofrezca un balance óptimo entre el consumo de memoria y el tiempo de manipulación. Esta asignatura es fundamental dentro del ámbito de la programación, dado que el uso apropiado de estructuras de datos es crítico en cualquier aplicación que maneje grandes volúmenes de información o bien que tenga unos requerimientos de eficiencia muy estrictos. Las asignaturas previas del ámbito de programación ya introducían algunas estructuras de datos básicos, como por ejemplo listas, pilas, colas o árboles. En esta asignatura se presenta el concepto de tipo abstracto de datos (TAD) como modelo general para describir una estructura de datos y estudiar su eficiencia. Finalmente, el núcleo central de la asignatura consiste en aprender a utilizar adecuadamente cada estructura de datos y saber seleccionar la estructura de datos más adecuada a cada situación.",
 			"requisitos": "La asignatura requiere disponer de las nociones fundamentales de algorítmica (asignaciones, condicionales, bucles) y de programación utilizando el paradigma imperativo (uso de compiladores y depuradores, uso de un entorno de desarrollo integrado -IDE-, etc.). Además, la asignatura requiere unos buenos conocimientos de programación orientada a objetos, específicamente en lenguaje Java. Por otro lado, se requieren nociones básicas sobre el cálculo del coste de un algoritmo. Antes de cursar esta asignatura, es muy recomendable haber cursado previamente las asignaturas básicas y obligatorias siguientes: fundamentos de programación, prácticas de programación, diseño y programación orientada a objetos, grafos y complejidad, Java, y nociones del cálculo del coste de un algoritmo.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75577",
@@ -394,7 +505,10 @@
 			"creditos": "6",
 			"descripcion": "Una vez vistas las funcionalidades que el Sistema Operativo (SO) ofrece a los usuarios, estamos en condiciones de analizar las diferentes técnicas y políticas que las hacen posibles. Este conocimiento nos ha de permitir aprovechar mejor el sistema operativo como usuarios finales, y da las bases para poder hacer una correcta administración del Sistema Operativo. En esta asignatura se presentará lo que es un Sistema Operativo, desde una óptica interna. Se verán las diferentes posibilidades de gestión de los elementos del SO, tanto hardware como software. Para conseguir estos objetivos se combinan los conceptos teóricos y prácticos. En la parte práctica se estudiará y se modificará el codigo fuente del sistema operativo Linux.",
 			"requisitos": "Estructura básica de un computador, conceptos básicos de lenguaje máquina: instrucciones más comunes, funcionamiento de la pila,Programación en un lenguaje de alto nivel, asignatura sistemas operativos. ",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75591",
@@ -403,7 +517,10 @@
 			"creditos": "6",
 			"descripcion": "Hoy en día, las redes de gran alcance son una parte fundamental de nuestro entorno, principalmente gracias al fenómeno de Internet y la proliferación de la banda ancha. Desde los correos electrónicos o la mensajería instantánea hasta los servicios web, las redes son un aspecto más de nuestra vida, siempre presente de forma invisible, pero ya inevitable. Por este motivo, cada día son necesarios nuevos especialistas que den soporte a las empresas que quieren sacar el máximo rendimiento de sus redes y usar tecnologías de interconexión remota para garantizar que la distancia que las separa desaparezca totalmente. Esta necesidad también ha creado un conjunto de certificaciones profesionales que acreditan su experiencia. La asignatura de Estructura de Redes de Computadores (ERC) se centra en el aprendizaje de los fundamentos de los protocolos de comunicación de más bajo nivel que permiten que diferentes tipos de dispositivo se puedan comunicar: Transporte, Internet y Acceso a la red. Dentro de esta se da especial protagonismo al funcionamiento de las redes de área local (LAN) Ethernet y la creación de esquemas de direccionamiento IP. Su principal particularidad respecto otras asignaturas del grado es que su contenido se alinea totalmente con una parte de la última versión del temario oficial de Cisco para la obtención de la certificación profesional CCNA (Cisco Certified Network Associate), en castellano. Esta es una de las más reconocidas en el mundo profesional de las redes y sirve como punto de entrada para todo uno seguido de especializaciones en el campo (diseño, seguridad, etc.). Concretamente, dentro de todo el temario de esta última versión del temario CCNA, llamada CCNA - Routing & Switching, esta asignatura engloba prácticamente la totalidad de la primera cuarta parte del curso, llamada Introduction to Networks.",
 			"requisitos": "Para cursar esta asignatura no es necesario tener especiales conocimientos previos en el campo de las redes, al tratarse de una de las asignaturas base del grado. De todas formas, se recomienda haber cursado Redes y Aplicaciones en Internet. En cualquier caso, se considera que el estudiante al menos sí que conoce qué es una red y qué es y qué formato tiene una dirección IPv4.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": " 75596 ",
@@ -412,7 +529,10 @@
 			"creditos": "6",
 			"descripcion": "Las continúas innovaciones en las tecnologías de la información y la comunicación están transformando el mundo del negocio empresarial en nuevos modelos, nuevos procesos y nuevas necesidades empresariales. Este entorno ha favorecido las inversiones de las empresas para ser más competitivas en el mercado actual, destinando un presupuesto a la adquisición, implantación o actualización de sistemas de información. En esta asignatura presentamos los conceptos básicos de los sistemas de información, las tipologías de sistemas de información, la relevancia de los sistemas de información a las empresas, como eran los primeros sistemas de información, cómo han evolucionado y que tienen que aportar los futuros sistemas en las empresas. Conoceremos el principal sistema de información: Enterprise Resource Planning, hoy también conocido como básico o tradicional. Veremos como la incorporación de nuevas funcionalidades en la evolución de los sistemas ERP hace nacer nuevos sistemas de información colaborativos: Customer Relationship Management (CRM), Supplier Chain Management (SCM) o Business Intelligence (BI).Y un tema transversal a cualquier sistema de información de empresa, su implantación. Trataremos el ciclo de vida de un proyecto de implantación, las características de sus diferentes fases, la problemática, y qué pautas seguir para obtener una implantación exitosa.",
 			"requisitos": "Fundamentos de sistemas de información es la primera asignatura del itinerario y no es neceario tener conocimientos sobre sistemas de información. Para facilitar el aprendizaje y la asimilación de conceptos sobre las organizaciones y la implantación de sistemas de información se recomienda haber cursado previamente las asignaturas obligatorias del Grado: Gestión de Proyectos y Administración y Gestión de Organizaciones.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75599",
@@ -421,7 +541,10 @@
 			"creditos": "6",
 			"descripcion": "Esta asignatura presenta un entorno que garantice el soporte de los servicios y la infraestructura de SI/TI en la organización, para lograr las estrategias y los objetivos corporativos. Trata la gestión de los servicios de SI/TI como un conjunto de procesos y funciones, proporcionados o gestionados desde un departamento de informática. Existen referencias que son guías útiles en la gestión de estos servicios como  ITIL, COBIT, CMMi.",
 			"requisitos": "Para los estudiantes del Grado en Ingeniería en Informática se recomienda haber realizado las asignaturas previas del itinerario de Sistemas de Información: Fundamentos de Sistemas de Información e Integración de Sistemas de Información.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75593 ",
@@ -430,7 +553,10 @@
 			"creditos": "6",
 			"descripcion": "La ingeniería de requisitos es la disciplina que nos ayuda a identificar, gestionar y mantener el conjunto de requisitos del software que queremos desarrollar. La ingeniería de requisitos tiene lugar dentro del mismo contexto que la ingeniería del software (el desarrollo de software), motivo por el cual se puede ver como parte de la ingeniería del software. Aún así, hay que tener en cuenta que la ingeniería de requisitos requiere conocimientos y habilidades propias  de otras disciplinas como por ejemplo la psicología, el marketing o el diseño. Esta asignatura tiene como finalidad que los futuros ingenieros de software profundicen en el estudio de las problemáticas, técnicas y herramientas relacionadas con la obtención, gestión, documentación y validación/verificación de los requisitos de un sistema de software. A la hora de presentar los contenidos de esta asignatura, nos hemos marcado dos objetivos principales: La disciplina de la ingeniería de requisitos se presenta desde un punto de vista práctico dando mucha importancia a las técnicas y herramientas que los estudiantes podrán aplicar en su vida profesional. También se da una visión lo más amplia posible sobre la ingeniería de requisitos, viendo aspectos tan diversos como la gestión de productos o la implementación de las pruebas automatizadas de aceptación. Esta asignatura asume que el estudiante tiene nociones básicas de la ingeniería de requisitos (en el caso de los estudiantes de la UOC, asumiremos que se ha cursado la asignatura Ingeniería del Software). Por lo tanto, esta asignatura profundiza y amplía algunos conceptos que ya se han estudiado anteriormente, en el mismo tiempo que introduce nuevas técnicas y herramientas propias de la ingeniería de requisitos. Para aquellos estudiantes que no hayan cursado Ingeniería del Software o bien quieran repasar los conceptos que se tratan respeto la ingeniería de requisitos, dentro del apartado Materiales y fuentes del aula pueden encontrar un enlace en el Módulo 3 (Requisitos) de la asignatura Ingeniería del Software.",
 			"requisitos": "Se recomienda haber cursado la asignatura Ingeniería del Software.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75587",
@@ -439,7 +565,10 @@
 			"creditos": "6",
 			"descripcion": "Los continuos adelantos en informática y telecomunicaciones están cambiando la manera como se desarrolla el software. En particular, el incesante aumento de la potencia de los ordenadores personales, el abaratamiento de los costes del hardware y la aparición de redes de datos de cobertura global han hecho posible una infraestructura especialmente favorable para el uso de los sistemas abiertos y distribuidos. Estos cambios han provocado, entre otras cosas, que los métodos de diseño y desarrollo de software tradicionales (vistos en las asignaturas de Ingeniería del Software y Análisis y Diseño con Patrones) sean insuficientes, puesto que, más o menos implícitamente, asumen que la aplicación a desarrollar se ejecutará en un entorno básicamente centralizado. Por lo tanto, los métodos tradicionales son incapaces de gestionar de manera natural la complejidad de los requisitos de este nuevo tipo de sistemas. Esta asignatura sirve como introducción a los conceptos y métodos fundamentales sobre los cuales se fundamenta el diseño y desarrollo de aplicaciones distribuidas basadas en componentes, y así se complementan los conocimientos adquiridos en las asignaturas previas. En primer lugar, se aborda el diseño de alto nivel de este tipo de sistemas, describiendo los diferentes puntos de vista a considerar, utilizando como marco de referencia el estándar definido por ISO, IEC e ITU-T, denominado RM-ODP. Cada punto de vista es independiente de los otros y aborda una serie de aspectos concretos, abstrayéndose del resto. Entre los diferentes puntos de vista, esta asignatura se centra en los más cercanos a su diseño y su implementación, como son la arquitectura del software y la implementación con componentes. Los aspectos más cercanos al análisis y a la especificación de requisitos no cambian respecto a aquello que se ha visto en las asignaturas anteriores y, por lo tanto, no se repiten aquí. La arquitectura de los sistemas de software permite describir de una manera abstracta y de alto nivel tanto la funcionalidad del sistema como otros muchos aspectos no funcionales de este (distribución, fiabilidad, seguridad, adaptabilidad, prestaciones, etc.). Esta descripción del sistema suele definirse partiendo de un estilo arquitectónico, una clasificación de los sistemas de software en grandes familias que siguen un patrón estructural común. Entre los estilos arquitectónicos más usuales para los sistemas distribuidos hay los sistemas organizados en múltiples capas, los sistemas cliente-servidor o los sistemas peer-to-peer. Estas arquitecturas pueden implementarse después utilizando cualquier paradigma de programación (orientado a objetos, estructurado...). Sin embargo, en esta asignatura abordaremos la programación orientada a componentes, un paradigma de programación que proporciona mecanismos apropiados para el desarrollo y la implementación de componentes de software distribuidos. Estos componentes son los que servirán para implementar los componentes arquitectónicos descritos en la arquitectura del sistema. El diseño de la aplicación en términos de componentes de software tiene que refinarse, posteriormente, para adaptarlo e implementarlo en una tecnología de componentes distribuidos concreta. En nuestro caso concreto, se describe con detalle la plataforma Java Enterprise Edition (Java EE). Ésta es una plataforma abierta basada en componentes que permiten desarrollar, desplegar y gestionar aplicaciones distribuidas con arquitecturas multinivel. Para conocer mejor el funcionamiento de esta tecnología, previamente se explica a fondo el mecanismo de invocación remota RMI que representa el núcleo del modelo distribuido de Java y la capa subyacente de comunicación distribuida de Java EE. Finalmente, para dar una visión más general del estado tecnológico actual, también se comentan otras plataformas y tecnologías distribuidas como por ejemplo CORBA, .NET, y especialmente los servicios web.",
 			"requisitos": "Haber superado Ingeniería del software y Análisis y Diseño con Patrones o tener los conocimientos equivalentes es la condición previa para poder cursar esta asignatura. Es también imprescindible que el estudiante tenga un buen nivel de Java para poder superar la asignatura. La asignatura tiene una parte importante de trabajo práctico en Java que asume un conocimiento y práctica importantes en este lenguaje. No es nada recomendable que el estudiante curse la asignatura hasta que se haya logrado un buen nivel en Java, puesto que de lo contrario se verá abocado a repetir la asignatura con una alta probabilidad.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75614",
@@ -448,7 +577,10 @@
 			"creditos": "6",
 			"descripcion": "Enfoque conceptual Dominar la matemática es imprescindible, tanto los contenidos como la metodología, para cursar cualquier grado de carácter científico. Por este motivo, es necesario comprender sus técnicas y conceptos básicos (muchas veces ya tratados en secundaria y bachillerato) antes de abordar las asignaturas propias de la titulación que se desea cursar. En este curso se proporcionarán las técnicas y conceptos básicos del álgebra lineal y del cálculo,  con la finalidad de garantizar la preparación adecuada para superar muchas de las asignaturas de la titulación. ",
 			"requisitos": "sin requisitos",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75595",
@@ -457,7 +589,10 @@
 			"creditos": "6",
 			"descripcion": "En las economías actuales, aparecen nuevas oportunidades de negocio para dar respuesta a necesidades hasta ahora inexistentes o insatisfechas o para mejorar la oferta existente. En este contexto, la figura del emprendedor, se convierte en un elemento central. Asimismo, en las empresas se valora cada vez más la cultura emprendedora y se estimula a los empleados para que actúen como emprendedores en la misma organización. Y es que se ha demostrado que existe una relación positiva entre la iniciativa emprendedora y el desarrollo de un país o región: contribuye al crecimiento económico, es una fuente de innovación, favorece la creación de ocupación y contribuye a la cohesión y dinamismo social, entre otras características. Es por ello que la  asignatura Iniciativa  Emprendedora pretende fomentar el espíritu emprendedor de los estudiantes a partir de la introducción a los principales elementos que configuran el proceso emprendedor y que se concretan en los siguientes bloques temáticos:- El espíritu emprendedor y las actitudes hacia la actividad emprendedora - El emprendedor/empresario como protagonista de la actividad emprendedora - El equipo fundacional - Innovación y creatividad - Ideas, oportunidades y modelos de negocio - Los recursos en el proceso emprendedor - El plan de empresa",
 			"requisitos": "Para poder cursar esta asignatura no se necesitan conocimientos previos excepto para los estudiantes del Grado en Ingeniería informática a los que se recomienda haber cursado Administración y gestión de organizaciones y Gestión de proyectos.  ",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75597",
@@ -466,7 +601,10 @@
 			"creditos": "6",
 			"descripcion": "Los contenidos de la asignatura Integración de Sistemas de Información (ISI) giran alrededor de los diversos significados de la palabra integración en relación a las organizaciones de todo tipo, y los sistemas de información utilizados por éstas. Así, para empezar, se verá el tipo de problemas que típicamente aparecen en las organizaciones poco integradas estructuralmente, así como las propuestas que contribuyen a una mejor integración empresarial, principalmente la definición e implantación de procesos empresariales, transversales a las clásicas áreas funcionales. Después se verá como las organizaciones han ido desarrollando e implantando nuevos sistemas de información como herramienta fundamental para su integración estructural e informacional, y como medio para su avance en cuanto a su gestión funcional y su dirección estratégica, en definitiva por el su avance en cuanto a calidad y competitividad. En esta línea, se profundizará en los diversos roles integradores que las empresas persiguen mediante los principales tipos de sistemas de información empresariales implantados en los últimos años, desde los sistemas ERP a los sistemas de BI, pasando por los sistemas CRM y SCM, así como los proyectos de EAI. Como continuación de lo visto en la asignatura Fundamentos de Sistemas de Información (FSI), se profundizará en los propósitos, similitudes y diferencias entre estos tipos de sistemas, y entre sus proyectos de implantación.",
 			"requisitos": "Los conocimientos temáticos conseguidos en las asignaturas previas de las especializaciones de Sistemas  de Información y  Tecnologías de la Información , especialmente en la asignatura de Fundamentos de Sistemas de Información (FSI). A pesar de ser muy recomendable haber superado FSI con anterioridad a ISI, aquellos estudiantes que dispongan de conocimientos equivalentes obtenidos por medio de la experiencia profesional directa también podrían cursar ISI sin muchas dificultades añadidas. Gran parte del material de estudio de integración de Sistemas de Información (ISI) está redactado  en INGLÈS, habiendo capítulos de libre, artículos o informes seleccionados de diversas fuentes. El nivel de inglés de los documentos escogidos no es excesivamente elevado pero sí requiere de un nivel suficiente de comprensión lectora en inglés, que en cualquier caso no es superior a aquel requerido para la buena práctica de la profesión informática en cualquier de sus especialidades. Como punto de referencia, recomendamos un nivel de inglés mínimo o equivalente al nivel B 1.2 (Threshold) del Marco de Referencia Europeo para el Aprendizaje, Enseñanza y Evaluación de Lenguas.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75584",
@@ -475,7 +613,10 @@
 			"creditos": "6",
 			"descripcion": "Minería de Datos es una asignatura de aplicación de los conocimientos previos que habéis aprendido a Estadística y Bases de Datos y de presentación de algunos de nuevos. Se presentan un conjunto de métodos procedentes de la Inteligencia Artificial, que forman el núcleo esencial de la disciplina conocida como Data Mining. Los conceptos estadísticos son muy útiles en esta asignatura y permitirán evaluar mejor algunas de las técnicas que se estudiarán.",
 			"requisitos": "Esta asignatura requiere conocimientos básicos de estadística, así como conocimientos de programación y bases de datos. También es necesario ser capaz de leer documentación en inglés",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75588 ",
@@ -484,7 +625,10 @@
 			"creditos": "12",
 			"descripcion": "La asignatura Proyectode Desarrollo del Software tiene como objetivo primordial el desarrollo de un proyecto de software completo. Está basada en la aplicación práctica de los conocimientos y competencias obtenidas hasta el momento en el Grado, como por ejemplo Fundamentos de Programación , Ingeniería del Software, Uso de Base de Datos, y concretamente las habilidades técnicas que se obtuvieron dentro de la Ingeniería del Software de Componentes y Sistemas Distribuidos. A pesar de que la asignatura se basa en la realización de un proyecto de software concreto, el curso también cubre aspecto teóricos, tanto nuevos como otros que complementan los conocimientos adquiridos hasta ahora, como la gestión de proyectos, la calidad del software, y la configuración del software y su mantenimiento. El desarrollo eficaz del proyecto se conseguirá por medio de una metodología específica que cubre todas las etapas del ciclo de vida del software, es decir, desde la especificación a la entrega final del producto al supuesto cliente. En particular, en la etapa de implementación, se empleará extensamente la plataforma Java EE para desarrollar el software distribuido basado en los componentes modulares que corren en  un servidor de aplicaciones. Además, otras tecnologías apoyarán el proyecto, como por ejemplo las herramientas para realizar pruebas del codigo y para la configuración y control del software. Por último, la complejidad del proyecto requerirá el desarrollo específico de competencias relacionadas con el trabajo colaborativo en grupos pequeños de 4 o 5 estudiantes. Para apoyar a este trabajo, la asignatura proporciona un entorno de trabajo colaborativo basado en las Apps de Google Suite para dar soporte a equipos virtuales de estudiantes durante el desarrollo del proyecto.",
 			"requisitos": "El desarrollo de un proyecto de software con un grado significativo de complejidad requiere disponer de un conocimiento técnico amplio y conceptos clave muy consolidados en disciplinas diferentes dentro del área de ingeniería de software, como los fundamentos de programación, estructuras de datos, el paradigma de orientación a objetos, ingeniería de requisitos, patrones de análisis y diseño, arquitecturas de software, bases de datos y SQL, y tecnologías distribuidas (por ejemplo, RMI, Java EE, y SOA). Además, los estudiantes tendrán que mostrar un nivel de expertesa en el uso de herramientas y sistemas específicos, como PostgreSQL, JEE, EJB 3.x, Eclipse y servicios web).",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75581 ",
@@ -493,7 +637,10 @@
 			"creditos": "6",
 			"descripcion": "Los sistemas inteligentes necesitan usar información en su proceso de toma de decisiones. No sólo se requiere la posibilidad de almacenar y consultar información, funcionalidades que pueden conseguirse mediante bases de datos o estructuras de datos en memoria. Además de esto, es necesario poder relacionar la información y usarla como base a partir de la que inferir nuevo conocimiento. Esta asignatura presenta los esquemas de representación más habituales para representar conocimiento en sistemas inteligentes: ontologías, redes semánticas, representaciones lógicas, frames, etcétera. También presenta ámbitos de aplicación donde se utilizan estos esquemas, como por ejemplo el campo de la web semántica.",
 			"requisitos": "Se recomienda haber superado Inteligencia artificial y Lógica.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75574",
@@ -502,7 +649,10 @@
 			"creditos": "6",
 			"descripcion": "En esta asignatura se presenta la problemática de la seguridad en las redes de computadores, y más en concreto en las redes TCP/IP. La estructuración de esta asignatura sigue el siguiente modelo. En primer lugar, se presenta la problemática de la seguridad en las redes TCP/IP. Una vez se han visto cuáles son los eventuales problemas de seguridad en este tipo de redes, nos centraremos en los mecanismos de prevención que existen, basados principalmente en el filtrado de información. Posteriormente, y asumiendo que no todos los sistemas de prevención y protección de las redes TCP/IP son infalibles, estudiaremos los diferentes mecanismos de detección de intrusos que existen. Finalmente haremos énfasis en las técnicas específicas de protección que hay. En particular, introduciremos las nociones básicas de criptografía que nos permitirán entender el funcionamiento de diferentes mecanismos y aplicaciones que permiten protegerse frente a los ataques. El enfoque de esta asignatura presupone que el estudiante ya tiene unos conocimientos básicos sobre el funcionamiento de las redes TCP/IP y el entorno a trabajo Unix. Su orientación es eminentemente práctica e implica que el estudiante tendrá que dedicar un cierto esfuerzo a la instalación y configuración de software, como parte de los objetivos evaluables de la asignatura.",
 			"requisitos": "Redes y aplicaciones Internet",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75594",
@@ -511,7 +661,10 @@
 			"creditos": "6",
 			"descripcion": "Los sistemas empotrados son cada día más presentes en nuestras vidas.  Desde los dispositivos de red a los sistemas de control industrial, un amplio abanico de dispositivos constituyen lo que conocemos como Sistema Empotrado. En esta asignatura se quiere dar una visión general de estos sistemas. Partiremos de su definición y nos adentraremos en sus ámbitos de aplicación. Se profundizará en el conocimiento de los componentes hardware que constituyen estos sistemas, conoceremos sus modelos de programación y las particularidades que condicionan el desarrollo de aplicaciones para sistemas empotrados. El objetivo principal de la asignatura es que el estudiante aprenda las técnicas básicas de programación de un sistema empotrado, tenga un conocimiento básico de la arquitectura hardware que los compone y adquiera habilidades para trabajar con este tipo de dispositivos.",
 			"requisitos": "Se requieren conocimientos de: - Sistemas Operativos (conceptos básicos). - Programación básica (en la asignatura se trabaja con el lenguaje NesC. NesC es el lenguaje C encapsulado en componentes). - Fundamentos de computadores (componentes básicos de electrónica digital y fundamentos de computadores básicos).",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75598",
@@ -520,7 +673,10 @@
 			"creditos": "6",
 			"descripcion": "La asignatura Uso de Sistemas de Información en las Organizaciones (USIO) tiene un enfoque deductivo; es decir, a través del estudio y trabajo sobre casos se analiza el impacto de las Tecnologías de la Información y Comunicación (TIC) en las organizaciones. Este enfoque permite establecer conclusiones e interpretaciones cuya finalidad es la comprensión del uso eficiente de las TIC en la gestión y la toma de decisiones empresariales. La asignatura se basa en la resolución de un caso a lo largo del cuatrimestre mediante trabajo en grupos interdisciplinarios. Los estudiantes de los Grados de Ingeniería Informática (GII) y Administración y Dirección de Empresas (ADE), compartirán un espacio de trabajo en el que desarrollarán las actividades de la asignatura. Este punto es muy importante y el alumno debe considerarlo antes de la matrícula. A diferencia de otras asignaturas en las que hay un material detallado sobre el que trabajar para una evaluación posterior, USIO no tiene un material el cual el estudiante debe estudiar en sentido clásico. Hay que formar un grupo y éste debe trabajar sobre el enunciado de un caso con contenidos de sistemas de información empresariales. El desarrollo debe ser colaborativo y aunque se den unas lecturas recomendadas, debe haber también búsquedas en internet u otras fuentes, planteando una solución coherente y argumentada. No se puede pensar que existe la solución al estilo de un ejercicio de matemáticas, hay varias posibles y el consultor valorará las diferentes alternativas con unos criterios preestablecidos (que se indican como parte del enunciado). A menudo la dinámica de trabajo de grupo es compleja y en este sentido es muy importante formar un grupo cohesionado y con ganas de trabajar desde el principio.",
 			"requisitos": "Para los estudiantes de Ingeniería Informática, el desarrollo de la asignatura USIO se basará en los conocimientos adquiridos en las asignaturas de Administración y Gestión de Organizaciones, y Fundamentos de Sistemas de Información. Es recomendable entonces haber cursado estas asignaturas antes de matricularse en USIO.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": "75615",
@@ -529,7 +685,10 @@
 			"creditos": "6",
 			"descripcion": "Las Prácticas tienen como objetivo que el estudiante conozca cómo se trabaja en el día a día en una empresa y que se apliquen ciertas competencias adquiridas en el grado de Ingeniería Informática, tanto transversales como específicas. Las prácticas en empresa serán organizadas desde la UOC, con un profesor de prácticas, y desde la empresa con un tutor que orientará y realizará el seguimiento del estudiante. Las prácticas se realizarán principalmente en modalidad on-line dentro del marco del campus virtual de la UOC. En algunos casos, según las circunstancias de residencia y disponibilidad del estudiante pueden tener una componente presencial. Las herramientas para desarrollar las prácticas serán principalmente las aportadas por los estudios, pudiendo recibir de la empresa alguna otra herramienta específica para desarrollar el trabajo. La carga docente para el estudiante será de 12 ETCS, equivalente a unas 300 horas de trabajo en la empresa.",
 			"requisitos": "Cada empresa definirá qué conocimientos específicos del grado de Ingeniería Informática debe tener el/la estudiante que quiera hacer las prácticas con ellos. Por lo tanto, antes de firmar el convenio es importante negociar el plan de trabajo y los conocimientos previos que aporta el/la estudiante.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		},
 		{
 			"codigo": " 75616",
@@ -538,13 +697,16 @@
 			"creditos": "12",
 			"descripcion": "El Trabajo de Fin de Grado (TFG) es una asignatura obligatoria del Grado en Informática. Tiene una carga de trabajo de 12 ECTS y está pensada para ser la última asignatura que curse un estudiante dentro del Grado. Cómo todas las asignaturas de la titulación, se trata de una asignatura semestral que se tiene que matricular y aprobar en un semestre. En caso de no superarlo, habrá que volverlo a matricular en un semestre posterior. El TFG tiene que servir para que el estudiante ponga en práctica las competencias transversales y específicas adquiridas durante el Grado y especialmente, durante el itinerario. El objetivo es aplicar a un trabajo en concreto aquello que se ha ido asimilando de las diferentes asignaturas cursadas. Al ser la asignatura final del Grado el estudiante también tendría que poder ir más allá de los conocimientos proporcionados por las asignaturas del Grado y, sin que tenga que ser un trabajo de investigación, sí que tendría que incluir cierta dosis de conocimiento adicional en su TFG. Este conocimiento adicional o innovación se podrá buscar en las fuentes habituales de conocimiento que tenemos a nuestro alcance: la web, revistas especializadas y libros. Cómo veis, pues en esta asignatura se pone en juego, y de manera destacada, la competencia transversal del Grado “Capacitado para innovar y generar nuevas ideas”. Existen diferentes áreas temáticas de TFG. La elección del área de TFG define el ámbito temático del trabajo a realizar y el conjunto de competencias sobre las que se hará más énfasis. Para matricular el TFG, el estudiante tiene que seleccionar una área de TFG. Esta elección se ha de hacer en el apartado de Trámites / Solicitud de trabajos finales. Una vez hecho este primer paso, el área aparecerá en el potencial de matrícula y ya se verá disponible para hacer la matrícula de la asignatura. Cada área temática está asociada a uno o más itinerarios  del Grado. Dado que para completar un itinerario, es necesario superar un TFG de una área asociada, la elección del itinerario del Grado determina las posibles áreas de TFG a escoger por el estudiante. Por este motivo se recomienda tener presente el itinerario a la hora de escoger una área de TFG. Para la obtención de un itinerario se debe haber superado las asignaturas asociadas a este itinerario y, además, haber realizado el TFG en una de las áreas correspondientes a este itinerario.",
 			"requisitos": "Para cursar el TFG, hay que cumplir los siguientes condicionantes: Haber superado como mínimo 180 ECTS entre todas las asignaturas de la titulación. Haber superado la asignatura de Gestión de Proyectos. Satisfacer los requisitos adicionales pedidos en el área concreta de TFG que se quiera matricular. Haber finalizando todas las asignaturas del itinerario (preferentemente), o bien estar cursando las dos últimas asignaturas en paralelo. Cada área de TFG puede indicar una serie de requisitos adicionales necesarios para realizar este trabajo. Se recomienda leer detenidamente el Plan Docente de la asignatura para enterarse de estos requisitos.",
-			"dificultad": ""
+			"dificultad": "",
+			"referencia": "",
+			"whatsapp":"",
+			"telegram":""
 		}
 
 	],
 	"groups": {
-		"whatsapp": "https://docs.google.com/spreadsheets/d/1SdH8dDhQbzuJUDj2p4BMDqmdnbAWShmY076_yCS6AdQ/edit#gid=894342696",
-		"telegram": "https://docs.google.com/spreadsheets/d/1SdH8dDhQbzuJUDj2p4BMDqmdnbAWShmY076_yCS6AdQ/edit#gid=0"
+		"whatsapp": "https://docs.google.com/spreadsheets/d/1b-m6YFy8AAPbN0-9AkuqpIcVXjfIqKFjWHxxCenBV4M/edit#gid=1397297600",
+		"telegram": "https://docs.google.com/spreadsheets/d/1b-m6YFy8AAPbN0-9AkuqpIcVXjfIqKFjWHxxCenBV4M/edit#gid=1698234186"
 	},
 	"storage": {
 		"mega": "https://mega.nz/folder/iFlR2TgY#7a07KulhBgsFOZHNf1vQqg/folder/6Q8FSZwI",
@@ -552,5 +714,5 @@
 	}
 
 	
-
+	
 }

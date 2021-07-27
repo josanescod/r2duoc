@@ -19,16 +19,16 @@ bot.start((ctx) => {
     let emoji = "🤖";
     switch (idioma) {
         case 0:
-            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} 
-            \n${language[idioma].start}`);
+            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji} `
+            );
             break;
         case 1:
-            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji} 
-            \n${language[idioma].start}`);
+            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}`
+            );
             break;
         case 2:
-            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji} 
-            \n${language[idioma].start}`);
+            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}`
+            );
             break;
         default:
             console.log("language error");
@@ -77,6 +77,8 @@ bot.command("/itinerarios", (ctx) => {
         }
         ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
     }, 1000);
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 
 });
 
@@ -136,6 +138,8 @@ bot.command("/itinerario", (ctx) => {
             ctx.reply(`porfavor elige un itinerario válido [ si | ti | c | is | ic ]`);
             break;
     }
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 });
 
 // todas o basicas, obligatorias optativas
@@ -150,6 +154,8 @@ bot.command("/asignaturas", (ctx) => {
         }
     }
     ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.command("/asignatura", (ctx) => {
@@ -215,8 +221,23 @@ bot.command("/telegram", (ctx) => {
 
     }
     else {
-        //buscará si el argumento coincide con un grupo/asignatura de telegram
-        ctx.reply(`enlace a la asignatura ${arg}`)
+        let obj = dataDegree.asignaturas;
+        let selectedTelegram = "";
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            var val = obj[key];
+            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+            if (val.referencia === arg) {
+                //console.log(val.nombre)
+                selectedTelegram = val.telegram;
+            }
+        }else {
+            selectedTelegram = "No existe esa asignatura"
+        }
+    }
+    ctx.reply(`enlace a la asignatura ${arg}: ${selectedTelegram}`);    
+     
     }//faltaria una tercera condicion si no existe la asignatura.    
     numMessages = numMessages + 2;
     console.log(numMessages)
@@ -232,9 +253,24 @@ bot.command("/whatsapp", (ctx) => {
 
     }
     else {
-        //buscará si el argumento coincide con un grupo/asignatura de whatsapp
-        ctx.reply(`enlace a la asignatura ${arg}`)
-    }//faltaria una tercera condicion si no existe la asignatura.    
+        let obj = dataDegree.asignaturas;
+        let selectedWhatsapp = "";
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            var val = obj[key];
+            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+            if (val.referencia === arg) {
+                //console.log(val.nombre)
+                selectedWhatsapp = val.whatsapp;
+            }
+        }else {
+            selectedWhatsapp = "No existe esa asignatura"
+        }
+    }
+    ctx.reply(`enlace a la asignatura ${arg}: ${selectedWhatsapp}`);    
+     
+    }  
 
 
     numMessages = numMessages + 2;
