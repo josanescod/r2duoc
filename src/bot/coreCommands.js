@@ -2,7 +2,7 @@ const bot = require('./bot');
 const dataDegree = require('./dataDegree.json');
 const path = require('path');
 const menu = require('./menu');
-const middleware = require('../middleware/middleware')
+const helper = require('../helpers/helpers')
 const fetch = require("node-fetch");
 const config = require("../config/config");
 const language = require("./language");
@@ -52,7 +52,7 @@ bot.command(["/help", "/ayuda", "/ajuda"], (ctx) => {
 
 bot.command("/clear", (ctx) => {
     console.log(numMessages)
-    numMessages = middleware.clearHistory(ctx, numMessages);
+    numMessages = helper.clearHistory(ctx, numMessages);
     console.log(numMessages);
 
 })
@@ -82,7 +82,7 @@ bot.command("/itinerarios", (ctx) => {
 
 bot.command("/itinerario", (ctx) => {
     let listSubjectsItineraries = "";
-    middleware.parseCommand(ctx);
+    helper.parseCommand(ctx);
 
     let arg = ctx.state.command.args[0];
     let obj;
@@ -154,7 +154,7 @@ bot.command("/asignaturas", (ctx) => {
 
 bot.command("/asignatura", (ctx) => {
     var selectedSubject = "";
-    middleware.parseCommand(ctx);
+    helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     let obj = dataDegree.asignaturas;
     for (let key in obj) {
@@ -174,7 +174,7 @@ bot.command("/asignatura", (ctx) => {
 });
 
 bot.command(["/idioma", "/language"], (ctx) => {
-    middleware.parseCommand(ctx);
+    helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     switch (arg) {
         case "es":
@@ -205,7 +205,7 @@ bot.command("/plan", (ctx) => {
 });
 
 bot.command("/telegram", (ctx) => {
-    middleware.parseCommand(ctx);
+    helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
     if (arg === "all") {
@@ -223,7 +223,7 @@ bot.command("/telegram", (ctx) => {
 });
 
 bot.command("/whatsapp", (ctx) => {
-    middleware.parseCommand(ctx);
+    helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
         ctx.reply(dataDegree.groups.whatsapp);
