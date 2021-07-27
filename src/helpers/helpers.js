@@ -38,4 +38,5 @@ function clearHistory(ctx, numMessages) {
   return numMessages = 0;
 }
 
+
 module.exports = { parseCommand, clearHistory }

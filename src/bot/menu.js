@@ -1,11 +1,9 @@
 
 
 const help = `*Info*
-/itinerarios - listado de itinerarios
-/itinerario \\[ itinerario \] - información sobre un itinerario
-/asignaturas - listado asignaturas con sus siglas
-/asignatura \\[ asignatura \] - información sobre una asignatura
-/plan - muestra el plan de estudios
+/itinerario \\[ itinerario | all \] - información sobre itinerarios
+/asignatura \\[ asignatura | all\] - información sobre asignaturas
+/plan - enlace al plan de estudios
 /clear - borra el historial
 /idioma \\[es | ca | en \]
 

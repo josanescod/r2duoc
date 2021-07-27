@@ -60,34 +60,29 @@ bot.command("/tramites", (ctx) => {
     ctx.reply("tramites");
 });
 
-bot.command("/itinerarios", (ctx) => {
-    let tempPath = path.join(__dirname, '../');
-    let photo = tempPath + `${process.env.ITINERARIE_IMG}`;
-    //ctx.reply("Create a scene o stage?");
-    ctx.replyWithPhoto({ source: photo });
-    setTimeout(function () {
-        let listItineraris = "";
-        let obj = dataDegree.itineraries;
-        for (let key in obj) {
-            if (obj.hasOwnProperty(key)) {
-                let val = obj[key];
-                listItineraris = val.name + "\n" + listItineraris;
-            }
-        }
-        ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
-    }, 1000);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-
-});
-
 bot.command("/itinerario", (ctx) => {
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
-
     let arg = ctx.state.command.args[0];
     let obj;
     switch (arg) {
+        case "all":
+            let tempPath = path.join(__dirname, '../');
+            let photo = tempPath + `${process.env.ITINERARIE_IMG}`;
+            ctx.replyWithPhoto({ source: photo });
+            setTimeout(function () {
+                let listItineraris = "";
+                let obj = dataDegree.itineraries;
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        let val = obj[key];
+                        listItineraris = val.name + "\n" + listItineraris;
+                    }
+                }
+                ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
+            }, 1000);
+            numMessages = numMessages + 1
+            break;
         case "si":
         case "sistemas":
             obj = dataDegree.itineraries[4].subjects;
@@ -134,25 +129,9 @@ bot.command("/itinerario", (ctx) => {
             `);
             break;
         default:
-            ctx.reply(`porfavor elige un itinerario válido [ si | ti | c | is | ic ]`);
+            ctx.reply(`porfavor elige una opción válida [ si | ti | c | is | ic | all ]`);
             break;
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-});
-
-// todas o basicas, obligatorias optativas
-bot.command("/asignaturas", (ctx) => {
-
-    let listAsignaturas = "";
-    let obj = dataDegree.asignaturas;
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            let val = obj[key];
-            listAsignaturas = `${val.nombre} - [ ${val.referencia} ] \n ${listAsignaturas}`;
-        }
-    }
-    ctx.reply(listAsignaturas + "\nhttp://www.josanweb.com");
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -162,18 +141,52 @@ bot.command("/asignatura", (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     let obj = dataDegree.asignaturas;
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            var val = obj[key];
-            //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-            //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
-            if (val.referencia === arg) {
-                //console.log(val.nombre)
-                selectedSubject = val.descripcion;
-            }
+
+    if (arg) {
+        switch (arg) {
+            case "all":
+                let listAsignaturas = "";                
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        let val = obj[key];
+                        listAsignaturas = `${val.nombre} -> [ ${val.referencia} ] \n ${listAsignaturas}`;
+                    }
+                }
+                ctx.replyWithMarkdown(`*Asignatura* - *codigo*                
+${listAsignaturas}
+http://www.josanweb.com`);
+                break;
+            case "basica":
+            case "ba":
+                ctx.reply("basica")
+                break;
+            case "obligatoria":
+            case "ob":
+                ctx.reply("obligatoria")
+                break;
+            case "optativa":
+            case "opt":
+                ctx.reply("optativa")
+                break;
+            default:
+                for (let key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        var val = obj[key];
+                        //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
+                        //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
+                        if (val.referencia === arg) {
+                            //console.log(val.nombre)
+                            selectedSubject = val.descripcion;
+                        }
+                    }
+                }
+                ctx.reply(selectedSubject);
+                break;
         }
+
+    } else {
+        ctx.reply(`porfavor elige una opción válida [ nombre | ba | ob | opt | all ]`);
     }
-    ctx.reply(selectedSubject);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -204,7 +217,6 @@ bot.command(["/idioma", "/language"], (ctx) => {
 
 bot.command("/plan", (ctx) => {
     ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
-    //ctx.replyWithMarkdown(`*algebra*\n[grupo de algebra](https://www.google.com)`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -216,7 +228,7 @@ bot.command("/telegram", (ctx) => {
     if (arg === "all") {
         ctx.reply(dataDegree.groups.telegram);
     } else if (arg === undefined) {
-        ctx.reply(`parametros válidos: nombre_asignatura/all`)
+        ctx.reply(`porfavor elige una opción válida [ nombre | all ]`)
 
     }
     else {
@@ -248,7 +260,7 @@ bot.command("/whatsapp", (ctx) => {
     if (arg === "all") {
         ctx.reply(dataDegree.groups.whatsapp);
     } else if (arg === undefined) {
-        ctx.reply(`parametros válidos: nombre_asignatura/all`)
+        ctx.reply(`porfavor elige una opción válida [ nombre | all ]`)
 
     }
     else {
@@ -315,15 +327,19 @@ bot.command("/api", (ctx) => {
 
 bot.mention(["Pacobot", "pacobot"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
     ctx.reply(`${language[idioma].help}`);
+    numMessages = numMessages + 2;
+    console.log(numMessages)
 
 });
 
 bot.on("text", ctx => {
-    ctx.reply(`${language[idioma].wrongText}`);
+    ctx.reply(`${language[idioma].wrongText}`);    
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
