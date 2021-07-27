@@ -91,15 +91,15 @@
 		},
 		{
 			"codigo": "75557",
-			"nombre": "algebra",
+			"nombre": "Algebra",
 			"tipo": "Básica",
 			"creditos": "6",
 			"descripcion": "Esta asignatura pretende proporcionar al/la estudiante una formación básica sobre temas de álgebra, los cuales son instrumentales para otras materias más directamente relacionadas con el mundo de las telecomunicaciones, la informática u otras ingenierías. Por otro lado, como asignatura de matemáticas que es, tiene que ayudar al/la estudiante en su formación científico-técnica, aportando un lenguaje y metodologías propios de las disciplinas matemáticas y científicas.",
 			"requisitos": "sin requisitos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"referencia": "algebra",
+			"whatsapp":"https://chat.whatsapp.com/II7KTf3NvIf4rGIJ10t0Hx",
+			"telegram":"https://t.me/joinchat/hDx0kzg_W7E4M2Y8"
 		},
 		{
 			"codigo": "75558",

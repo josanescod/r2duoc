@@ -7,13 +7,11 @@ const fetch = require("node-fetch");
 require('dotenv').config()
 const language = require("./language");
 
-
 let idioma = 0 //0,1,2
 let chat_id = ""
 let numMessages = 0;
 console.log("numMessages:", numMessages, "idioma: ", idioma,
     "chat_id: ", chat_id);
-
 
 bot.start((ctx) => {
     chat_id = ctx.chat.id
@@ -137,7 +135,7 @@ bot.command("/itinerario", (ctx) => {
 });
 
 bot.command("/asignatura", (ctx) => {
-    var selectedSubject = "";
+    var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     let obj = dataDegree.asignaturas;
@@ -145,7 +143,7 @@ bot.command("/asignatura", (ctx) => {
     if (arg) {
         switch (arg) {
             case "all":
-                let listAsignaturas = "";                
+                let listAsignaturas = "";
                 for (let key in obj) {
                     if (obj.hasOwnProperty(key)) {
                         let val = obj[key];
@@ -234,22 +232,22 @@ bot.command("/telegram", (ctx) => {
     else {
         let obj = dataDegree.asignaturas;
         let selectedTelegram = "";
+        let selectedSubject = "";
         for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
                 var val = obj[key];
-                //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-                //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
                 if (val.referencia === arg) {
-                    //console.log(val.nombre)
                     selectedTelegram = val.telegram;
+                    selectedSubject = val.nombre;
                 }
-            } else {
-                selectedTelegram = "No existe esa asignatura"
             }
         }
-        ctx.reply(`enlace a la asignatura ${arg}: ${selectedTelegram}`);
-
-    }//faltaria una tercera condicion si no existe la asignatura.    
+        if (selectedSubject !== "") {
+            ctx.reply(`Enlace a ${selectedSubject}: ${selectedTelegram}`);
+        } else {
+            ctx.reply(`No existe esa asignatura`);
+        }
+    }
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -262,28 +260,25 @@ bot.command("/whatsapp", (ctx) => {
     } else if (arg === undefined) {
         ctx.reply(`porfavor elige una opción válida [ nombre | all ]`)
 
-    }
-    else {
+    } else {
         let obj = dataDegree.asignaturas;
         let selectedWhatsapp = "";
+        let selectedSubject = "";
         for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
                 var val = obj[key];
-                //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-                //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
                 if (val.referencia === arg) {
-                    //console.log(val.nombre)
                     selectedWhatsapp = val.whatsapp;
+                    selectedSubject = val.nombre;
                 }
-            } else {
-                selectedWhatsapp = "No existe esa asignatura"
             }
         }
-        ctx.reply(`enlace a la asignatura ${arg}: ${selectedWhatsapp}`);
-
+        if (selectedSubject !== "") {
+            ctx.reply(`Enlace a ${selectedSubject}: ${selectedWhatsapp}`);
+        } else {
+            ctx.reply(`No existe esa asignatura`);
+        }
     }
-
-
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
@@ -339,7 +334,7 @@ bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
 });
 
 bot.on("text", ctx => {
-    ctx.reply(`${language[idioma].wrongText}`);    
+    ctx.reply(`${language[idioma].wrongText}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
