@@ -45,7 +45,7 @@ bot.help((ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/help", "/ayuda", "/ajuda"], (ctx) => {
+bot.command(["/help", "/ayuda", "/ajuda","/h"], (ctx) => {
     ctx.replyWithMarkdown(`${menu.help}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
@@ -138,7 +138,7 @@ bot.command("/itinerario", (ctx) => {
     console.log(numMessages)
 });
 
-bot.command("/asignatura", (ctx) => {
+bot.command(["/asignatura","/asig","/a"], (ctx) => {
     var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -256,7 +256,7 @@ bot.command("/plan", (ctx) => {
     console.log(numMessages)
 });
 
-bot.command("/telegram", (ctx) => {
+bot.command(["/telegram","/tel","/t"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
@@ -289,7 +289,7 @@ bot.command("/telegram", (ctx) => {
     console.log(numMessages)
 });
 
-bot.command("/whatsapp", (ctx) => {
+bot.command(["/whatsapp","/whats","/w"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
