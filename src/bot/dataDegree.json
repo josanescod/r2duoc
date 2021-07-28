@@ -261,9 +261,9 @@
 			"descripcion": "Un elemento clave en el desarrollo de sistemas de información son las bases de datos. Concretamente, dentro de este desarrollo, el diseño de la base de datos juega un papel fundamental puesto que condiciona la explotación de datos posterior. Además, el diseño de bases de datos es un proceso complejo, que permite obtener una implementación de una base de datos a partir de los requerimientos iniciales de los usuarios del sistema de información y se abordará en distintas etapas. En esta asignatura se estudiarán las diferentes etapas de diseño de bases de datos y se aplicará al caso concreto de las bases de datos relacionales. Su implementación física se llevará a cabo sobre un sistema de gestión de bases de datos concreto y por lo tanto, será necesaria una adaptación de este diseño a la base de datos en cuestión. Tras la creación de la base de datos se procederá a su explotación y en concreto, estudiaremos el procesamiento de consultas y vistas con el fin de optimizar dicho proceso y conseguir que la explotación de los datos sea lo más eficiente posible. Así pues, en esta asignatura el estudiante aprenderá a realizar el proceso de diseño de las bases de datos, mejorarlo a través del procesamiento de consultas y vistas y asegurar su idoneidad.",
 			"requisitos": "Uso de bases de datos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "dbd",
+			"whatsapp": "https://chat.whatsapp.com/HQiZtw7ANpN2FP8zaO8Tl3",
+			"telegram": "https://t.me/joinchat/xb3GOfw4DIZkMDY0"
 		},
 		{
 			"codigo": "75575",
@@ -273,9 +273,9 @@
 			"descripcion": "La asignatura Administración de redes y sistemas operativos tiene un enfoque constructivo; es decir, a través de los materiales diseñamos, construimos y tenemos cuidado de un entorno informático viendo las ventajas, pero también los problemas de llevar a cabo una tarea de estas dimensiones. Aprendemos a hacer la dirección, la gestión y la toma de decisiones para departamentos informáticos de organizaciones. Este enfoque constructivo se basa en la idea de crear un sistema informático desde el inicio. Empezamos por el diseño, después ponemos complementos imprescindibles (seguridad, permisos, web, ...), y finalmente nos preocupamos de la toma de decisiones de alto nivel. Esto lo hacemos siempre desde el punto de vista de Directores de informática y/o administradores de sistemas; el que seremos siempre en esta asignatura. La asignatura, por lo tanto, está orientada a como planificar, administrar y tener cuidado de un sistema informático en red para hacerlo eficiente, y también de cómo podemos hacer funcionar el 'departamento de informática' dentro de la organización de la que forma parte. La información es muy valiosa y no se puede perder ni tener rendijas de seguridad y los usuarios han de estar satisfechos con el sistema. Nuestra responsabilidad será entonces poder conseguir ambas hitos. Hemos querido tener cuidado en especial de dos cuestiones, la vertiente legal y la vertiente de seguridad en la administración y gestión de sistemas, puesto que pensamos que los conocimientos sobre estas áreas son imprescindibles.",
 			"requisitos": "sin requisitos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "arso",
+			"whatsapp": "https://chat.whatsapp.com/C9Kj1GCSNCV0VUcaAAqfZ7",
+			"telegram": "https://t.me/joinchat/24jo2nPy0G80M2Rk"
 		},
 		{
 			"codigo": "75563 ",
@@ -285,9 +285,9 @@
 			"descripcion": "Los profesionales de las tecnologías de la información y la comunicación (TIC), además de saber programar un sistema, gestionar redes de telecomunicación o diseñar una aplicación interactiva, tienen la necesidad de comunicarse de manera eficaz con los usuarios y los directivos en sus diferentes ámbitos de actuación. Un ingeniero informático o de telecomunicación, así como un estudiante, tiene que redactar proyectos, presentar informes, elaborar una memoria, describir un sistema y componer diferentes tipos de textos, que tendrá que saber producir con la máxima eficiencia posible. En esta asignatura, pretendemos poner al alcance de los estudiantes las herramientas de que dispone actualmente la lingüística para resolver los principales problemas que se presentan en la redacción de textos especializados del ámbito de las TIC. La orientación teórica, los conceptos, la metodología y las actividades se basan en las aportaciones de la lingüística del texto y del análisis del discurso, que toman el texto como referencia y se centran en el estudio del uso del lenguaje y en las necesidades comunicativas. No solo se estudia la oración, sino el texto como unidad y todo aquello que lo condiciona: el objetivo, los destinatarios y, en general, las circunstancias que configuran la situación de comunicación. Se trata, por lo tanto, de saber utilizar la lengua en situaciones concretas. A partir de los principales problemas detectados en textos de estudiantes, hemos estructurado un programa adecuado a las necesidades comunicativas del futuro profesional de las TIC. La finalidad del curso no es aprender gramática, sino aprovechar los conocimientos de la lingüística más útiles para resolver las dificultades que se tienen que afrontar en la producción de los textos de especialidad. La asignatura se organiza alrededor de tres núcleos temáticos: conceptos básicos relacionados con el texto, caracterización de algunos de los textos más significativos de las TIC y técnicas de producción de textos especializados. Los contenidos se presentan de manera clara, sencilla y breve, y se incide en los aspectos que posibilitan la reflexión sobre la composición de textos, los cuales se introducen y se explican con ejemplos reales, mayoritariamente del ámbito de las TIC, comentados con el fin de reforzar los conceptos más importantes y destacar los aspectos prácticos.",
 			"requisitos": "sin requisitos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "cctic",
+			"whatsapp": "https://chat.whatsapp.com/Bh25ALoaIre0719i7in7dG",
+			"telegram": "https://t.me/joinchat/P1LQlrIQLz1jZDc0"
 		},
 		{
 			"codigo": "75569",
@@ -297,9 +297,9 @@
 			"descripcion": "Muchas situaciones se pueden describir en forma de jerarquía o red entre diferentes entidades: red social, red de carreteras, cargos en una organización, red de computadores, conexiones en un circuito... Matemáticamente, esta noción de jerarquía o red se denomina grafo. En esta asignatura, estudiaremos el concepto de grafo, sus propiedades y los problemas más usuales que se pueden plantear. Estos conceptos serán de gran aplicación en muchos problemas del campo de la informática. Por otro lado, algunos problemas que nos puede interesar resolver sobre un grafo son computacionalmente complejos: un ordenador necesitaría mucho tiempo de cálculo o espacio de memoria para resolverlos. En la segunda parte de la asignatura estudiaremos los límites prácticos de cálculo de un ordenador a partir de este concepto de dificultad computacional. Definiremos diferentes familias de problemas según su complejidad y presentaremos algunos ejemplos de problemas complejos, dentro y fuera de la teoría de grafos. Veremos que algunos de estos problemas complejos son muy frecuentes en el campo de la informática y que tienen aplicaciones a diferentes ámbitos, como por ejemplo la criptografía.",
 			"requisitos": "sin requisitos, pero recomendable: prácticas de programación y lógica",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "grafos",
+			"whatsapp": "https://chat.whatsapp.com/DRql3YzzSu50bala0h77LT",
+			"telegram": "https://t.me/joinchat/6F432Pe4eNE5M2Y0"
 		},
 		{
 			"codigo": "75571",
@@ -309,9 +309,9 @@
 			"descripcion": "La mayoría de los proyectos donde actualmente participan profesionales de las tecnologías de la información y de la comunicación (TIC) no son estrictamente técnicos, sino que implican diferentes departamentos y habilidades. Además desde un punto de vista técnico, muchos de estos proyectos no son sólo el desarrollo de software, sino que implementan o integran productos existentes. Actualmente, a través de las diferentes áreas de ingeniería, la mayoría de las actividades diarias de las organizaciones, así como sus profesionales, se estructuran en proyectos. Esta asignatura presenta un método general e introductorio para los profesionales de gestión de proyectos (medianos y grandes) en materia de TIC, que tendrían que ser complementados con métodos específicos para cada tipo de especialización y/o proyecto. La asignatura tiene como objetivo proporcionar al alumno los conocimientos básicos y las capacidades de gestión de proyectos para que sea un miembro activo del equipo de un proyecto de TIC, bajo la orientación y supervisión de un jefe de proyecto. El enfoque de esta asignatura, basado en la experiencia del equipo docente y en estudios y manuales de referencia, se centra esencialmente en el enfoque propuesto en el Project Management Body of Knowledge, PMBOK. El PMBOK se está convirtiendo en un estándar de facto dentro de la profesión y los certificados emitidos por el Project Management Institute son cada vez más demandados por las empresas de todo el mundo. Como su nombre indica, el PMBOK es un cuerpo de conocimientos o una guía de buenas prácticas; en definitiva, se trata de una caja de herramientas que un jefe de proyectos con experiencia puede utilizar como sea necesario para cualquier trabajo.",
 			"requisitos": "sin requisitos, recomendable administración y gestión de Organizaciones.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "gp",
+			"whatsapp": "https://chat.whatsapp.com/3yKe8iCzWlVEJsk9LXWxkWb",
+			"telegram": "https://t.me/joinchat/HCDiCHF_D4MRVeVT"
 		},
 		{
 			"codigo": "75573",
@@ -321,9 +321,9 @@
 			"descripcion": "Esta asignatura completa los conceptos que se han visto a la asignatura de Fundamentos de Computadores. Por lo tanto, se presupone que el estudiante tiene alcanzados unos conocimientos base, como las diversas formas de representar la información dentro del computador, los diferentes tipos de circuitos que lo constituyen y la estructura más básica de un computador sencillo. Estructura de Computadores se adentra un poco más en el interior del computador con la pretensión de dar una visión de la máquina básica desde la perspectiva del programador de lenguajes de bajo nivel. La programación que se realizará será en C haciendo llamadas a funciones en ensamblador con el fin de poder utilizar las funciones de E/S y las estructuras propias de C e incluir llamadas a funciones que estarán programadas en ensamblador. Para un buen seguimiento de la asignatura es recomendable tender unos conocimientos básicos de algorítmica y programación.",
 			"requisitos": "Fundamentos de computadores",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ec",
+			"whatsapp": "https://chat.whatsapp.com/IwrC1i0bI9xHizWuk78qaA",
+			"telegram": "https://t.me/joinchat/HKnrhmONcJUzNGY0"
 		},
 		{
 			"codigo": "75572",
@@ -333,9 +333,9 @@
 			"descripcion": "En esta asignatura se presentan los conceptos básicos de las redes de ordenadores y se describen los principios de funcionamiento y las aplicaciones características de la red Internet, haciendo especial énfasis en la web. También se incluye en esta asignatura las redes multimedia, así como los principios básicos de seguridad en las aplicaciones Internet.",
 			"requisitos": "Sistemas Operativos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "rai",
+			"whatsapp": "https://chat.whatsapp.com/BwakwyUSgWB2ReizzhY4vy",
+			"telegram": "https://t.me/joinchat/85-IyL6zZs5kNWY0"
 		},
 		{
 			"codigo": "75589",
@@ -345,9 +345,9 @@
 			"descripcion": "Esta asignatura está básicamente enfocada a conocer los principales conceptos relacionados con los sistemas y aplicaciones distribuidas a escala Internet. Las aplicaciones distribuidas son sistemas formados por algunos, varios o muchos ordenadores interconectados en una red y con procesos que interaccionan entre si de forma compleja, compartiendo recursos y servicios.",
 			"requisitos": "Redes y aplicaciones Internet, sistema operativos, diseño y programaciónorientada a objetos.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "sd",
+			"whatsapp": "https://chat.whatsapp.com/7lTPjHOzyXfFk1gPfpgp4V",
+			"telegram": "https://t.me/joinchat/JLnSqhZyVgzRkR3oZHZeiQ"
 		},
 		{
 			"codigo": "75566",
@@ -357,9 +357,9 @@
 			"descripcion": "La asignatura de Sistemas Operativos, es la primera de un bloque de tres asignaturas (Ampliación de sistemas operativos y Administración de redes y sistemas operativos). En esta primera asignatura se pueden distinguir dos partes bien diferenciadas: una parte teórica donde se presentan posibles soluciones que puede dar un sistema operativo a los diversos problemas planteados en la gestión de procesos, ficheros, memoria y comunicación; y una segunda parte, donde se presentará lo que es un Sistema Operativo (SO) desde la óptica de los usuarios de un sistema informático. Esta visión cubre aspectos que van desde el usuario no especializado de un sistema informático, hasta el técnico encargado de la administración del sistema, pasando por el desarrollador de aplicaciones. Esta visión se centra, desde la óptica de su utilización, en el conocimiento de los principales servicios del sistema, y de sus herramientas asociadas. Para conseguir estos objetivos se combinarán las clases de teoría con clases prácticas basadas en un sistema de la familia UNIX.",
 			"requisitos": "lenguaje C",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "so",
+			"whatsapp": "https://chat.whatsapp.com/A4XJVWInKumDeC1jywP2io",
+			"telegram": "https://t.me/joinchat/yN_fDfKezqszYWY0"
 		},
 		{
 			"codigo": "75582",
@@ -369,9 +369,9 @@
 			"descripcion": "Esta asignatura es una introducción a la Inteligencia Artificial (IA). A lo largo de los 5 módulos en que se ha dividido la asignatura se dará una visión general del campo, se presentarán los métodos y técnicas básicos de la IA y se describirán algunos ejemplos de aplicación, así como también se verá una introducción al aprendizaje computacional. En particular, se verá cómo formalizar un problema y como la formulación permite aplicar los llamados métodos de búsqueda con el fin de encontrar una solución. Se verán algunos de estos métodos de búsqueda. También se estudiarán algunos de los mecanismos para la representación del conocimiento, necesarios para incorporar en un sistema el conocimiento sobre el entorno a aplicación. A lo largo de la asignatura se verá que los temas planteados tienen conexiones con otras asignaturas del grado en informática. En particular, el tema de representación del conocimiento está relacionado, entre de otros, con la asignatura que lleva el mismo nombre (Representación del Conocimiento). Como se verá, no hay un único mecanismo de representación del conocimiento sino que hay diversos (se anunciará que la lógica de primer orden es uno de ellos). Eso plantea el problema de escoger la representación más adecuada para un problema, como sucede a la hora de escoger entre diferentes estructuras de datos. Además, la representación del conocimiento necesita implementaciones eficientes dado que la cantidad de conocimiento que se tiene que representar es habitualmente grande. El tema de búsqueda también está relacionado con la asignatura de Grafos y Complejidad. Allí se vieron los grafos y los recorridos en un grafo. Encontrar la solución a un problema se verá como un recorrido en un grafo. Aún estando relacionada con las dos asignaturas, su superación no es un prerrequisito para cursar IA. La IA tiene una continuación natural en el grado en la asignatura de Aprendizaje Computacional, que cubre los aspectos relacionados con la extracción de características, los modelos de aprendizaje automático (supervisado y no supervisado) sobre un conjunto de datos, y los sistemas basados en agentes. Por este motivo se ha introducido un quinto módulo donde se ve una introducción al Aprendizaje Computacional. El Aprendizaje Computacional es una de les áreas donde más investigación avanzada se está realizando en los últimos años, permitiendo aplicaciones como la conducción automática de vehículos, el diagnóstico automático de enfermedades, el reconocimiento de caras y objetos genéricos, el estudio de grandes volúmenes de datos y redes sociales, y las aplicaciones a la bioinformática y/o estudio del genoma. Todas las técnicas que se utilizan tienen su base en la IA clásica que se introduce en la asignatura de Inteligencia Artificial descrita en este plan docente.",
 			"requisitos": "sin requisitos, recomendable representación del conocimiento y grafos y complejidad",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ia",
+			"whatsapp": "https://chat.whatsapp.com/G8GRXQ5ccmAFsRRDoQwRKf",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75559",
@@ -381,9 +381,9 @@
 			"descripcion": "Un conocimiento funcional del inglés es básico hoy en día tanto para los estudios universitarios como para la carrera profesional. Idioma Moderno I corresponde a la primera parte del nivel B2 del Marco Común Europeo de Referencia para las Lenguas (MCERL). La asignatura se centra en las destrezas comunicativas efectivas en inglés y utiliza una metodología basada en tareas a realizar individualmente y/o en grupo.",
 			"requisitos": "nivel medio de inglés (equivalente a un B1 del Marco Común Europeo Referencia para las Lenguas).",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ingles1",
+			"whatsapp": "https://chat.whatsapp.com/DDb1U9eertELDYgZDRhn3v",
+			"telegram": "https://t.me/joinchat/D300o1B1I9Kd-C1wUtCN_w"
 		},
 		{
 			"codigo": "75560",
@@ -393,9 +393,9 @@
 			"descripcion": "Un conocimiento funcional del inglés es básico hoy en día tanto para los estudios universitarios como para la carrera profesional. Inglés B2.2 es la segunda de dos asignaturas obligatorias de lengua extranjera en los grados de la UOC. La asignatura se centra en las destrezas comunicativas efectivas en inglés y utiliza una metodología basada en tareas a realizar individualmente y/o en grupo.",
 			"requisitos": "Idioma moderno I: Inglés",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ingles2",
+			"whatsapp": "https://chat.whatsapp.com/L2wNZQTzrJuCVmCaAhoK9J",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75586 ",
