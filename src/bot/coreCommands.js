@@ -17,6 +17,7 @@ console.log("numMessages:", numMessages, "idioma: ", idioma,
 bot.start((ctx) => {
     chat_id = ctx.chat.id
     console.log("chat id " + ctx.chat.id);
+    console.log("user id ",ctx.update.message.from.id)
     let emoji = "🤖";
     switch (idioma) {
         case 0:
