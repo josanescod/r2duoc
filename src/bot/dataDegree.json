@@ -2,7 +2,7 @@
 	"nombre": "Ingenieria informatica",
 	"universidad": "UOC",
 	"tipos_materia_creditos": [
-        {
+		{
 			"Formación básica": 60
 		},
 		{
@@ -17,43 +17,75 @@
 		{
 			"Total": 240
 		}
-
 	],
 	"itineraries": [
 		{
 			"name": "Ingeniería de computadores - ic",
-			"subjects": ["Administración de redes y sistemas operativos (obligatoria)","Arquitectura de computadores (optativa)",
-			"Arquitectura de computadores avanzados (optativa)","Diseño de sistemas operativos (optativa)",
-		"Diseño de sistemas operativos (optativa)","Seguridad en redes de computadores (optativa)","Seguridad en redes de computadores (optativa)",
-		"Sistemas distribuidos (obligatoria)"]            },
+			"subjects": [
+				"Administración de redes y sistemas operativos (obligatoria)",
+				"Arquitectura de computadores (optativa)",
+				"Arquitectura de computadores avanzados (optativa)",
+				"Diseño de sistemas operativos (optativa)",
+				"Diseño de sistemas operativos (optativa)",
+				"Seguridad en redes de computadores (optativa)",
+				"Seguridad en redes de computadores (optativa)",
+				"Sistemas distribuidos (obligatoria)"
+			]
+		},
 		{
 			"name": "Ingeniería del software - is",
-			"subjects": ["Análisis y diseño con patrones (optativa)","Diseño de estructuras de datos (optativa)","Ingeniería del software (obligatoria)",
-			"Ingeniería del software de componentes y sistemas distribuidos (optativa)","Ingeniería de requisitos (optativa)",
-		"Interacción persona ordenador (obligatoria)","Proyecto de desarrollo de software (optativa)"]
+			"subjects": [
+				"Análisis y diseño con patrones (optativa)",
+				"Diseño de estructuras de datos (optativa)",
+				"Ingeniería del software (obligatoria)",
+				"Ingeniería del software de componentes y sistemas distribuidos (optativa)",
+				"Ingeniería de requisitos (optativa)",
+				"Interacción persona ordenador (obligatoria)",
+				"Proyecto de desarrollo de software (optativa)"
+			]
 		},
 		{
 			"name": "Computación - c ",
-			"subjects": ["Aprendizaje computacional (optativa)","Autómatas y gramáticas (optativa)","Compiladores (optativa)",
-			"Diseño de estructuras de datos (optativa)","Grafos y complejidad (obligatoria)","Inteligencia artificial (obligatoria)",
-			"Minería de datos (optativa)","Representación del conocimiento (optativa)"]
+			"subjects": [
+				"Aprendizaje computacional (optativa)",
+				"Autómatas y gramáticas (optativa)",
+				"Compiladores (optativa)",
+				"Diseño de estructuras de datos (optativa)",
+				"Grafos y complejidad (obligatoria)",
+				"Inteligencia artificial (obligatoria)",
+				"Minería de datos (optativa)",
+				"Representación del conocimiento (optativa)"
+			]
 		},
 		{
 			"name": "Tecnologías de la información - ti",
-			"subjects": ["Administración de redes y sistemas operativos (obligatoria)","Arquitectura de bases de datos (optativa)",
-			"Comercio electrónico (optativa)","Diseño de redes de computadores (optativa)","Fundamentos de sistemas de información (optativa)",
-			"Integración de sistemas de información (optativa)","Interacción persona ordenador (obligatoria)","Seguridad en redes de computadores (optativa)"
-		]
+			"subjects": [
+				"Administración de redes y sistemas operativos (obligatoria)",
+				"Arquitectura de bases de datos (optativa)",
+				"Comercio electrónico (optativa)",
+				"Diseño de redes de computadores (optativa)",
+				"Fundamentos de sistemas de información (optativa)",
+				"Integración de sistemas de información (optativa)",
+				"Interacción persona ordenador (obligatoria)",
+				"Seguridad en redes de computadores (optativa)"
+			]
 		},
 		{
 			"name": "Sistemas de información - si",
-			"subjects": ["Fundamentos de sistemas de información (optativa)","Ingeniería del software (obligatoria)","Gestión de proyectos (obligatoria)",
-				"Gestión funcional de servicios SI/TI (optativa)","Gestión funcional de servicios SI/TI (optativa)","Integración de sistemas de información (optativa)",
-			"Planificación y uso estratégico de sistemas de información (optativa)","Uso de sistemas de información en las organizaciones (optativa)"]
+			"subjects": [
+				"Fundamentos de sistemas de información (optativa)",
+				"Ingeniería del software (obligatoria)",
+				"Gestión de proyectos (obligatoria)",
+				"Gestión funcional de servicios SI/TI (optativa)",
+				"Gestión funcional de servicios SI/TI (optativa)",
+				"Integración de sistemas de información (optativa)",
+				"Planificación y uso estratégico de sistemas de información (optativa)",
+				"Uso de sistemas de información en las organizaciones (optativa)"
+			]
 		}
 	],
 	"asignaturas": [
-        {
+		{
 			"codigo": "75554",
 			"nombre": "Fundamentos de programación",
 			"tipo": "Básica",
@@ -62,8 +94,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "fp",
-			"whatsapp":"https://chat.whatsapp.com/InC2pzpvg8qJs2l98xdyO2",
-			"telegram":"https://t.me/joinchat/32Dhi2Z2rXIwYTY8"
+			"whatsapp": "https://chat.whatsapp.com/InC2pzpvg8qJs2l98xdyO2",
+			"telegram": "https://t.me/joinchat/32Dhi2Z2rXIwYTY8"
 		},
 		{
 			"codigo": "75555",
@@ -74,11 +106,11 @@
 			"requisitos": "los adquiridos en Fundamentos de programación",
 			"dificultad": "",
 			"referencia": "pp",
-			"whatsapp":"https://chat.whatsapp.com/InC2pzpvg8qJs2l98xdyO2",
-			"telegram":"https://t.me/joinchat/FtMISwYTexAyMzFk"
+			"whatsapp": "https://chat.whatsapp.com/InC2pzpvg8qJs2l98xdyO2",
+			"telegram": "https://t.me/joinchat/FtMISwYTexAyMzFk"
 		},
 		{
-			"codigo": "75556",			
+			"codigo": "75556",
 			"nombre": "Administración y gestión de organizaciones",
 			"tipo": "Básica",
 			"creditos": "6",
@@ -86,8 +118,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "ago",
-			"whatsapp":"https://chat.whatsapp.com/5FO7lAIpClK8CqZcz5RPUl",
-			"telegram":"https://t.me/joinchat/WqECtXVCmRJiYTNk"
+			"whatsapp": "https://chat.whatsapp.com/5FO7lAIpClK8CqZcz5RPUl",
+			"telegram": "https://t.me/joinchat/WqECtXVCmRJiYTNk"
 		},
 		{
 			"codigo": "75557",
@@ -98,8 +130,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "algebra",
-			"whatsapp":"https://chat.whatsapp.com/II7KTf3NvIf4rGIJ10t0Hx",
-			"telegram":"https://t.me/joinchat/hDx0kzg_W7E4M2Y8"
+			"whatsapp": "https://chat.whatsapp.com/II7KTf3NvIf4rGIJ10t0Hx",
+			"telegram": "https://t.me/joinchat/hDx0kzg_W7E4M2Y8"
 		},
 		{
 			"codigo": "75558",
@@ -110,8 +142,8 @@
 			"requisitos": "se aconseja cursar IMI o tener recientes los conocimientos previos de derivación e integración de Bachillerato o equivalente",
 			"dificultad": "",
 			"referencia": "am",
-			"whatsapp":"https://chat.whatsapp.com/KDjRbjZEnavGdM0ZuyHCbs",
-			"telegram":"https://t.me/joinchat/-6YgNHkj6Dw1MjY8"
+			"whatsapp": "https://chat.whatsapp.com/KDjRbjZEnavGdM0ZuyHCbs",
+			"telegram": "https://t.me/joinchat/-6YgNHkj6Dw1MjY8"
 		},
 		{
 			"codigo": "75570",
@@ -122,8 +154,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "logica",
-			"whatsapp":"https://chat.whatsapp.com/9vhuRDOd7wh7mW23oJiwyJ",
-			"telegram":"https://t.me/joinchat/9SJHSXueuYs1MWNk"
+			"whatsapp": "https://chat.whatsapp.com/9vhuRDOd7wh7mW23oJiwyJ",
+			"telegram": "https://t.me/joinchat/9SJHSXueuYs1MWNk"
 		},
 		{
 			"codigo": "75568",
@@ -134,8 +166,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "estadistica",
-			"whatsapp":"https://chat.whatsapp.com/1k5S54GQY3O4XEuK2cTmyc",
-			"telegram":"https://t.me/joinchat/_oBhtwjTqCFkZmM0"
+			"whatsapp": "https://chat.whatsapp.com/1k5S54GQY3O4XEuK2cTmyc",
+			"telegram": "https://t.me/joinchat/_oBhtwjTqCFkZmM0"
 		},
 		{
 			"codigo": "75561",
@@ -146,8 +178,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "ter",
-			"whatsapp":"https://chat.whatsapp.com/K6uWwpWiT7V0lg0VXWt7HJ",
-			"telegram":"n/a"
+			"whatsapp": "https://chat.whatsapp.com/K6uWwpWiT7V0lg0VXWt7HJ",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75562",
@@ -158,8 +190,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "fc",
-			"whatsapp":"https://chat.whatsapp.com/LmWXudCYuTV3KRfp2ORuSen",
-			"telegram":"https://t.me/joinchat/HPNI9EB00PllNmE8"
+			"whatsapp": "https://chat.whatsapp.com/LmWXudCYuTV3KRfp2ORuSen",
+			"telegram": "https://t.me/joinchat/HPNI9EB00PllNmE8"
 		},
 		{
 			"codigo": "75611",
@@ -170,8 +202,8 @@
 			"requisitos": "Álgebra y Análisis matemático",
 			"dificultad": "",
 			"referencia": "ffi",
-			"whatsapp":"https://chat.whatsapp.com/HI6azPOtBaaJyaHUl8yCZD",
-			"telegram":"https://t.me/joinchat/EF9sdroIoUU3M2I0"
+			"whatsapp": "https://chat.whatsapp.com/HI6azPOtBaaJyaHUl8yCZD",
+			"telegram": "https://t.me/joinchat/EF9sdroIoUU3M2I0"
 		},
 		{
 			"codigo": "75564",
@@ -182,8 +214,8 @@
 			"requisitos": "Fundamentos de Programación y prácticas de programación ",
 			"dificultad": "",
 			"referencia": "dpo",
-			"whatsapp":"https://chat.whatsapp.com/EBYirigrk852odY0oxwSvY",
-			"telegram":"https://t.me/joinchat/pi74UNn-eEg2MDFk"
+			"whatsapp": "https://chat.whatsapp.com/EBYirigrk852odY0oxwSvY",
+			"telegram": "https://t.me/joinchat/pi74UNn-eEg2MDFk"
 		},
 		{
 			"codigo": "75565",
@@ -194,8 +226,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "is",
-			"whatsapp":"https://chat.whatsapp.com/JNuzr6oDQTV1pt5lnns0Ys",
-			"telegram":"https://t.me/joinchat/dJwEDI_-Yh4xMWJk"
+			"whatsapp": "https://chat.whatsapp.com/JNuzr6oDQTV1pt5lnns0Ys",
+			"telegram": "https://t.me/joinchat/dJwEDI_-Yh4xMWJk"
 		},
 		{
 			"codigo": "75590",
@@ -206,8 +238,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "ipo",
-			"whatsapp":"https://chat.whatsapp.com/Do8yD3Vh4PyKUtn2qIGgD0",
-			"telegram":"https://t.me/joinchat/F9y4CkF_QzUXXVv4"
+			"whatsapp": "https://chat.whatsapp.com/Do8yD3Vh4PyKUtn2qIGgD0",
+			"telegram": "https://t.me/joinchat/F9y4CkF_QzUXXVv4"
 		},
 		{
 			"codigo": "75567",
@@ -218,8 +250,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "ubd",
-			"whatsapp":"https://chat.whatsapp.com/JAJ9V2ypaEy2UPd55xFWSf",
-			"telegram":"https://t.me/joinchat/JLnSqhW-NPHluF0JprnVww"
+			"whatsapp": "https://chat.whatsapp.com/JAJ9V2ypaEy2UPd55xFWSf",
+			"telegram": "https://t.me/joinchat/JLnSqhW-NPHluF0JprnVww"
 		},
 		{
 			"codigo": "75585",
@@ -230,8 +262,8 @@
 			"requisitos": "Uso de bases de datos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75575",
@@ -242,8 +274,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75563 ",
@@ -254,8 +286,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75569",
@@ -266,8 +298,8 @@
 			"requisitos": "sin requisitos, pero recomendable: prácticas de programación y lógica",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75571",
@@ -278,8 +310,8 @@
 			"requisitos": "sin requisitos, recomendable administración y gestión de Organizaciones.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75573",
@@ -290,8 +322,8 @@
 			"requisitos": "Fundamentos de computadores",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75572",
@@ -302,8 +334,8 @@
 			"requisitos": "Sistemas Operativos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75589",
@@ -314,8 +346,8 @@
 			"requisitos": "Redes y aplicaciones Internet, sistema operativos, diseño y programaciónorientada a objetos.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75566",
@@ -326,8 +358,8 @@
 			"requisitos": "lenguaje C",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75582",
@@ -338,8 +370,8 @@
 			"requisitos": "sin requisitos, recomendable representación del conocimiento y grafos y complejidad",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75559",
@@ -350,8 +382,8 @@
 			"requisitos": "nivel medio de inglés (equivalente a un B1 del Marco Común Europeo Referencia para las Lenguas).",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75560",
@@ -362,10 +394,9 @@
 			"requisitos": "Idioma moderno I: Inglés",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
-
 		{
 			"codigo": "75586 ",
 			"nombre": "Análisis y diseño con patrones",
@@ -375,8 +406,8 @@
 			"requisitos": "sin requisitos, recomendable UML, POO, y bases de datos relacionales",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75583",
@@ -387,8 +418,8 @@
 			"requisitos": "sin requisitos, recomendable Algebra lineal y estadística",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75607",
@@ -399,8 +430,8 @@
 			"requisitos": "Diseño de bases de datos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75578 ",
@@ -411,8 +442,8 @@
 			"requisitos": "Fundamentos de computadores y Estructura de computadores, conocimientos C,Linux, compilación C con gcc",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75592",
@@ -423,8 +454,8 @@
 			"requisitos": "Se recomienda cursar Arquitectura de computadores antes de esta asignatura, ya que es la previa en el itinerario 'ingeniería de computadores' dentro del grado.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75579",
@@ -435,8 +466,8 @@
 			"requisitos": "La asignatura requiere conocimientos básicos del concepto de grafo, que se ha introducido en la asignatura Grafos y Complejidad. Por otro lado, la asignatura requiere una cierta habilidad con el uso de notación matemática, dado que los lenguajes se describen de manera formal. Por este motivo, se recomienda haber cursado previamente la asignatura de Lógica .",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75604",
@@ -447,8 +478,8 @@
 			"requisitos": "Uso de Bases de Datos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75580",
@@ -459,8 +490,8 @@
 			"requisitos": "La asignatura presupone un buenos conocimientos de programación, específicamente en lenguaje Java, por lo que resulta muy recomendable haber cursado las asignaturas de programación y de estructuras de datos correspondientes con anterioridad. Además, para el buen seguimiento de la asignatura se tiene que partir de unos conocimientos básicos en lenguajes, expresiones regulares, autómatas finitos y gramáticas. Y, finalmente, hay que tener conocimientos básicos sobre lenguaje ensamblador y estructura de computadores.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75601",
@@ -471,8 +502,8 @@
 			"requisitos": "Para hacer el seguimiento de esta asignatura es necesario tener conocimientos básicos de matemáticas a nivel de grado, y conocimientos de algorítmica, programación procedimental y las bases de la programación orientada a objetos.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75600",
@@ -483,8 +514,8 @@
 			"requisitos": "Fundamentos de Sistemas de Información, uso de sistemas de información a las organizaciones, integración de sistemas de Información, gestión funcional de sistemas de Información, gestión de proyectos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75613 ",
@@ -495,8 +526,8 @@
 			"requisitos": "La asignatura requiere disponer de las nociones fundamentales de algorítmica (asignaciones, condicionales, bucles) y de programación utilizando el paradigma imperativo (uso de compiladores y depuradores, uso de un entorno de desarrollo integrado -IDE-, etc.). Además, la asignatura requiere unos buenos conocimientos de programación orientada a objetos, específicamente en lenguaje Java. Por otro lado, se requieren nociones básicas sobre el cálculo del coste de un algoritmo. Antes de cursar esta asignatura, es muy recomendable haber cursado previamente las asignaturas básicas y obligatorias siguientes: fundamentos de programación, prácticas de programación, diseño y programación orientada a objetos, grafos y complejidad, Java, y nociones del cálculo del coste de un algoritmo.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75577",
@@ -507,8 +538,8 @@
 			"requisitos": "Estructura básica de un computador, conceptos básicos de lenguaje máquina: instrucciones más comunes, funcionamiento de la pila,Programación en un lenguaje de alto nivel, asignatura sistemas operativos. ",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75591",
@@ -519,8 +550,8 @@
 			"requisitos": "Para cursar esta asignatura no es necesario tener especiales conocimientos previos en el campo de las redes, al tratarse de una de las asignaturas base del grado. De todas formas, se recomienda haber cursado Redes y Aplicaciones en Internet. En cualquier caso, se considera que el estudiante al menos sí que conoce qué es una red y qué es y qué formato tiene una dirección IPv4.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": " 75596 ",
@@ -531,8 +562,8 @@
 			"requisitos": "Fundamentos de sistemas de información es la primera asignatura del itinerario y no es neceario tener conocimientos sobre sistemas de información. Para facilitar el aprendizaje y la asimilación de conceptos sobre las organizaciones y la implantación de sistemas de información se recomienda haber cursado previamente las asignaturas obligatorias del Grado: Gestión de Proyectos y Administración y Gestión de Organizaciones.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75599",
@@ -543,8 +574,8 @@
 			"requisitos": "Para los estudiantes del Grado en Ingeniería en Informática se recomienda haber realizado las asignaturas previas del itinerario de Sistemas de Información: Fundamentos de Sistemas de Información e Integración de Sistemas de Información.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75593 ",
@@ -555,8 +586,8 @@
 			"requisitos": "Se recomienda haber cursado la asignatura Ingeniería del Software.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75587",
@@ -567,8 +598,8 @@
 			"requisitos": "Haber superado Ingeniería del software y Análisis y Diseño con Patrones o tener los conocimientos equivalentes es la condición previa para poder cursar esta asignatura. Es también imprescindible que el estudiante tenga un buen nivel de Java para poder superar la asignatura. La asignatura tiene una parte importante de trabajo práctico en Java que asume un conocimiento y práctica importantes en este lenguaje. No es nada recomendable que el estudiante curse la asignatura hasta que se haya logrado un buen nivel en Java, puesto que de lo contrario se verá abocado a repetir la asignatura con una alta probabilidad.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75614",
@@ -579,8 +610,8 @@
 			"requisitos": "sin requisitos",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75595",
@@ -591,8 +622,8 @@
 			"requisitos": "Para poder cursar esta asignatura no se necesitan conocimientos previos excepto para los estudiantes del Grado en Ingeniería informática a los que se recomienda haber cursado Administración y gestión de organizaciones y Gestión de proyectos.  ",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75597",
@@ -603,8 +634,8 @@
 			"requisitos": "Los conocimientos temáticos conseguidos en las asignaturas previas de las especializaciones de Sistemas  de Información y  Tecnologías de la Información , especialmente en la asignatura de Fundamentos de Sistemas de Información (FSI). A pesar de ser muy recomendable haber superado FSI con anterioridad a ISI, aquellos estudiantes que dispongan de conocimientos equivalentes obtenidos por medio de la experiencia profesional directa también podrían cursar ISI sin muchas dificultades añadidas. Gran parte del material de estudio de integración de Sistemas de Información (ISI) está redactado  en INGLÈS, habiendo capítulos de libre, artículos o informes seleccionados de diversas fuentes. El nivel de inglés de los documentos escogidos no es excesivamente elevado pero sí requiere de un nivel suficiente de comprensión lectora en inglés, que en cualquier caso no es superior a aquel requerido para la buena práctica de la profesión informática en cualquier de sus especialidades. Como punto de referencia, recomendamos un nivel de inglés mínimo o equivalente al nivel B 1.2 (Threshold) del Marco de Referencia Europeo para el Aprendizaje, Enseñanza y Evaluación de Lenguas.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75584",
@@ -615,8 +646,8 @@
 			"requisitos": "Esta asignatura requiere conocimientos básicos de estadística, así como conocimientos de programación y bases de datos. También es necesario ser capaz de leer documentación en inglés",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75588 ",
@@ -627,8 +658,8 @@
 			"requisitos": "El desarrollo de un proyecto de software con un grado significativo de complejidad requiere disponer de un conocimiento técnico amplio y conceptos clave muy consolidados en disciplinas diferentes dentro del área de ingeniería de software, como los fundamentos de programación, estructuras de datos, el paradigma de orientación a objetos, ingeniería de requisitos, patrones de análisis y diseño, arquitecturas de software, bases de datos y SQL, y tecnologías distribuidas (por ejemplo, RMI, Java EE, y SOA). Además, los estudiantes tendrán que mostrar un nivel de expertesa en el uso de herramientas y sistemas específicos, como PostgreSQL, JEE, EJB 3.x, Eclipse y servicios web).",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75581 ",
@@ -639,8 +670,8 @@
 			"requisitos": "Se recomienda haber superado Inteligencia artificial y Lógica.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75574",
@@ -651,8 +682,8 @@
 			"requisitos": "Redes y aplicaciones Internet",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75594",
@@ -663,8 +694,8 @@
 			"requisitos": "Se requieren conocimientos de: - Sistemas Operativos (conceptos básicos). - Programación básica (en la asignatura se trabaja con el lenguaje NesC. NesC es el lenguaje C encapsulado en componentes). - Fundamentos de computadores (componentes básicos de electrónica digital y fundamentos de computadores básicos).",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75598",
@@ -675,8 +706,8 @@
 			"requisitos": "Para los estudiantes de Ingeniería Informática, el desarrollo de la asignatura USIO se basará en los conocimientos adquiridos en las asignaturas de Administración y Gestión de Organizaciones, y Fundamentos de Sistemas de Información. Es recomendable entonces haber cursado estas asignaturas antes de matricularse en USIO.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": "75615",
@@ -687,8 +718,8 @@
 			"requisitos": "Cada empresa definirá qué conocimientos específicos del grado de Ingeniería Informática debe tener el/la estudiante que quiera hacer las prácticas con ellos. Por lo tanto, antes de firmar el convenio es importante negociar el plan de trabajo y los conocimientos previos que aporta el/la estudiante.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		},
 		{
 			"codigo": " 75616",
@@ -699,10 +730,9 @@
 			"requisitos": "Para cursar el TFG, hay que cumplir los siguientes condicionantes: Haber superado como mínimo 180 ECTS entre todas las asignaturas de la titulación. Haber superado la asignatura de Gestión de Proyectos. Satisfacer los requisitos adicionales pedidos en el área concreta de TFG que se quiera matricular. Haber finalizando todas las asignaturas del itinerario (preferentemente), o bien estar cursando las dos últimas asignaturas en paralelo. Cada área de TFG puede indicar una serie de requisitos adicionales necesarios para realizar este trabajo. Se recomienda leer detenidamente el Plan Docente de la asignatura para enterarse de estos requisitos.",
 			"dificultad": "",
 			"referencia": "",
-			"whatsapp":"",
-			"telegram":""
+			"whatsapp": "",
+			"telegram": ""
 		}
-
 	],
 	"groups": {
 		"whatsapp": "https://docs.google.com/spreadsheets/d/1b-m6YFy8AAPbN0-9AkuqpIcVXjfIqKFjWHxxCenBV4M/edit#gid=1397297600",
@@ -710,9 +740,6 @@
 	},
 	"storage": {
 		"mega": "https://mega.nz/folder/iFlR2TgY#7a07KulhBgsFOZHNf1vQqg/folder/6Q8FSZwI",
-		"github":"https://github.com/UOCstudentGIT/Ingenieria-Informatica"
+		"github": "https://github.com/UOCstudentGIT/Ingenieria-Informatica"
 	}
-
-	
-	
 }

@@ -17,7 +17,6 @@ console.log("numMessages:", numMessages, "idioma: ", idioma,
 bot.start((ctx) => {
     chat_id = ctx.chat.id
     console.log("chat id " + ctx.chat.id);
-    console.log("user id ",ctx.update.message.from.id)
     let emoji = "🤖";
     switch (idioma) {
         case 0:
@@ -46,13 +45,13 @@ bot.help((ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/help", "/ayuda", "/ajuda","/h"], (ctx) => {
+bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
     ctx.replyWithMarkdown(`${menu.help}`);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
-bot.command("/clear", (ctx) => {
+bot.command(["/clear", "/c"], (ctx) => {
     console.log(numMessages)
     numMessages = helper.clearHistory(ctx, numMessages);
     console.log(numMessages);
@@ -63,7 +62,7 @@ bot.command("/tramites", (ctx) => {
     ctx.reply("tramites");
 });
 
-bot.command("/itinerario", (ctx) => {
+bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -139,7 +138,7 @@ bot.command("/itinerario", (ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/asignatura","/asig","/a"], (ctx) => {
+bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
     var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -227,7 +226,7 @@ ${listOptativas}`)
     console.log(numMessages)
 });
 
-bot.command(["/idioma", "/language"], (ctx) => {
+bot.command(["/idioma", "/language", "/id"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     switch (arg) {
@@ -257,7 +256,7 @@ bot.command("/plan", (ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/telegram","/tel","/t"], (ctx) => {
+bot.command(["/telegram", "/tel", "/t"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
@@ -290,7 +289,7 @@ bot.command(["/telegram","/tel","/t"], (ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/whatsapp","/whats","/w"], (ctx) => {
+bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
@@ -321,19 +320,19 @@ bot.command(["/whatsapp","/whats","/w"], (ctx) => {
     console.log(numMessages)
 });
 
-bot.command("/mega", (ctx) => {
+bot.command(["/mega", "/m"], (ctx) => {
     ctx.reply(dataDegree.storage.mega);
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
-bot.command("/discord", (ctx) => {
+bot.command(["/discord", "/dis", "/d"], (ctx) => {
     ctx.reply("servidores discord");
     numMessages = numMessages + 2;
     console.log(numMessages)
 });
 
-bot.command("/github", (ctx) => {
+bot.command(["/github", "/git", "/g"], (ctx) => {
     ctx.reply(dataDegree.storage.github);
     numMessages = numMessages + 2;
     console.log(numMessages)

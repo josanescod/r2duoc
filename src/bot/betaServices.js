@@ -1,6 +1,12 @@
 const { Markup } = require("telegraf");
 const bot = require('./bot');
 
+
+
+/*
+console.log("user id ",ctx.update.message.from.id)
+bot.telegram.sendMessage(888251391,"hola");
+*/
 bot.hears("!miweb", (ctx) => {
     ctx.reply("mi web es:");
     bot.url("mi web", "www.josanweb.com");

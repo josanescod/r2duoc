@@ -12,7 +12,6 @@ function parseCommand(ctx) {
         args = match[2].split(' ')
       }
     }
-
     ctx.state.command = {
       raw: text,
       command,
@@ -31,9 +30,7 @@ function clearHistory(ctx, numMessages) {
       ctx.deleteMessage(k)
     }
   } else {
-    ctx.deleteMessage(ctx.message.message_id)
-    console.log('borrar solo /clear');
-
+    ctx.deleteMessage(ctx.message.message_id);
   }
   return numMessages = 0;
 }

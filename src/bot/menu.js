@@ -1,5 +1,3 @@
-
-
 const help = `*Info*
 /itinerario \\[ itinerario | all \] - información sobre itinerarios
 /asignatura \\[ asignatura | all\] - información sobre asignaturas
