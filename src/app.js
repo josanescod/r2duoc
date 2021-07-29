@@ -6,7 +6,7 @@ require('./bot/coreCommands');
 const bot = require('./bot/bot');
 setInterval(function () {
     bot.telegram.sendMessage(888251391, "Han pasado 20 minutos");
-}, 1200000);
+}, 600000);
 
 
 /* TODO
