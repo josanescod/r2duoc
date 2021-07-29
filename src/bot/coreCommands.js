@@ -1,6 +1,3 @@
-const fetch = require("node-fetch");
-require('dotenv').config();
-const _ = require("lodash");
 const bot = require('./bot');
 const dataDegree = require('./dataDegree.json');
 const path = require('path');
@@ -338,24 +335,6 @@ bot.command(["/github", "/git", "/g"], (ctx) => {
     console.log(numMessages)
 });
 
-bot.command("/api", (ctx) => {
-    async function fetchData() {
-        let response = await fetch('https://www.boredapi.com/api/activity');
-        let data = await response.json();
-        data = JSON.stringify(data);
-        data = JSON.parse(data);
-        return data;
-    }
-
-    async function main() {
-        let abc = await fetchData();
-        console.log(abc.activity);
-        ctx.reply("frase: " + abc.activity);
-    }
-    main();
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-})
 
 bot.mention(["Pacobot", "pacobot"], (ctx) => {
     ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");

@@ -1,3 +1,12 @@
+
+function pingHeroku() {
+  var https = require("https");
+  setInterval(function () {
+    https.get(process.env.URL);
+    console.log("ping");
+  }, 300000); // every 5 minutes (300000)
+}
+
 function parseCommand(ctx) {
   const text = ctx.update.message.text.toLowerCase()
   if (text.startsWith('/')) {
@@ -36,4 +45,4 @@ function clearHistory(ctx, numMessages) {
 }
 
 
-module.exports = { parseCommand, clearHistory }
+module.exports = { parseCommand, clearHistory, pingHeroku }

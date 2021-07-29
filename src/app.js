@@ -1,6 +1,4 @@
 require('./bot/coreCommands');
-require('./bot/betaServices');
-
 
 /* TO DO
 
