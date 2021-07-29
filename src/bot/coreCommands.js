@@ -274,7 +274,7 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
             }
         }
         if (selectedSubject !== "") {
-            ctx.reply(`Enlace a ${selectedSubject}: ${selectedTelegram}`);
+            ctx.reply(`Link a ${selectedSubject}: ${selectedTelegram}`);
         } else {
             ctx.reply(`No existe esa asignatura`);
         }
@@ -305,7 +305,7 @@ bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
             }
         }
         if (selectedSubject !== "") {
-            ctx.reply(`Enlace a ${selectedSubject}: ${selectedWhatsapp}`);
+            ctx.reply(`Link a ${selectedSubject}: ${selectedWhatsapp}`);
         } else {
             ctx.reply(`No existe esa asignatura`);
         }

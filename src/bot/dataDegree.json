@@ -405,9 +405,9 @@
 			"descripcion": "Este curso está enfocado al estudio de los patrones de análisis y diseño contemplados desde una perspectiva práctica. Los contenidos se sitúan dentro de la metodología de la orientación a objetos, actualmente la más aceptada, y utilizando la notación UML por la misma razón. Los patrones (de análisis, diseño, arquitectónicos...) son una de las innovaciones que han tenido más impacto sobre el desarrollo orientado al objeto en los últimos años, junto con la aparición del lenguaje UML. Su principal ventaja es que permiten ahorrar tiempo y ganar en calidad a través de aplicar soluciones (que nombramos patrones) ya probadas exhaustivamente por otros diseñadores. Por esta razón, la utilización de patrones se considera una habilidad básica que tienen que adquirir los diseñadores de software orientado a objetos actualmente. Ahora bien, no parece que esta habilidad se pueda adquirir de otra manera que a través de la práctica; en esta práctica normalmente se utiliza la información detallada que se encuentra en los libros - que ya empiezan a ser numerosos - sobre patrones, y esta forma de trabajar es la que se recomienda a los estudiantes para su futuro trabajo profesional. En esta asignatura se proporcionan descripciones resumidas de muchos de los patrones más conocidos y aceptados actualmente, además de unos conceptos generales sobre los patrones y su utilización.",
 			"requisitos": "sin requisitos, recomendable UML, POO, y bases de datos relacionales",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "adp",
+			"whatsapp": "https://chat.whatsapp.com/HJWpTLN0nwQ6CERhM5WcJv",
+			"telegram": "https://t.me/joinchat/BjO75Pc4j_BlYWE0"
 		},
 		{
 			"codigo": "75583",
@@ -417,9 +417,9 @@
 			"descripcion": "La motivación principal de esta asignatura es la de dar a conocer el aprendizaje automático y como se sitúa dentro de la Inteligencia Artificial como disciplina y entender que son los agentes y los sistemas multiagente. En Inteligencia Artificial se dio una visión general de la Inteligencia Artificial y se presentaron algunos de los métodos y técnicas llamados clásicos, como son la resolución de problemas, la búsqueda y los sistemas basados en el conocimiento, también se vieron técnicas más avanzadas de razonamiento aproximado. En esta asignatura se profundizará mucho más en el problema del aprendizaje automático (machine learning), cubriendo los temas del aprendizaje no supervisado (clustering) y supervisado (clasificación). En especial, se hará hincapié en algoritmos del estado del arte como Support Vector Machines, ensemble de clasificadores o redes neuronales.",
 			"requisitos": "sin requisitos, recomendable Algebra lineal y estadística",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ac",
+			"whatsapp": "https://chat.whatsapp.com/LfxwZg62lwc8FKdObsreAO",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75607",
@@ -429,9 +429,9 @@
 			"descripcion": "Arquitectura de Bases de datos es una asignatura optativa, propuesta dentro del itinerario en Tecnologías de la Información, que pertenece al Grado de Ingeniería Informática. La asignatura profundiza en el conocimiento adquirido en asignaturas previas obligatorias en materia de bases de datos, como por ejemplo, Uso de Bases de datos y Diseño de Bases de datos. La asignatura se inicia estudiando los principales inconvenientes del modelo relacional y presenta algunos modelos alternativos de datos. A continuación, se analizan los principales problemas relacionados con la implantación de sistemas gestores de bases de datos (SGBD), tanto en entornos centralizados como en entornos distribuidos. Finalmente, se introducen conceptos fundamentales sobre el diseño de bases de datos distribuidas. El Grado de Ingeniería Informática tiene el aprendizaje en lenguas extranjeras (en concreto el inglés) como competencia transversal a ser adquirida. Por eso algunas asignaturas tienen el material de aprendizaje en lengua inglesa. Éste es el caso de Arquitectura de Bases de datos, dadas sus características específicas (una asignatura de especialización con un modelo basado en evaluación continua).",
 			"requisitos": "Diseño de bases de datos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "arqbd",
+			"whatsapp": "https://chat.whatsapp.com/BaMV0zEXBtZFWIkewDF93t",
+			"telegram": "https://t.me/joinchat/D300o075g62T8wshMagQQg"
 		},
 		{
 			"codigo": "75578 ",
@@ -441,9 +441,9 @@
 			"descripcion": "En esta asignatura se profundiza en el conocimiento de la arquitectura de los ordenadores introducido en las asignaturas de Fundamentos y Estructura de computadores del Grado de Ingeniería informática.",
 			"requisitos": "Fundamentos de computadores y Estructura de computadores, conocimientos C,Linux, compilación C con gcc",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "arqc",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/VOrCrxs7j0YyMWI0"
 		},
 		{
 			"codigo": "75592",
@@ -453,9 +453,9 @@
 			"descripcion": "En esta asignatura se profundiza en el conocimiento de arquitecturas avanzadas de computadores actuales. Por un lado se ampliarán los conocimientos previos en Fundamentos y Estructura de Computadores y Arquitectura de Computadores. Por otro lado se presentarán distintos modelos de arquitecturas de procesadores actuales. Entre ellos se estudiarán arquitecturas de altas prestaciones, multicores o arquitecturas GPU. No obstante, no sólo se discutirán los aspectos puramente arquitectónicos de dichos sistemas, también se presentarán los distintos paradigmas de programación asociados a dichas arquitecturas.",
 			"requisitos": "Se recomienda cursar Arquitectura de computadores antes de esta asignatura, ya que es la previa en el itinerario 'ingeniería de computadores' dentro del grado.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "arqca",
+			"whatsapp": "n/a",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75579",
@@ -465,9 +465,9 @@
 			"descripcion": "Una parte muy importante de la información disponible hoy en día se encuentra disponible en formato textual: páginas web, ficheros de configuración, scripts, programas de ordenador o incluso texto en lenguaje natural. Para que un ordenador pueda utilizar esta información, es necesario que la pueda interpretar según las reglas del lenguaje en que está escrita. En esta asignatura se presentan técnicas básicas para describir la estructura de un lenguaje, las expresiones regulares y las gramáticas libres de contexto. Estas notaciones son las que se usan, por ejemplo, para describir los lenguajes de programación o describir patrones de texto para hacer búsquedas. Además, se presentan los mecanismos que utilizan los ordenadores para reconocer si una sentencia está correctamente formada según la estructura de un lenguaje. En concreto se presentan los autómatas finitos y autómatas con pila. En resumen, esta asignatura proporciona las herramientas básicas para saber tratar información textual con un ordenador.",
 			"requisitos": "La asignatura requiere conocimientos básicos del concepto de grafo, que se ha introducido en la asignatura Grafos y Complejidad. Por otro lado, la asignatura requiere una cierta habilidad con el uso de notación matemática, dado que los lenguajes se describen de manera formal. Por este motivo, se recomienda haber cursado previamente la asignatura de Lógica .",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "aig",
+			"whatsapp": "https://chat.whatsapp.com/JUuOKJnMPyQ1kH9fvwhv3l",
+			"telegram": "https://t.me/joinchat/06qeJ3ibrBlmZWY0"
 		},
 		{
 			"codigo": "75604",
@@ -477,9 +477,9 @@
 			"descripcion": "La asignatura de Comercio electrónico pretende formar a los alumnos en esta nueva disciplina nacida a remolque de las redes de comunicación de utilización general, como por ejemplo Internet. Pese al amplio abanico de disciplinas que a menudo se incluyen dentro de las palabras comercio electrónico (nueva economía, marketing, derecho, comportamiento social, etc.) es importante destacar que al encontrarnos en una asignatura de ingeniería informática, su enfoque es eminentemente tecnológico. De todos modos, el hecho que su enfoque sea tecnológico no quita que incluya diferentes disciplinas dentro de esta vertiente. Así pues, podemos identificar tres grandes áreas de conocimiento en las cuales incidiremos en esta asignatura. De una parte encontramos las bases de datos. En los sistemas de comercio electrónico, el correcto diseño y gestión de las bases de datos es sumamente importante puesto que una de las características que tiene el comercio electrónico es su alto grado de automatización, más que en otros ámbitos. Esto hace que las bases de datos jueguen un papel muy importante. Otro punto relevante en el comercio electrónico lo presentan el sistemas de pago. Como ya es sabido, una de las reticencias que debe superar el comercio electrónico es la desconfianza y por lo tanto se debe poner un énfasis especial en la seguridad. Por último, hay una parte que a menudo se olvida, quizás porque a los consumidores nos afecta poco, o mejor dicho, nos afecta positivamente y es la problemática que presenta el comercio electrónico de productos en soporte digital. La facilidad de copia junto con la exactitud de éstas implica que la piratería hace que sea un problema inherente a este soporte. Esta problemática, que muchas veces frena la venta y distribución de productos por la vía del comercio electrónico, genera en la actualidad importantes esfuerzos de investigación. Veremos distintas posibilidades para frenar la piretaría y qué problemática presentan. El curso quiere darse mediante un enfoque muy práctico, y es por este motivo que se han incluido dos prácticas obligatorias en la asignatura, además de las cuatro PECs. En la primera práctica trabajaremos con las tecnologías básicas de desarrollo web para poner en marcha un comercio electrónico. Por otro lado, en la segunda práctica implementaremos un sistema de comercio electrónico a través de una herramienta de gestión de contenidos (CMS) especializada para comercio electrónico: Prestashop.",
 			"requisitos": "Uso de Bases de Datos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ce",
+			"whatsapp": "https://chat.whatsapp.com/BRoV2hQS1TnJFyKzQ0UGRYm",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75580",
@@ -489,9 +489,9 @@
 			"descripcion": "Los compiladores son herramientas indispensables para cualquier informático, encargadas de traducir información textual de un formato o lenguaje a otro. Por ejemplo, actúan como piezas clave en el proceso la ejecución de un programa: traducen el programa desde el lenguaje de alto nivel utilizado por los programadores hasta un lenguaje de bajo nivel que se puede ejecutar en un ordenador (como el ensamblador o el codigo máquina). Esta asignatura presenta la estructura básica de un compilador: los módulos que lo componen y cómo se comunican entre sí. Nos centraremos en el caso de los lenguajes de programación de propósito general y en el proceso de generación de un ejecutable a partir de un programa en alto nivel. Concretamente, se verá cómo se analiza un programa fuente para obtener sus componentes y se detectan los posibles errores introducidos por el programador. Se introducirá también el concepto de intérprete y su relación con los compiladores. Después se estudiará cómo a partir de los datos obtenidos en la parte de análisis, se genera el codigo objeto y es optimizado para mejorar el rendimiento. Todo eso se pondrá en práctica mediante el uso de herramientas para la construcción de compiladores.",
 			"requisitos": "La asignatura presupone un buenos conocimientos de programación, específicamente en lenguaje Java, por lo que resulta muy recomendable haber cursado las asignaturas de programación y de estructuras de datos correspondientes con anterioridad. Además, para el buen seguimiento de la asignatura se tiene que partir de unos conocimientos básicos en lenguajes, expresiones regulares, autómatas finitos y gramáticas. Y, finalmente, hay que tener conocimientos básicos sobre lenguaje ensamblador y estructura de computadores.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "compiladores",
+			"whatsapp": "https://chat.whatsapp.com/HhbBxchYf6xB8irQ4IyIWj",
+			"telegram": "https://t.me/joinchat/QId5MReJty85YWQ0"
 		},
 		{
 			"codigo": "75601",
@@ -501,9 +501,9 @@
 			"descripcion": "La asignatura de Criptografía tiene como objetivo fundamental formar a los alumnos en el ámbito de la criptografía moderna. Esta disciplina tiene cada vez más importancia en el mundo en que vivimos debido al creciente valor que tiene la información. Por un lado, las técnicas criptográficas son necesarias para proteger la seguridad y la privacidad de los usuarios cuando hacen uso de la tecnología y de las redes de comunicaciones. En especial es importante proteger el usuarios de actividades de vigilancia masiva que pueden llevar a cabo de forma ilegal no sólo empresas privadas sino también algunos organismos gubernamentales que actúan fuera de los circuitos legales. Por otra parte, más allá de la propia protección de los usuarios, las empresas y cualquier entidad que se relacione o utilice la tecnología necesita mecanismos que protejan sus activos digitales que, en ocasiones, pueden ser todos los activos de una compañía. Finalmente, el desarrollo de la criptografía también permite el nacimiento de nuevos paradigmas de relación entre las personas como la creación de nuevas monedas virtuales, las criptomonedas, que no dependen de ninguna entidad centralizada para poder funcionar. El curso quiere dar un enfoque práctico de la criptografía, y es por este motivo que la asignatura se estructura conjuntamente en base a contenidos tanto teóricos como prácticos que son complementados con actividades de programación que permiten conocer los problemas reales que surgen en la implementación de sistemas criptográficos.",
 			"requisitos": "Para hacer el seguimiento de esta asignatura es necesario tener conocimientos básicos de matemáticas a nivel de grado, y conocimientos de algorítmica, programación procedimental y las bases de la programación orientada a objetos.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "criptografia",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/M0MawRXqmmHsU2RecbsG-Q"
 		},
 		{
 			"codigo": "75600",
@@ -513,9 +513,9 @@
 			"descripcion": "La misión de este curso es introducir los estudiantes de Ingeniería Informática y otros planes de estudios en las bases por la comprensión de los usos estratégicos de la tecnologia a las organizaciones y la dirección y planificación estratégica de los sistemas de información. En entornos cada vez más complejos, la gestión de la información y la tecnología representa un aspecto clave para el éxito y el buen funcionamiento de cualquier tipo de organización, ya se trate de empresas privadas o bien de administraciones públicas. Esta es una disciplina bastante nueva, tanto en la teoría académica y la investigación, como en la práctica profesional. El concepto de CIO  (el primer ejecutivo de la compañía responsable de la información y la tecnología) apareció justo a principios de los 1980 y la Asociación de Sistemas de Información (AIS) se estableció el 1994. La dirección de Sistemas de Información implica el diseño, la entrega eficaz, el uso e impacto de la Tecnología de la Información dentro de las organizaciones y en la sociedad. En  palabras de Keen (1987), el foco principal de esta materia es la mejora del diseño y práctica de la gestión (el management), en su sentido más amplio; al final del día, la gestión  de la IT trata de la gestión(Austin y Nolan, 2010). Las  definiciones anteriores describen la naturaleza híbrida de este tema. La tecnología no es un artefacto fuera de su uso en negocios, organizaciones y seres humanos. Los  sistemas de información no son sólo diseño o arquitectura, sino especialmente su implementación eficaz. Y su administración no es sólo sobre tácticas y técnicas (mejorando la organización y procesos del departamento de IT), sino sobre estrategia (la relación con la estrategia empresarial y la obtención de ventajas competitivas). Por eso, cuando decimos gestión estratégica, queremos enfatizar el rol  más proactivo y transformador que la información y las tecnologías tienen para la empresa y la necesidad alinear los sistemas de información y tecnología con la estrategia de la empresa en su conjunto. Además, el volumen y relevancia del gasto en IT forma parte cada vez más de la agenda de los directores generales y del comité de dirección de las empresas y organizaciones. Este curso está diseñado para proporcionar a los estudiantes del Grado de Ingeniería Informática  una visión introductoria de los temas que actualmente enfrenta la empresa y la tecnología y la relación entre los dos y, particularmente, del rol del primer ejecutivo responsable de los sistemas y tecnologías:¿Cuáles son las decisiones estratégicas principales en sistemas de información y como tendrían que ser consideradas y adoptadas? ¿Cómo tendrían que ser dirigidas las TIC  para estar correctamente alineadas con la estrategia global del negocio? ¿Cómo se pueden asegurar relaciones más productivas entre los departamentos de IT y el resto de los departamentos y unidades de negocio? ¿Qué son las mayores contribuciones de los sistemas de información para apoyar, transformar y crear productos nuevos, procesos e incluso negocios? ¿Cómo la información y gestión del conocimiento están transformando la manera de hacer empresarial y la función de la IT? ¿Cómo puede la planificación de IT proporcionar un marco y una hoja de ruta  para cumplir la misión y la visión de la empresa? ¿Cómo se puede implantar? ¿Cómo se puede transformar la organización de la IT con un sentido estratégico? Adicionalmente, en la actualidad, se habla de la transformación digital, el proceso por el cual las organizaciones tienen que rediseñar sus productos y servicios, sus procesos de trabajo y su relación con clientes, proveedores, socios y personal debido a la irrupción de la internet, la movilidad, el núbol y los datos masivos. El director de organización e informática (el CIO, o Chief Information Officer) va cogiendo un nuevo rol como líder, o al menos, socio destacado de esta transformación y se produce también un mayor acercamiento de los usuarios y directivos de negocio a la informática.",
 			"requisitos": "Fundamentos de Sistemas de Información, uso de sistemas de información a las organizaciones, integración de sistemas de Información, gestión funcional de sistemas de Información, gestión de proyectos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "puesi",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/B_ex60N7Vs9jYWQ0"
 		},
 		{
 			"codigo": "75613 ",
@@ -525,9 +525,9 @@
 			"descripcion": "En esta asignatura se estudian las diversas estrategias de representación de datos en un ordenador y los criterios para evaluarlas. En función del tipo de tratamiento que se tenga que hacer con esta información (tamaño, criterios de acceso, etc.), se puede seleccionar la estrategia que ofrezca un balance óptimo entre el consumo de memoria y el tiempo de manipulación. Esta asignatura es fundamental dentro del ámbito de la programación, dado que el uso apropiado de estructuras de datos es crítico en cualquier aplicación que maneje grandes volúmenes de información o bien que tenga unos requerimientos de eficiencia muy estrictos. Las asignaturas previas del ámbito de programación ya introducían algunas estructuras de datos básicos, como por ejemplo listas, pilas, colas o árboles. En esta asignatura se presenta el concepto de tipo abstracto de datos (TAD) como modelo general para describir una estructura de datos y estudiar su eficiencia. Finalmente, el núcleo central de la asignatura consiste en aprender a utilizar adecuadamente cada estructura de datos y saber seleccionar la estructura de datos más adecuada a cada situación.",
 			"requisitos": "La asignatura requiere disponer de las nociones fundamentales de algorítmica (asignaciones, condicionales, bucles) y de programación utilizando el paradigma imperativo (uso de compiladores y depuradores, uso de un entorno de desarrollo integrado -IDE-, etc.). Además, la asignatura requiere unos buenos conocimientos de programación orientada a objetos, específicamente en lenguaje Java. Por otro lado, se requieren nociones básicas sobre el cálculo del coste de un algoritmo. Antes de cursar esta asignatura, es muy recomendable haber cursado previamente las asignaturas básicas y obligatorias siguientes: fundamentos de programación, prácticas de programación, diseño y programación orientada a objetos, grafos y complejidad, Java, y nociones del cálculo del coste de un algoritmo.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ded",
+			"whatsapp": "https://chat.whatsapp.com/DaF9obDYSqWLs7sxj5h2CT",
+			"telegram": "https://t.me/joinchat/zeN_sQJYR2E1ZTY8"
 		},
 		{
 			"codigo": "75577",
