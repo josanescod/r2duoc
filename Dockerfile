@@ -4,6 +4,4 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
-#CMD ["pwd"]
-#CMD ["ls -lar"]
 CMD ["node","src/app.js"]
