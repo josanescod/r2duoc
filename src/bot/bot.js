@@ -3,8 +3,8 @@ require('dotenv').config()
 const { Telegraf } = require("telegraf");
 const helper = require('../helpers/helpers')
 
-const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || 'https://your-heroku-app.herokuapp.com';
+const PORT = process.env.PORT;
+const URL = process.env.URL;
 const API_TOKEN = process.env.API_TOKEN;
 const bot = new Telegraf(API_TOKEN);
 
@@ -18,8 +18,7 @@ process.once('SIGTERM', () => bot.stop('SIGTERM'));
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT);
 
-// Ping Heroku
-helper.pingHeroku();
+helper.caffeine();
 
 module.exports = bot;
 

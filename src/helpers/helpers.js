@@ -1,5 +1,5 @@
 
-function pingHeroku() {
+function caffeine() {
   var https = require("https");
   setInterval(function () {
     https.get(process.env.URL);
@@ -31,9 +31,7 @@ function parseCommand(ctx) {
 
 function clearHistory(ctx, numMessages) {
   if (numMessages > 0) {
-    let k = 0;
-    //si agregamos un numMessages de clear falla
-    //asi parece que funcione
+    let k = 0;  
     for (let i = 0; i <= numMessages; i++) {
       k = ctx.message.message_id - i;
       ctx.deleteMessage(k)
@@ -45,4 +43,4 @@ function clearHistory(ctx, numMessages) {
 }
 
 
-module.exports = { parseCommand, clearHistory, pingHeroku }
+module.exports = { parseCommand, clearHistory, caffeine }
