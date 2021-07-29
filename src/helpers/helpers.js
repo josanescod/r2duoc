@@ -1,12 +1,3 @@
-
-function caffeine() {
-  var https = require("https");
-  setInterval(function () {
-    https.get(process.env.URL);
-    console.log("get a la url a los 10 minutos");
-  }, 600000); // every 10 minutes (600000)
-}
-
 function parseCommand(ctx) {
   const text = ctx.update.message.text.toLowerCase()
   if (text.startsWith('/')) {
@@ -43,4 +34,4 @@ function clearHistory(ctx, numMessages) {
 }
 
 
-module.exports = { parseCommand, clearHistory, caffeine }
+module.exports = { parseCommand, clearHistory}

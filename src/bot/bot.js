@@ -1,4 +1,4 @@
-//require('dotenv').config()
+require('dotenv').config()
 const { Telegraf } = require("telegraf");
 const helper = require('../helpers/helpers')
 
@@ -16,8 +16,6 @@ process.once('SIGTERM', () => bot.stop('SIGTERM'));
 // Production
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT);
-
-helper.caffeine();
 
 module.exports = bot;
 
