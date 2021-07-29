@@ -1,5 +1,14 @@
 require('./bot/coreCommands');
 
+
+/* only TESTING */
+
+const bot = require('./bot/bot');
+setInterval(function () {
+    bot.telegram.sendMessage(888251391, "Han pasado 20 minutos");
+}, 1200000);
+
+
 /* TODO
 
 pass all urls to env variables

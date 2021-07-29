@@ -3,8 +3,8 @@ function caffeine() {
   var https = require("https");
   setInterval(function () {
     https.get(process.env.URL);
-    console.log("ping");
-  }, 300000); // every 5 minutes (300000)
+    //console.log("get a la url a los 20 minutos");
+  }, 1200000); // every 10 minutes (600000)
 }
 
 function parseCommand(ctx) {
@@ -31,7 +31,7 @@ function parseCommand(ctx) {
 
 function clearHistory(ctx, numMessages) {
   if (numMessages > 0) {
-    let k = 0;  
+    let k = 0;
     for (let i = 0; i <= numMessages; i++) {
       k = ctx.message.message_id - i;
       ctx.deleteMessage(k)
