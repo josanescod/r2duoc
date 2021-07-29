@@ -1,5 +1,4 @@
-
-require('dotenv').config()
+//require('dotenv').config()
 const { Telegraf } = require("telegraf");
 const helper = require('../helpers/helpers')
 
