@@ -203,11 +203,8 @@ ${listOptativas}`)
             default:
                 for (let key in obj) {
                     if (obj.hasOwnProperty(key)) {
-                        var val = obj[key];
-                        //listAsignaturas = val.nombre + val.codigo + "\n" + listAsignaturas;
-                        //listAsignaturas = `${val.nombre} ${val.codigo} \n ${listAsignaturas}`;
-                        if (val.referencia === arg) {
-                            //console.log(val.nombre)
+                        var val = obj[key];                        
+                        if (val.referencia === arg) {                            
                             selectedSubject = val.descripcion;
                         }
                     }

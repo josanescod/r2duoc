@@ -8,11 +8,11 @@ const URL = process.env.URL || 'https://your-heroku-app.herokuapp.com';
 const API_TOKEN = process.env.API_TOKEN;
 const bot = new Telegraf(API_TOKEN);
 
-bot.launch()
-// Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'))
-process.once('SIGTERM', () => bot.stop('SIGTERM'))
+bot.launch();
 
+// Enable graceful stop
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 // Production
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
