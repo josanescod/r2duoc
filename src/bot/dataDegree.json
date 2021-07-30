@@ -633,9 +633,9 @@
 			"descripcion": "Los contenidos de la asignatura Integración de Sistemas de Información (ISI) giran alrededor de los diversos significados de la palabra integración en relación a las organizaciones de todo tipo, y los sistemas de información utilizados por éstas. Así, para empezar, se verá el tipo de problemas que típicamente aparecen en las organizaciones poco integradas estructuralmente, así como las propuestas que contribuyen a una mejor integración empresarial, principalmente la definición e implantación de procesos empresariales, transversales a las clásicas áreas funcionales. Después se verá como las organizaciones han ido desarrollando e implantando nuevos sistemas de información como herramienta fundamental para su integración estructural e informacional, y como medio para su avance en cuanto a su gestión funcional y su dirección estratégica, en definitiva por el su avance en cuanto a calidad y competitividad. En esta línea, se profundizará en los diversos roles integradores que las empresas persiguen mediante los principales tipos de sistemas de información empresariales implantados en los últimos años, desde los sistemas ERP a los sistemas de BI, pasando por los sistemas CRM y SCM, así como los proyectos de EAI. Como continuación de lo visto en la asignatura Fundamentos de Sistemas de Información (FSI), se profundizará en los propósitos, similitudes y diferencias entre estos tipos de sistemas, y entre sus proyectos de implantación.",
 			"requisitos": "Los conocimientos temáticos conseguidos en las asignaturas previas de las especializaciones de Sistemas  de Información y  Tecnologías de la Información , especialmente en la asignatura de Fundamentos de Sistemas de Información (FSI). A pesar de ser muy recomendable haber superado FSI con anterioridad a ISI, aquellos estudiantes que dispongan de conocimientos equivalentes obtenidos por medio de la experiencia profesional directa también podrían cursar ISI sin muchas dificultades añadidas. Gran parte del material de estudio de integración de Sistemas de Información (ISI) está redactado  en INGLÈS, habiendo capítulos de libre, artículos o informes seleccionados de diversas fuentes. El nivel de inglés de los documentos escogidos no es excesivamente elevado pero sí requiere de un nivel suficiente de comprensión lectora en inglés, que en cualquier caso no es superior a aquel requerido para la buena práctica de la profesión informática en cualquier de sus especialidades. Como punto de referencia, recomendamos un nivel de inglés mínimo o equivalente al nivel B 1.2 (Threshold) del Marco de Referencia Europeo para el Aprendizaje, Enseñanza y Evaluación de Lenguas.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "isi",
+			"whatsapp": "https://chat.whatsapp.com/Gg5tbeXcvUgAgSLP91LsgO",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75584",
@@ -645,9 +645,9 @@
 			"descripcion": "Minería de Datos es una asignatura de aplicación de los conocimientos previos que habéis aprendido a Estadística y Bases de Datos y de presentación de algunos de nuevos. Se presentan un conjunto de métodos procedentes de la Inteligencia Artificial, que forman el núcleo esencial de la disciplina conocida como Data Mining. Los conceptos estadísticos son muy útiles en esta asignatura y permitirán evaluar mejor algunas de las técnicas que se estudiarán.",
 			"requisitos": "Esta asignatura requiere conocimientos básicos de estadística, así como conocimientos de programación y bases de datos. También es necesario ser capaz de leer documentación en inglés",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "mineria",
+			"whatsapp": "https://chat.whatsapp.com/Gg5tbeXcvUgAgSLP91LsgO",
+			"telegram": "https://t.me/joinchat/ULzvfJVR_1pjM2Rk"
 		},
 		{
 			"codigo": "75588 ",
@@ -657,9 +657,9 @@
 			"descripcion": "La asignatura Proyectode Desarrollo del Software tiene como objetivo primordial el desarrollo de un proyecto de software completo. Está basada en la aplicación práctica de los conocimientos y competencias obtenidas hasta el momento en el Grado, como por ejemplo Fundamentos de Programación , Ingeniería del Software, Uso de Base de Datos, y concretamente las habilidades técnicas que se obtuvieron dentro de la Ingeniería del Software de Componentes y Sistemas Distribuidos. A pesar de que la asignatura se basa en la realización de un proyecto de software concreto, el curso también cubre aspecto teóricos, tanto nuevos como otros que complementan los conocimientos adquiridos hasta ahora, como la gestión de proyectos, la calidad del software, y la configuración del software y su mantenimiento. El desarrollo eficaz del proyecto se conseguirá por medio de una metodología específica que cubre todas las etapas del ciclo de vida del software, es decir, desde la especificación a la entrega final del producto al supuesto cliente. En particular, en la etapa de implementación, se empleará extensamente la plataforma Java EE para desarrollar el software distribuido basado en los componentes modulares que corren en  un servidor de aplicaciones. Además, otras tecnologías apoyarán el proyecto, como por ejemplo las herramientas para realizar pruebas del codigo y para la configuración y control del software. Por último, la complejidad del proyecto requerirá el desarrollo específico de competencias relacionadas con el trabajo colaborativo en grupos pequeños de 4 o 5 estudiantes. Para apoyar a este trabajo, la asignatura proporciona un entorno de trabajo colaborativo basado en las Apps de Google Suite para dar soporte a equipos virtuales de estudiantes durante el desarrollo del proyecto.",
 			"requisitos": "El desarrollo de un proyecto de software con un grado significativo de complejidad requiere disponer de un conocimiento técnico amplio y conceptos clave muy consolidados en disciplinas diferentes dentro del área de ingeniería de software, como los fundamentos de programación, estructuras de datos, el paradigma de orientación a objetos, ingeniería de requisitos, patrones de análisis y diseño, arquitecturas de software, bases de datos y SQL, y tecnologías distribuidas (por ejemplo, RMI, Java EE, y SOA). Además, los estudiantes tendrán que mostrar un nivel de expertesa en el uso de herramientas y sistemas específicos, como PostgreSQL, JEE, EJB 3.x, Eclipse y servicios web).",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "pds",
+			"whatsapp": "n/a",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75581 ",
@@ -669,9 +669,9 @@
 			"descripcion": "Los sistemas inteligentes necesitan usar información en su proceso de toma de decisiones. No sólo se requiere la posibilidad de almacenar y consultar información, funcionalidades que pueden conseguirse mediante bases de datos o estructuras de datos en memoria. Además de esto, es necesario poder relacionar la información y usarla como base a partir de la que inferir nuevo conocimiento. Esta asignatura presenta los esquemas de representación más habituales para representar conocimiento en sistemas inteligentes: ontologías, redes semánticas, representaciones lógicas, frames, etcétera. También presenta ámbitos de aplicación donde se utilizan estos esquemas, como por ejemplo el campo de la web semántica.",
 			"requisitos": "Se recomienda haber superado Inteligencia artificial y Lógica.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "rc",
+			"whatsapp": "https://chat.whatsapp.com/JxHQ4jjJLy2Aa2wZSx1nbT",
+			"telegram": "https://t.me/joinchat/JLnSqhWEGlOPmvGpw609vw"
 		},
 		{
 			"codigo": "75574",
@@ -681,9 +681,9 @@
 			"descripcion": "En esta asignatura se presenta la problemática de la seguridad en las redes de computadores, y más en concreto en las redes TCP/IP. La estructuración de esta asignatura sigue el siguiente modelo. En primer lugar, se presenta la problemática de la seguridad en las redes TCP/IP. Una vez se han visto cuáles son los eventuales problemas de seguridad en este tipo de redes, nos centraremos en los mecanismos de prevención que existen, basados principalmente en el filtrado de información. Posteriormente, y asumiendo que no todos los sistemas de prevención y protección de las redes TCP/IP son infalibles, estudiaremos los diferentes mecanismos de detección de intrusos que existen. Finalmente haremos énfasis en las técnicas específicas de protección que hay. En particular, introduciremos las nociones básicas de criptografía que nos permitirán entender el funcionamiento de diferentes mecanismos y aplicaciones que permiten protegerse frente a los ataques. El enfoque de esta asignatura presupone que el estudiante ya tiene unos conocimientos básicos sobre el funcionamiento de las redes TCP/IP y el entorno a trabajo Unix. Su orientación es eminentemente práctica e implica que el estudiante tendrá que dedicar un cierto esfuerzo a la instalación y configuración de software, como parte de los objetivos evaluables de la asignatura.",
 			"requisitos": "Redes y aplicaciones Internet",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "src",
+			"whatsapp": "https://chat.whatsapp.com/CsTf0ycrO4yDW0S98da5Ed",
+			"telegram": "https://t.me/joinchat/JLnSqhSRcWjHNIA-BcqQmA"
 		},
 		{
 			"codigo": "75594",
@@ -693,9 +693,9 @@
 			"descripcion": "Los sistemas empotrados son cada día más presentes en nuestras vidas.  Desde los dispositivos de red a los sistemas de control industrial, un amplio abanico de dispositivos constituyen lo que conocemos como Sistema Empotrado. En esta asignatura se quiere dar una visión general de estos sistemas. Partiremos de su definición y nos adentraremos en sus ámbitos de aplicación. Se profundizará en el conocimiento de los componentes hardware que constituyen estos sistemas, conoceremos sus modelos de programación y las particularidades que condicionan el desarrollo de aplicaciones para sistemas empotrados. El objetivo principal de la asignatura es que el estudiante aprenda las técnicas básicas de programación de un sistema empotrado, tenga un conocimiento básico de la arquitectura hardware que los compone y adquiera habilidades para trabajar con este tipo de dispositivos.",
 			"requisitos": "Se requieren conocimientos de: - Sistemas Operativos (conceptos básicos). - Programación básica (en la asignatura se trabaja con el lenguaje NesC. NesC es el lenguaje C encapsulado en componentes). - Fundamentos de computadores (componentes básicos de electrónica digital y fundamentos de computadores básicos).",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "se",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/JLnSqhWrnlaXyrkVsUeBRw"
 		},
 		{
 			"codigo": "75598",
@@ -705,9 +705,9 @@
 			"descripcion": "La asignatura Uso de Sistemas de Información en las Organizaciones (USIO) tiene un enfoque deductivo; es decir, a través del estudio y trabajo sobre casos se analiza el impacto de las Tecnologías de la Información y Comunicación (TIC) en las organizaciones. Este enfoque permite establecer conclusiones e interpretaciones cuya finalidad es la comprensión del uso eficiente de las TIC en la gestión y la toma de decisiones empresariales. La asignatura se basa en la resolución de un caso a lo largo del cuatrimestre mediante trabajo en grupos interdisciplinarios. Los estudiantes de los Grados de Ingeniería Informática (GII) y Administración y Dirección de Empresas (ADE), compartirán un espacio de trabajo en el que desarrollarán las actividades de la asignatura. Este punto es muy importante y el alumno debe considerarlo antes de la matrícula. A diferencia de otras asignaturas en las que hay un material detallado sobre el que trabajar para una evaluación posterior, USIO no tiene un material el cual el estudiante debe estudiar en sentido clásico. Hay que formar un grupo y éste debe trabajar sobre el enunciado de un caso con contenidos de sistemas de información empresariales. El desarrollo debe ser colaborativo y aunque se den unas lecturas recomendadas, debe haber también búsquedas en internet u otras fuentes, planteando una solución coherente y argumentada. No se puede pensar que existe la solución al estilo de un ejercicio de matemáticas, hay varias posibles y el consultor valorará las diferentes alternativas con unos criterios preestablecidos (que se indican como parte del enunciado). A menudo la dinámica de trabajo de grupo es compleja y en este sentido es muy importante formar un grupo cohesionado y con ganas de trabajar desde el principio.",
 			"requisitos": "Para los estudiantes de Ingeniería Informática, el desarrollo de la asignatura USIO se basará en los conocimientos adquiridos en las asignaturas de Administración y Gestión de Organizaciones, y Fundamentos de Sistemas de Información. Es recomendable entonces haber cursado estas asignaturas antes de matricularse en USIO.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "usio",
+			"whatsapp": "https://chat.whatsapp.com/By6k5AekAho3LoqUYbYFWI",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": "75615",
@@ -717,9 +717,9 @@
 			"descripcion": "Las Prácticas tienen como objetivo que el estudiante conozca cómo se trabaja en el día a día en una empresa y que se apliquen ciertas competencias adquiridas en el grado de Ingeniería Informática, tanto transversales como específicas. Las prácticas en empresa serán organizadas desde la UOC, con un profesor de prácticas, y desde la empresa con un tutor que orientará y realizará el seguimiento del estudiante. Las prácticas se realizarán principalmente en modalidad on-line dentro del marco del campus virtual de la UOC. En algunos casos, según las circunstancias de residencia y disponibilidad del estudiante pueden tener una componente presencial. Las herramientas para desarrollar las prácticas serán principalmente las aportadas por los estudios, pudiendo recibir de la empresa alguna otra herramienta específica para desarrollar el trabajo. La carga docente para el estudiante será de 12 ETCS, equivalente a unas 300 horas de trabajo en la empresa.",
 			"requisitos": "Cada empresa definirá qué conocimientos específicos del grado de Ingeniería Informática debe tener el/la estudiante que quiera hacer las prácticas con ellos. Por lo tanto, antes de firmar el convenio es importante negociar el plan de trabajo y los conocimientos previos que aporta el/la estudiante.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "pe",
+			"whatsapp": "n/a",
+			"telegram": "n/a"
 		},
 		{
 			"codigo": " 75616",
@@ -729,9 +729,9 @@
 			"descripcion": "El Trabajo de Fin de Grado (TFG) es una asignatura obligatoria del Grado en Informática. Tiene una carga de trabajo de 12 ECTS y está pensada para ser la última asignatura que curse un estudiante dentro del Grado. Cómo todas las asignaturas de la titulación, se trata de una asignatura semestral que se tiene que matricular y aprobar en un semestre. En caso de no superarlo, habrá que volverlo a matricular en un semestre posterior. El TFG tiene que servir para que el estudiante ponga en práctica las competencias transversales y específicas adquiridas durante el Grado y especialmente, durante el itinerario. El objetivo es aplicar a un trabajo en concreto aquello que se ha ido asimilando de las diferentes asignaturas cursadas. Al ser la asignatura final del Grado el estudiante también tendría que poder ir más allá de los conocimientos proporcionados por las asignaturas del Grado y, sin que tenga que ser un trabajo de investigación, sí que tendría que incluir cierta dosis de conocimiento adicional en su TFG. Este conocimiento adicional o innovación se podrá buscar en las fuentes habituales de conocimiento que tenemos a nuestro alcance: la web, revistas especializadas y libros. Cómo veis, pues en esta asignatura se pone en juego, y de manera destacada, la competencia transversal del Grado “Capacitado para innovar y generar nuevas ideas”. Existen diferentes áreas temáticas de TFG. La elección del área de TFG define el ámbito temático del trabajo a realizar y el conjunto de competencias sobre las que se hará más énfasis. Para matricular el TFG, el estudiante tiene que seleccionar una área de TFG. Esta elección se ha de hacer en el apartado de Trámites / Solicitud de trabajos finales. Una vez hecho este primer paso, el área aparecerá en el potencial de matrícula y ya se verá disponible para hacer la matrícula de la asignatura. Cada área temática está asociada a uno o más itinerarios  del Grado. Dado que para completar un itinerario, es necesario superar un TFG de una área asociada, la elección del itinerario del Grado determina las posibles áreas de TFG a escoger por el estudiante. Por este motivo se recomienda tener presente el itinerario a la hora de escoger una área de TFG. Para la obtención de un itinerario se debe haber superado las asignaturas asociadas a este itinerario y, además, haber realizado el TFG en una de las áreas correspondientes a este itinerario.",
 			"requisitos": "Para cursar el TFG, hay que cumplir los siguientes condicionantes: Haber superado como mínimo 180 ECTS entre todas las asignaturas de la titulación. Haber superado la asignatura de Gestión de Proyectos. Satisfacer los requisitos adicionales pedidos en el área concreta de TFG que se quiera matricular. Haber finalizando todas las asignaturas del itinerario (preferentemente), o bien estar cursando las dos últimas asignaturas en paralelo. Cada área de TFG puede indicar una serie de requisitos adicionales necesarios para realizar este trabajo. Se recomienda leer detenidamente el Plan Docente de la asignatura para enterarse de estos requisitos.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "tfg",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/V3tDm1iJkRMFLyhD"
 		}
 	],
 	"groups": {
