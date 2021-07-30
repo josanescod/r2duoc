@@ -537,9 +537,9 @@
 			"descripcion": "Una vez vistas las funcionalidades que el Sistema Operativo (SO) ofrece a los usuarios, estamos en condiciones de analizar las diferentes técnicas y políticas que las hacen posibles. Este conocimiento nos ha de permitir aprovechar mejor el sistema operativo como usuarios finales, y da las bases para poder hacer una correcta administración del Sistema Operativo. En esta asignatura se presentará lo que es un Sistema Operativo, desde una óptica interna. Se verán las diferentes posibilidades de gestión de los elementos del SO, tanto hardware como software. Para conseguir estos objetivos se combinan los conceptos teóricos y prácticos. En la parte práctica se estudiará y se modificará el codigo fuente del sistema operativo Linux.",
 			"requisitos": "Estructura básica de un computador, conceptos básicos de lenguaje máquina: instrucciones más comunes, funcionamiento de la pila,Programación en un lenguaje de alto nivel, asignatura sistemas operativos. ",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "dso",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/Grg4TiHL6QmcsKoB"
 		},
 		{
 			"codigo": "75591",
@@ -549,9 +549,9 @@
 			"descripcion": "Hoy en día, las redes de gran alcance son una parte fundamental de nuestro entorno, principalmente gracias al fenómeno de Internet y la proliferación de la banda ancha. Desde los correos electrónicos o la mensajería instantánea hasta los servicios web, las redes son un aspecto más de nuestra vida, siempre presente de forma invisible, pero ya inevitable. Por este motivo, cada día son necesarios nuevos especialistas que den soporte a las empresas que quieren sacar el máximo rendimiento de sus redes y usar tecnologías de interconexión remota para garantizar que la distancia que las separa desaparezca totalmente. Esta necesidad también ha creado un conjunto de certificaciones profesionales que acreditan su experiencia. La asignatura de Estructura de Redes de Computadores (ERC) se centra en el aprendizaje de los fundamentos de los protocolos de comunicación de más bajo nivel que permiten que diferentes tipos de dispositivo se puedan comunicar: Transporte, Internet y Acceso a la red. Dentro de esta se da especial protagonismo al funcionamiento de las redes de área local (LAN) Ethernet y la creación de esquemas de direccionamiento IP. Su principal particularidad respecto otras asignaturas del grado es que su contenido se alinea totalmente con una parte de la última versión del temario oficial de Cisco para la obtención de la certificación profesional CCNA (Cisco Certified Network Associate), en castellano. Esta es una de las más reconocidas en el mundo profesional de las redes y sirve como punto de entrada para todo uno seguido de especializaciones en el campo (diseño, seguridad, etc.). Concretamente, dentro de todo el temario de esta última versión del temario CCNA, llamada CCNA - Routing & Switching, esta asignatura engloba prácticamente la totalidad de la primera cuarta parte del curso, llamada Introduction to Networks.",
 			"requisitos": "Para cursar esta asignatura no es necesario tener especiales conocimientos previos en el campo de las redes, al tratarse de una de las asignaturas base del grado. De todas formas, se recomienda haber cursado Redes y Aplicaciones en Internet. En cualquier caso, se considera que el estudiante al menos sí que conoce qué es una red y qué es y qué formato tiene una dirección IPv4.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "erc",
+			"whatsapp": "https://chat.whatsapp.com/LqTEnlFRZfo2tQVjfPjAee",
+			"telegram": "https://t.me/joinchat/Der8czHXwQNmNzVk"
 		},
 		{
 			"codigo": " 75596 ",
@@ -561,9 +561,9 @@
 			"descripcion": "Las continúas innovaciones en las tecnologías de la información y la comunicación están transformando el mundo del negocio empresarial en nuevos modelos, nuevos procesos y nuevas necesidades empresariales. Este entorno ha favorecido las inversiones de las empresas para ser más competitivas en el mercado actual, destinando un presupuesto a la adquisición, implantación o actualización de sistemas de información. En esta asignatura presentamos los conceptos básicos de los sistemas de información, las tipologías de sistemas de información, la relevancia de los sistemas de información a las empresas, como eran los primeros sistemas de información, cómo han evolucionado y que tienen que aportar los futuros sistemas en las empresas. Conoceremos el principal sistema de información: Enterprise Resource Planning, hoy también conocido como básico o tradicional. Veremos como la incorporación de nuevas funcionalidades en la evolución de los sistemas ERP hace nacer nuevos sistemas de información colaborativos: Customer Relationship Management (CRM), Supplier Chain Management (SCM) o Business Intelligence (BI).Y un tema transversal a cualquier sistema de información de empresa, su implantación. Trataremos el ciclo de vida de un proyecto de implantación, las características de sus diferentes fases, la problemática, y qué pautas seguir para obtener una implantación exitosa.",
 			"requisitos": "Fundamentos de sistemas de información es la primera asignatura del itinerario y no es neceario tener conocimientos sobre sistemas de información. Para facilitar el aprendizaje y la asimilación de conceptos sobre las organizaciones y la implantación de sistemas de información se recomienda haber cursado previamente las asignaturas obligatorias del Grado: Gestión de Proyectos y Administración y Gestión de Organizaciones.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "fsi",
+			"whatsapp": "https://chat.whatsapp.com/2limiMO9fBS9sgr2tdZhPY",
+			"telegram": "https://t.me/joinchat/eDPJ3hcAZWo4MmRk"
 		},
 		{
 			"codigo": "75599",
@@ -573,9 +573,9 @@
 			"descripcion": "Esta asignatura presenta un entorno que garantice el soporte de los servicios y la infraestructura de SI/TI en la organización, para lograr las estrategias y los objetivos corporativos. Trata la gestión de los servicios de SI/TI como un conjunto de procesos y funciones, proporcionados o gestionados desde un departamento de informática. Existen referencias que son guías útiles en la gestión de estos servicios como  ITIL, COBIT, CMMi.",
 			"requisitos": "Para los estudiantes del Grado en Ingeniería en Informática se recomienda haber realizado las asignaturas previas del itinerario de Sistemas de Información: Fundamentos de Sistemas de Información e Integración de Sistemas de Información.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "gfsiti",
+			"whatsapp": "https://chat.whatsapp.com/BSpI8hMzCrOIF5IaBkuLSQ",
+			"telegram": "https://t.me/joinchat/YzQE7zM5f70zMGY0"
 		},
 		{
 			"codigo": "75593 ",
@@ -585,9 +585,9 @@
 			"descripcion": "La ingeniería de requisitos es la disciplina que nos ayuda a identificar, gestionar y mantener el conjunto de requisitos del software que queremos desarrollar. La ingeniería de requisitos tiene lugar dentro del mismo contexto que la ingeniería del software (el desarrollo de software), motivo por el cual se puede ver como parte de la ingeniería del software. Aún así, hay que tener en cuenta que la ingeniería de requisitos requiere conocimientos y habilidades propias  de otras disciplinas como por ejemplo la psicología, el marketing o el diseño. Esta asignatura tiene como finalidad que los futuros ingenieros de software profundicen en el estudio de las problemáticas, técnicas y herramientas relacionadas con la obtención, gestión, documentación y validación/verificación de los requisitos de un sistema de software. A la hora de presentar los contenidos de esta asignatura, nos hemos marcado dos objetivos principales: La disciplina de la ingeniería de requisitos se presenta desde un punto de vista práctico dando mucha importancia a las técnicas y herramientas que los estudiantes podrán aplicar en su vida profesional. También se da una visión lo más amplia posible sobre la ingeniería de requisitos, viendo aspectos tan diversos como la gestión de productos o la implementación de las pruebas automatizadas de aceptación. Esta asignatura asume que el estudiante tiene nociones básicas de la ingeniería de requisitos (en el caso de los estudiantes de la UOC, asumiremos que se ha cursado la asignatura Ingeniería del Software). Por lo tanto, esta asignatura profundiza y amplía algunos conceptos que ya se han estudiado anteriormente, en el mismo tiempo que introduce nuevas técnicas y herramientas propias de la ingeniería de requisitos. Para aquellos estudiantes que no hayan cursado Ingeniería del Software o bien quieran repasar los conceptos que se tratan respeto la ingeniería de requisitos, dentro del apartado Materiales y fuentes del aula pueden encontrar un enlace en el Módulo 3 (Requisitos) de la asignatura Ingeniería del Software.",
 			"requisitos": "Se recomienda haber cursado la asignatura Ingeniería del Software.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ir",
+			"whatsapp": "https://chat.whatsapp.com/InOdBYd3eqo298FD6YsP3B",
+			"telegram": "https://t.me/joinchat/Xkqueojk7HdlYTU8"
 		},
 		{
 			"codigo": "75587",
@@ -597,9 +597,9 @@
 			"descripcion": "Los continuos adelantos en informática y telecomunicaciones están cambiando la manera como se desarrolla el software. En particular, el incesante aumento de la potencia de los ordenadores personales, el abaratamiento de los costes del hardware y la aparición de redes de datos de cobertura global han hecho posible una infraestructura especialmente favorable para el uso de los sistemas abiertos y distribuidos. Estos cambios han provocado, entre otras cosas, que los métodos de diseño y desarrollo de software tradicionales (vistos en las asignaturas de Ingeniería del Software y Análisis y Diseño con Patrones) sean insuficientes, puesto que, más o menos implícitamente, asumen que la aplicación a desarrollar se ejecutará en un entorno básicamente centralizado. Por lo tanto, los métodos tradicionales son incapaces de gestionar de manera natural la complejidad de los requisitos de este nuevo tipo de sistemas. Esta asignatura sirve como introducción a los conceptos y métodos fundamentales sobre los cuales se fundamenta el diseño y desarrollo de aplicaciones distribuidas basadas en componentes, y así se complementan los conocimientos adquiridos en las asignaturas previas. En primer lugar, se aborda el diseño de alto nivel de este tipo de sistemas, describiendo los diferentes puntos de vista a considerar, utilizando como marco de referencia el estándar definido por ISO, IEC e ITU-T, denominado RM-ODP. Cada punto de vista es independiente de los otros y aborda una serie de aspectos concretos, abstrayéndose del resto. Entre los diferentes puntos de vista, esta asignatura se centra en los más cercanos a su diseño y su implementación, como son la arquitectura del software y la implementación con componentes. Los aspectos más cercanos al análisis y a la especificación de requisitos no cambian respecto a aquello que se ha visto en las asignaturas anteriores y, por lo tanto, no se repiten aquí. La arquitectura de los sistemas de software permite describir de una manera abstracta y de alto nivel tanto la funcionalidad del sistema como otros muchos aspectos no funcionales de este (distribución, fiabilidad, seguridad, adaptabilidad, prestaciones, etc.). Esta descripción del sistema suele definirse partiendo de un estilo arquitectónico, una clasificación de los sistemas de software en grandes familias que siguen un patrón estructural común. Entre los estilos arquitectónicos más usuales para los sistemas distribuidos hay los sistemas organizados en múltiples capas, los sistemas cliente-servidor o los sistemas peer-to-peer. Estas arquitecturas pueden implementarse después utilizando cualquier paradigma de programación (orientado a objetos, estructurado...). Sin embargo, en esta asignatura abordaremos la programación orientada a componentes, un paradigma de programación que proporciona mecanismos apropiados para el desarrollo y la implementación de componentes de software distribuidos. Estos componentes son los que servirán para implementar los componentes arquitectónicos descritos en la arquitectura del sistema. El diseño de la aplicación en términos de componentes de software tiene que refinarse, posteriormente, para adaptarlo e implementarlo en una tecnología de componentes distribuidos concreta. En nuestro caso concreto, se describe con detalle la plataforma Java Enterprise Edition (Java EE). Ésta es una plataforma abierta basada en componentes que permiten desarrollar, desplegar y gestionar aplicaciones distribuidas con arquitecturas multinivel. Para conocer mejor el funcionamiento de esta tecnología, previamente se explica a fondo el mecanismo de invocación remota RMI que representa el núcleo del modelo distribuido de Java y la capa subyacente de comunicación distribuida de Java EE. Finalmente, para dar una visión más general del estado tecnológico actual, también se comentan otras plataformas y tecnologías distribuidas como por ejemplo CORBA, .NET, y especialmente los servicios web.",
 			"requisitos": "Haber superado Ingeniería del software y Análisis y Diseño con Patrones o tener los conocimientos equivalentes es la condición previa para poder cursar esta asignatura. Es también imprescindible que el estudiante tenga un buen nivel de Java para poder superar la asignatura. La asignatura tiene una parte importante de trabajo práctico en Java que asume un conocimiento y práctica importantes en este lenguaje. No es nada recomendable que el estudiante curse la asignatura hasta que se haya logrado un buen nivel en Java, puesto que de lo contrario se verá abocado a repetir la asignatura con una alta probabilidad.",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "iscsd",
+			"whatsapp": "https://chat.whatsapp.com/EcR2fF7fdHgEp6qgvAcsRN",
+			"telegram": "https://t.me/joinchat/JeLceEP9ZBMyOWVk"
 		},
 		{
 			"codigo": "75614",
@@ -609,9 +609,9 @@
 			"descripcion": "Enfoque conceptual Dominar la matemática es imprescindible, tanto los contenidos como la metodología, para cursar cualquier grado de carácter científico. Por este motivo, es necesario comprender sus técnicas y conceptos básicos (muchas veces ya tratados en secundaria y bachillerato) antes de abordar las asignaturas propias de la titulación que se desea cursar. En este curso se proporcionarán las técnicas y conceptos básicos del álgebra lineal y del cálculo,  con la finalidad de garantizar la preparación adecuada para superar muchas de las asignaturas de la titulación. ",
 			"requisitos": "sin requisitos",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "imi",
+			"whatsapp": "https://chat.whatsapp.com/FnO3WE6EhMV75RDL2eUDc9",
+			"telegram": "https://t.me/joinchat/8uQDJ65O2RI3ZmJk"
 		},
 		{
 			"codigo": "75595",
@@ -621,9 +621,9 @@
 			"descripcion": "En las economías actuales, aparecen nuevas oportunidades de negocio para dar respuesta a necesidades hasta ahora inexistentes o insatisfechas o para mejorar la oferta existente. En este contexto, la figura del emprendedor, se convierte en un elemento central. Asimismo, en las empresas se valora cada vez más la cultura emprendedora y se estimula a los empleados para que actúen como emprendedores en la misma organización. Y es que se ha demostrado que existe una relación positiva entre la iniciativa emprendedora y el desarrollo de un país o región: contribuye al crecimiento económico, es una fuente de innovación, favorece la creación de ocupación y contribuye a la cohesión y dinamismo social, entre otras características. Es por ello que la  asignatura Iniciativa  Emprendedora pretende fomentar el espíritu emprendedor de los estudiantes a partir de la introducción a los principales elementos que configuran el proceso emprendedor y que se concretan en los siguientes bloques temáticos:- El espíritu emprendedor y las actitudes hacia la actividad emprendedora - El emprendedor/empresario como protagonista de la actividad emprendedora - El equipo fundacional - Innovación y creatividad - Ideas, oportunidades y modelos de negocio - Los recursos en el proceso emprendedor - El plan de empresa",
 			"requisitos": "Para poder cursar esta asignatura no se necesitan conocimientos previos excepto para los estudiantes del Grado en Ingeniería informática a los que se recomienda haber cursado Administración y gestión de organizaciones y Gestión de proyectos.  ",
 			"dificultad": "",
-			"referencia": "",
-			"whatsapp": "",
-			"telegram": ""
+			"referencia": "ie",
+			"whatsapp": "n/a",
+			"telegram": "https://t.me/joinchat/ZiNaqiJXXxhhYzFk"
 		},
 		{
 			"codigo": "75597",
