@@ -21,7 +21,7 @@ cd r2duoc
 npm install
 touch .env
 # edit the .env file with the variables: API_TOKEN, PORT, URL 
-npm run dev 
+node src/app.js 
 
 ```
 
