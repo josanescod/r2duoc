@@ -67,7 +67,7 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
     switch (arg) {
         case "all":
             let tempPath = path.join(__dirname, '../');
-            let photo = tempPath + `${process.env.ITINERARIE_IMG}`;
+            let photo = tempPath + `assets/img/itineraries.png`;
             ctx.replyWithPhoto({ source: photo });
             setTimeout(function () {
                 let listItineraris = "";
