@@ -48,17 +48,6 @@ bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
     console.log(numMessages)
 });
 
-bot.command(["/clear", "/c"], (ctx) => {
-    console.log(numMessages)
-    numMessages = helper.clearHistory(ctx, numMessages);
-    console.log(numMessages);
-
-})
-
-bot.command("/tramites", (ctx) => {
-    ctx.reply("tramites");
-});
-
 bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
@@ -220,6 +209,19 @@ ${listOptativas}`)
     console.log(numMessages)
 });
 
+bot.command(["/plan","/p"], (ctx) => {
+    ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
+    numMessages = numMessages + 2;
+    console.log(numMessages)
+});
+
+bot.command(["/clear", "/c"], (ctx) => {
+    console.log(numMessages)
+    numMessages = helper.clearHistory(ctx, numMessages);
+    console.log(numMessages);
+
+})
+
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -243,12 +245,6 @@ bot.command(["/idioma", "/language", "/id"], (ctx) => {
     numMessages = numMessages + 2;
     console.log(numMessages)
 })
-
-bot.command("/plan", (ctx) => {
-    ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-});
 
 bot.command(["/telegram", "/tel", "/t"], (ctx) => {
     helper.parseCommand(ctx);
@@ -352,3 +348,7 @@ bot.on("text", ctx => {
     console.log(numMessages)
 });
 
+
+/*bot.command(["/tramites","/tr"], (ctx) => {
+    ctx.reply("tramites");
+});*/
