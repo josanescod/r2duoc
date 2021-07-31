@@ -6,8 +6,8 @@ Telegram bot intended for consult information about the degree in Computer Engin
 
 ## Dependencies
 
-- NodeJS
-- Telegraf 4.3.0
+- [NodeJS](https://nodejs.org/)
+- [Telegraf 4.3.0](https://github.com/telegraf/telegraf)
 
 
 ## Run from master

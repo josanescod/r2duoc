@@ -17,15 +17,15 @@ bot.start((ctx) => {
     let emoji = "🤖";
     switch (idioma) {
         case 0:
-            ctx.reply(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
+            ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
 ${language[idioma].start}`);
             break;
         case 1:
-            ctx.reply(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}
+            ctx.replyWithMarkdown(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}
 ${language[idioma].start}`);
             break;
         case 2:
-            ctx.reply(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}
+            ctx.replyWithMarkdown(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}
 ${language[idioma].start}`);
             break;
         default:
