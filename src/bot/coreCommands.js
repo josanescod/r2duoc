@@ -5,15 +5,11 @@ const menu = require('./menu');
 const helper = require('../helpers/helpers')
 const language = require("./language");
 
-let idioma = 0 //0,1,2
-let chat_id = ""
-let numMessages = 0;
-console.log("numMessages:", numMessages, "idioma: ", idioma,
-    "chat_id: ", chat_id);
+
+const dataUsers = new Map();
 
 bot.start((ctx) => {
-    chat_id = ctx.chat.id
-    console.log("chat id " + ctx.chat.id);
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     let emoji = "🤖";
     switch (idioma) {
         case 0:
@@ -31,24 +27,19 @@ ${language[idioma].start}`);
         default:
             console.log("language error");
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 
-});
 
-bot.help((ctx) => {
-    ctx.replyWithMarkdown(`${menu.help}`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
 });
 
 bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -69,7 +60,10 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
                 }
                 ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
             }, 1000);
-            numMessages = numMessages + 1
+            // numMessages = numMessages + 1
+            let tempMessages = dataUsers.get(ctx.chat.id)[1] + 1
+            dataUsers.set(ctx.chat.id, [idioma, tempMessages])
+            console.log(dataUsers);
             break;
         case "si":
         case "sistemas":
@@ -120,11 +114,11 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
             ctx.reply(`porfavor elige una opción válida [ si | ti | c | is | ic | all ]`);
             break;
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -192,8 +186,8 @@ ${listOptativas}`)
             default:
                 for (let key in obj) {
                     if (obj.hasOwnProperty(key)) {
-                        var val = obj[key];                        
-                        if (val.referencia === arg) {                            
+                        var val = obj[key];
+                        if (val.referencia === arg) {
                             selectedSubject = val.descripcion;
                         }
                     }
@@ -205,24 +199,27 @@ ${listOptativas}`)
     } else {
         ctx.reply(`porfavor elige una opción válida [ nombre | ba | ob | opt | all ]`);
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
-bot.command(["/plan","/p"], (ctx) => {
+bot.command(["/plan", "/p"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-    console.log(numMessages)
-    numMessages = helper.clearHistory(ctx, numMessages);
-    console.log(numMessages);
+    console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
+    helper.clearHistory(ctx, dataUsers.get(ctx.chat.id)[1]);
+    dataUsers.delete(ctx.chat.id);
+    console.log(dataUsers);
+
+
 
 })
 
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     switch (arg) {
@@ -242,11 +239,11 @@ bot.command(["/idioma", "/language", "/id"], (ctx) => {
             ctx.reply(`${language[idioma].helpLang}`);
             break;
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 })
 
 bot.command(["/telegram", "/tel", "/t"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
@@ -275,11 +272,11 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
@@ -306,49 +303,38 @@ bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/mega", "/m"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.mega);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/discord", "/dis", "/d"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply("servidores discord");
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/github", "/git", "/g"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.github);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-});
-
-
-bot.mention(["Pacobot", "pacobot"], (ctx) => {
-    ctx.reply("Hola, escribe /help para ver en que te puedo ayudar 🤖");
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
+    if (dataUsers.get(ctx.chat.id)) {
+        idioma = dataUsers.get(ctx.chat.id)[0]
+    }
     ctx.reply(`${language[idioma].help}`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
-
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.on("text", ctx => {
+    let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(`${language[idioma].wrongText}`);
-    numMessages = numMessages + 2;
-    console.log(numMessages)
+    helper.updateDataUsers(ctx, dataUsers, idioma);
 });
-
-
-/*bot.command(["/tramites","/tr"], (ctx) => {
-    ctx.reply("tramites");
-});*/

@@ -30,8 +30,28 @@ function clearHistory(ctx, numMessages) {
   } else {
     ctx.deleteMessage(ctx.message.message_id);
   }
-  return numMessages = 0;
 }
 
 
-module.exports = { parseCommand, clearHistory}
+function checkLanguage(ctx, dataUsers) {
+  let idioma = 0;// 0 es, 1 ca, 2 en
+  if (dataUsers.get(ctx.chat.id)) {
+    idioma = dataUsers.get(ctx.chat.id)[0]
+  }
+  return idioma;
+}
+
+function updateDataUsers(ctx, dataUsers, idioma) {
+  if (dataUsers.get(ctx.chat.id)) {
+    let tempMessages = dataUsers.get(ctx.chat.id)[1] + 2
+    dataUsers.set(ctx.chat.id, [idioma, tempMessages])
+    console.log(dataUsers);
+  } else {
+    dataUsers.set(ctx.chat.id, [idioma, 2]);
+    console.log(dataUsers);
+
+  }
+
+}
+
+module.exports = { parseCommand, clearHistory, checkLanguage, updateDataUsers }
