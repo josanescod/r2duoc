@@ -5,7 +5,6 @@ const menu = require('./menu');
 const helper = require('../helpers/helpers')
 const language = require("./language");
 
-
 const dataUsers = new Map();
 
 bot.start((ctx) => {
@@ -33,6 +32,7 @@ ${language[idioma].start}`);
 });
 
 bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
+
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
     helper.updateDataUsers(ctx, dataUsers, idioma);
@@ -48,22 +48,19 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
         case "all":
             let tempPath = path.join(__dirname, '../');
             let photo = tempPath + `assets/img/itineraries.png`;
-            ctx.replyWithPhoto({ source: photo });
-            setTimeout(function () {
-                let listItineraris = "";
-                let obj = dataDegree.itineraries;
-                for (let key in obj) {
-                    if (obj.hasOwnProperty(key)) {
-                        let val = obj[key];
-                        listItineraris = val.name + "\n" + listItineraris;
-                    }
+            let listItineraris = "";
+            obj = dataDegree.itineraries;
+            for (let key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    let val = obj[key];
+                    listItineraris = val.name + "\n" + listItineraris;
                 }
-                ctx.reply(listItineraris + "\nhttp://www.josanweb.com");
-            }, 1000);
-            // numMessages = numMessages + 1
-            let tempMessages = dataUsers.get(ctx.chat.id)[1] + 1
-            dataUsers.set(ctx.chat.id, [idioma, tempMessages])
-            console.log(dataUsers);
+            }
+            ctx.replyWithPhoto(
+                { "source": photo },
+                { "caption": listItineraris })
+
+            console.log(dataUsers, photo);
             break;
         case "si":
         case "sistemas":
@@ -116,7 +113,6 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
     }
     helper.updateDataUsers(ctx, dataUsers, idioma);
 });
-
 bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     var selectedSubject = "no existe";
@@ -209,10 +205,19 @@ bot.command(["/plan", "/p"], (ctx) => {
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-    console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
-    helper.clearHistory(ctx, dataUsers.get(ctx.chat.id)[1]);
-    dataUsers.delete(ctx.chat.id);
-    console.log(dataUsers);
+    if (dataUsers.get(ctx.chat.id) !== undefined) {
+        let idioma = helper.checkLanguage(ctx, dataUsers);
+        let tempMessages = dataUsers.get(ctx.chat.id)[1] + 1
+        let tempArrayId = dataUsers.get(ctx.chat.id)[2]
+        tempArrayId.push(ctx.message.message_id)
+        dataUsers.set(ctx.chat.id, [idioma, tempMessages, tempArrayId])
+        //dataUsers.set(ctx.chat.id, [idioma, tempMessages])
+        console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
+        helper.clearHistory(ctx, dataUsers);
+        dataUsers.delete(ctx.chat.id);
+        console.log(dataUsers);
+    }
+
 
 
 

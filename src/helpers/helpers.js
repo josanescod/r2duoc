@@ -20,13 +20,30 @@ function parseCommand(ctx) {
   }
 }
 
-function clearHistory(ctx, numMessages) {
-  if (numMessages > 0) {
-    let k = 0;
-    for (let i = 0; i <= numMessages; i++) {
+function clearHistory(ctx, dataUsers) {
+  console.log("=====>", ctx.chat.id, dataUsers.get(ctx.chat.id)[1], dataUsers.get(ctx.chat.id)[2])
+
+  if (dataUsers.get(ctx.chat.id)[1] > 0) {
+    /*let k;
+    for (let i = 0; i < (numMessages-1); i++) {
       k = ctx.message.message_id - i;
+      console.log(ctx.message.message_id)
+      console.log(k)
       ctx.deleteMessage(k)
+      
     }
+    //ctx.deleteMessage(ctx.message.message_id);*/
+    let tempArrayId = dataUsers.get(ctx.chat.id)[2]
+    console.log(tempArrayId);
+    tempArrayId.forEach(function (i, id) {
+      try {
+        ctx.deleteMessage(i)
+      } catch (ex) {
+        console.log("NO EXISTE ESE MENSAJE")
+      }
+
+
+    })
   } else {
     ctx.deleteMessage(ctx.message.message_id);
   }
@@ -43,11 +60,17 @@ function checkLanguage(ctx, dataUsers) {
 
 function updateDataUsers(ctx, dataUsers, idioma) {
   if (dataUsers.get(ctx.chat.id)) {
+
     let tempMessages = dataUsers.get(ctx.chat.id)[1] + 2
-    dataUsers.set(ctx.chat.id, [idioma, tempMessages])
+    let tempArrayId = dataUsers.get(ctx.chat.id)[2]
+    tempArrayId.push(ctx.message.message_id)
+    tempArrayId.push(ctx.message.message_id + 1)
+    dataUsers.set(ctx.chat.id, [idioma, tempMessages, tempArrayId])
+
     console.log(dataUsers);
   } else {
-    dataUsers.set(ctx.chat.id, [idioma, 2]);
+
+    dataUsers.set(ctx.chat.id, [idioma, 2, [ctx.message.message_id, ctx.message.message_id + 1]]);
     console.log(dataUsers);
 
   }
