@@ -11,8 +11,8 @@ const help = `*Info*
 
 *Recursos*
 /mega - cuenta en la nube con materiales 
-/discord - servidores discord de estudiantes
 /github - repositorio con materiales
+/wiki - wiki de r2duoc
 `
 
 module.exports = {

@@ -317,9 +317,9 @@ bot.command(["/mega", "/m"], (ctx) => {
     helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
-bot.command(["/discord", "/dis", "/d"], (ctx) => {
+bot.command(["/wiki", "/wi"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
-    ctx.reply("servidores discord");
+    ctx.reply("https://github.com/josanescod/r2duoc/wiki");
     helper.updateDataUsers(ctx, dataUsers, idioma);
 });
 
