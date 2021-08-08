@@ -33,6 +33,9 @@ function clearHistory(ctx, dataUsers) {
       
     }
     //ctx.deleteMessage(ctx.message.message_id);*/
+
+
+    /* query db, selecting chat.id and delete messages_id, and delete db registers */
     let tempArrayId = dataUsers.get(ctx.chat.id)[2]
     console.log(tempArrayId);
     tempArrayId.forEach(function (i, id) {
@@ -58,7 +61,7 @@ function checkLanguage(ctx, dataUsers) {
   return idioma;
 }
 
-function updateDataUsers(ctx, dataUsers, idioma) {
+function saveDataUsers(ctx, dataUsers, idioma) {
   if (dataUsers.get(ctx.chat.id)) {
 
     let tempMessages = dataUsers.get(ctx.chat.id)[1] + 2
@@ -75,6 +78,13 @@ function updateDataUsers(ctx, dataUsers, idioma) {
 
   }
 
+  /*
+  ctx.chat.id
+  ctx.message.message_id
+  every time that app send or response messages, insert
+  chat.id and message_id on db
+  */
+
 }
 
-module.exports = { parseCommand, clearHistory, checkLanguage, updateDataUsers }
+module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers }

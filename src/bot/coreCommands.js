@@ -26,7 +26,7 @@ ${language[idioma].start}`);
         default:
             console.log("language error");
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 
 
 });
@@ -35,7 +35,7 @@ bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
 
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
@@ -111,7 +111,7 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
             ctx.reply(`porfavor elige una opción válida [ si | ti | c | is | ic | all ]`);
             break;
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
@@ -195,13 +195,13 @@ ${listOptativas}`)
     } else {
         ctx.reply(`porfavor elige una opción válida [ nombre | ba | ob | opt | all ]`);
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/plan", "/p"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
@@ -244,7 +244,7 @@ bot.command(["/idioma", "/language", "/id"], (ctx) => {
             ctx.reply(`${language[idioma].helpLang}`);
             break;
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 })
 
 bot.command(["/telegram", "/tel", "/t"], (ctx) => {
@@ -277,7 +277,7 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
@@ -308,25 +308,25 @@ bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/mega", "/m"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.mega);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/wiki", "/wi"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply("https://github.com/josanescod/r2duoc/wiki");
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.command(["/github", "/git", "/g"], (ctx) => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.github);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
@@ -335,11 +335,11 @@ bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
         idioma = dataUsers.get(ctx.chat.id)[0]
     }
     ctx.reply(`${language[idioma].help}`);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
 
 bot.on("text", ctx => {
     let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(`${language[idioma].wrongText}`);
-    helper.updateDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx, dataUsers, idioma);
 });
