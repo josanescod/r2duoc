@@ -46,8 +46,13 @@ function insertMessages(db, chatId, messageId) {
 
 }
 
-function queryMessagesByChatId() {
-
+function queryMessagesByChatId(db, chatId) {
+    
+    db.each(`SELECT rowid AS id, chatid, messageid FROM messages WHERE chatid= ${chatId}`, function(err, row) {
+        //console.log(row.id + ": " + row.chatid + " " + row.messageid);
+        
+    });
+    
 }
 
 
@@ -55,4 +60,10 @@ function deleteMessages() {
 
 }
 
-module.exports = { createConnection,  insertMessages, queryMessagesByChatId, deleteMessages }
+function close(db){
+    db.close();
+    console.log('database closed');
+
+}
+
+module.exports = { createConnection,  insertMessages, queryMessagesByChatId, deleteMessages, close }

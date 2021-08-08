@@ -212,7 +212,7 @@ bot.command(["/clear", "/c"], (ctx) => {
         tempArrayId.push(ctx.message.message_id)
         dataUsers.set(ctx.chat.id, [idioma, tempMessages, tempArrayId])
         //dataUsers.set(ctx.chat.id, [idioma, tempMessages])
-        console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
+        //console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
         helper.clearHistory(ctx, dataUsers);
         dataUsers.delete(ctx.chat.id);
         console.log(dataUsers);
