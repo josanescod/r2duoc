@@ -120,4 +120,4 @@ dist
 #custom folders & files
 roadmap.txt
 ideas.md
-/db/*.db
+db/*.db
