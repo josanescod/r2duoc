@@ -1,5 +1,6 @@
 require('./bot/coreCommands');
 
+
 /* TODO
 
 pass all urls to env variables

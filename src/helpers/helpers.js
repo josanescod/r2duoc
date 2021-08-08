@@ -1,3 +1,5 @@
+const db = require('../helpers/dbfuncs');
+
 function parseCommand(ctx) {
   const text = ctx.update.message.text.toLowerCase()
   if (text.startsWith('/')) {
@@ -84,7 +86,12 @@ function saveDataUsers(ctx, dataUsers, idioma) {
   every time that app send or response messages, insert
   chat.id and message_id on db
   */
-
+ // DB
+  r2duocDB = db.createConnection();  
+  db.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
+  db.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1 );
+  r2duocDB.close();
+ 
 }
 
 module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers }
