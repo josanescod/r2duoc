@@ -55,10 +55,10 @@ function saveDataUsers(ctx) {
   dbfuncs.close(r2duocDB);
 }
 
-function saveMessageClearCommand(ctx) {
+function saveOneMessage(ctx) {
   let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
   dbfuncs.close(r2duocDB);
 }
 
-module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers, saveMessageClearCommand }
+module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers, saveOneMessage }

@@ -206,7 +206,7 @@ bot.command(["/plan", "/p"], (ctx) => {
 
 bot.command(["/clear", "/c"], (ctx) => {
         //let idioma = helper.checkLanguage(ctx, dataUsers);        
-        helper.saveMessageClearCommand(ctx)
+        helper.saveOneMessage(ctx)
         helper.clearHistory(ctx);  
 })
 
