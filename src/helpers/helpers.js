@@ -22,52 +22,18 @@ function parseCommand(ctx) {
   }
 }
 
-function clearHistory(ctx, dataUsers) {
-  console.log("=====>", ctx.chat.id, dataUsers.get(ctx.chat.id)[1], dataUsers.get(ctx.chat.id)[2])
-
-  if (dataUsers.get(ctx.chat.id)[1] > 0) {
-    /*let k;
-    for (let i = 0; i < (numMessages-1); i++) {
-      k = ctx.message.message_id - i;
-      console.log(ctx.message.message_id)
-      console.log(k)
-      ctx.deleteMessage(k)
-      
-    }
-    //ctx.deleteMessage(ctx.message.message_id);*/
-
-
-    /* query db, selecting chat.id and delete messages_id, and delete db registers */
-    let tempArrayId = dataUsers.get(ctx.chat.id)[2]
-    //console.log(tempArrayId);
-    tempArrayId.forEach(function (i, id) {
-      try {
-        ctx.deleteMessage(i)
-      } catch (ex) {
-        console.log("NO EXISTE ESE MENSAJE")
-      }
-
-
-    })
-  } else {
-    ctx.deleteMessage(ctx.message.message_id);
-  }
-
-
-  /* DB */
-
-  //queryMessagesByChatId(db) ctx.chat.id
-  let r2duocDB = dbfuncs.createConnection(); 
-  const testArray = dbfuncs.queryMessagesByChatId(r2duocDB,ctx.chat.id);
- 
-  r2duocDB.each(`SELECT rowid AS id, chatid, messageid FROM messages WHERE chatid= ${ctx.chat.id}`, function(err, row) {
-    console.log(row.id + ": " + row.chatid + " " + row.messageid);
-    
-});
-r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
-
+function clearHistory(ctx) {
+  const r2duocDB = dbfuncs.createConnection();
+  r2duocDB.each(`SELECT messageid FROM messages WHERE chatid= ${ctx.chat.id}`, function (err, row) {
+    //console.log('borrar esto con ctx' ,row.messageid);
+    ctx.deleteMessage(row.messageid);
+  });
+  r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
   dbfuncs.close(r2duocDB);
+
 }
+
+
 
 
 function checkLanguage(ctx, dataUsers) {
@@ -101,12 +67,18 @@ function saveDataUsers(ctx, dataUsers, idioma) {
   every time that app send or response messages, insert
   chat.id and message_id on db
   */
- // DB
-  let r2duocDB = dbfuncs.createConnection();  
+  // DB
+  let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
-  dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1 );
+  dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1);
   dbfuncs.close(r2duocDB);
- 
+
 }
 
-module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers }
+function saveMessageClearCommand(ctx) {
+  let r2duocDB = dbfuncs.createConnection();
+  dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
+  dbfuncs.close(r2duocDB);
+}
+
+module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers, saveMessageClearCommand }

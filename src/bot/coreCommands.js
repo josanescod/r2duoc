@@ -205,22 +205,9 @@ bot.command(["/plan", "/p"], (ctx) => {
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-    if (dataUsers.get(ctx.chat.id) !== undefined) {
-        let idioma = helper.checkLanguage(ctx, dataUsers);
-        let tempMessages = dataUsers.get(ctx.chat.id)[1] + 1
-        let tempArrayId = dataUsers.get(ctx.chat.id)[2]
-        tempArrayId.push(ctx.message.message_id)
-        dataUsers.set(ctx.chat.id, [idioma, tempMessages, tempArrayId])
-        //dataUsers.set(ctx.chat.id, [idioma, tempMessages])
-        //console.log("number of messages", dataUsers.get(ctx.chat.id)[1]);
-        helper.clearHistory(ctx, dataUsers);
-        dataUsers.delete(ctx.chat.id);
-        console.log(dataUsers);
-    }
-
-
-
-
+        let idioma = helper.checkLanguage(ctx, dataUsers);        
+        helper.saveMessageClearCommand(ctx)
+        helper.clearHistory(ctx);  
 })
 
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
