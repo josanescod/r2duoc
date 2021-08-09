@@ -60,7 +60,7 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
                 { "source": photo },
                 { "caption": listItineraris })
 
-            console.log(dataUsers, photo);
+            //console.log(dataUsers, photo);
             break;
         case "si":
         case "sistemas":
