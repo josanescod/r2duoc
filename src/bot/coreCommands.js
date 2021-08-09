@@ -5,10 +5,11 @@ const menu = require('./menu');
 const helper = require('../helpers/helpers')
 const language = require("./language");
 
+const idioma = 0;//temporal
 bot.start((ctx) => {
     //let idioma = helper.checkLanguage(ctx, dataUsers);
     let emoji = "🤖";
-    let idioma = 0;//temporal
+    
     switch (idioma) {
         case 0:
             ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
