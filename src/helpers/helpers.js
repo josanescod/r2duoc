@@ -24,17 +24,17 @@ function parseCommand(ctx) {
 
 function clearHistory(ctx) {
   const r2duocDB = dbfuncs.createConnection();
-  r2duocDB.each(`SELECT messageid FROM messages WHERE chatid= ${ctx.chat.id}`, function (err, row) {
+  r2duocDB.each(`SELECT messageid FROM messages WHERE chatid = ${ctx.chat.id}`, function (err, row) {
     ctx.deleteMessage(row.messageid);
   });
-  setTimeout(function(){ 
+  /*setTimeout(function(){ 
     r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
     dbfuncs.close(r2duocDB);
     console.log('messages deleted');
-   }, 10000);
-  /*r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
+   }, 10000);*/
+  r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)// first time exist ctx.chat.id?
   dbfuncs.close(r2duocDB);
-  console.log('messages deleted');*/
+  console.log('messages deleted');
  
 
 }
