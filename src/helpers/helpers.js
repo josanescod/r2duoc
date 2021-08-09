@@ -32,9 +32,9 @@ function clearHistory(ctx) {
     dbfuncs.close(r2duocDB);
     console.log('messages deleted');
    }, 10000);
-  r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
+  /*r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
   dbfuncs.close(r2duocDB);
-  console.log('messages deleted');
+  console.log('messages deleted');*/
  
 
 }
