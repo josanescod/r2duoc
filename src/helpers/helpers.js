@@ -27,8 +27,12 @@ function clearHistory(ctx) {
   r2duocDB.each(`SELECT messageid FROM messages WHERE chatid= ${ctx.chat.id}`, function (err, row) {
     ctx.deleteMessage(row.messageid);
   });
-  r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
-  dbfuncs.close(r2duocDB);
+  setTimeout(function(){ 
+    r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
+    dbfuncs.close(r2duocDB);
+    console.log('messages deleted');
+   }, 5000);
+ 
 
 }
 
