@@ -5,11 +5,10 @@ const menu = require('./menu');
 const helper = require('../helpers/helpers')
 const language = require("./language");
 
-const dataUsers = new Map();
-
 bot.start((ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     let emoji = "🤖";
+    let idioma = 0;//temporal
     switch (idioma) {
         case 0:
             ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
@@ -26,20 +25,20 @@ ${language[idioma].start}`);
         default:
             console.log("language error");
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 
 
 });
 
 bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
 
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -111,10 +110,10 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
             ctx.reply(`porfavor elige una opción válida [ si | ti | c | is | ic | all ]`);
             break;
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -195,23 +194,23 @@ ${listOptativas}`)
     } else {
         ctx.reply(`porfavor elige una opción válida [ nombre | ba | ob | opt | all ]`);
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/plan", "/p"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-        let idioma = helper.checkLanguage(ctx, dataUsers);        
+        //let idioma = helper.checkLanguage(ctx, dataUsers);        
         helper.saveMessageClearCommand(ctx)
         helper.clearHistory(ctx);  
 })
 
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     switch (arg) {
@@ -231,11 +230,11 @@ bot.command(["/idioma", "/language", "/id"], (ctx) => {
             ctx.reply(`${language[idioma].helpLang}`);
             break;
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 })
 
 bot.command(["/telegram", "/tel", "/t"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
@@ -264,11 +263,11 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
@@ -295,38 +294,38 @@ bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
             ctx.reply(`No existe esa asignatura`);
         }
     }
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/mega", "/m"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.mega);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/wiki", "/wi"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply("https://github.com/josanescod/r2duoc/wiki");
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.command(["/github", "/git", "/g"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.github);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     if (dataUsers.get(ctx.chat.id)) {
         idioma = dataUsers.get(ctx.chat.id)[0]
     }
     ctx.reply(`${language[idioma].help}`);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });
 
 bot.on("text", ctx => {
-    let idioma = helper.checkLanguage(ctx, dataUsers);
+    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(`${language[idioma].wrongText}`);
-    helper.saveDataUsers(ctx, dataUsers, idioma);
+    helper.saveDataUsers(ctx);
 });

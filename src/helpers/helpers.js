@@ -25,7 +25,6 @@ function parseCommand(ctx) {
 function clearHistory(ctx) {
   const r2duocDB = dbfuncs.createConnection();
   r2duocDB.each(`SELECT messageid FROM messages WHERE chatid= ${ctx.chat.id}`, function (err, row) {
-    //console.log('borrar esto con ctx' ,row.messageid);
     ctx.deleteMessage(row.messageid);
   });
   r2duocDB.run(`DELETE FROM messages WHERE chatid= ${ctx.chat.id}`)
@@ -33,9 +32,7 @@ function clearHistory(ctx) {
 
 }
 
-
-
-
+/* Check Language select on database?*/
 function checkLanguage(ctx, dataUsers) {
   let idioma = 0;// 0 es, 1 ca, 2 en
   if (dataUsers.get(ctx.chat.id)) {
@@ -44,35 +41,11 @@ function checkLanguage(ctx, dataUsers) {
   return idioma;
 }
 
-function saveDataUsers(ctx, dataUsers, idioma) {
-  if (dataUsers.get(ctx.chat.id)) {
-
-    let tempMessages = dataUsers.get(ctx.chat.id)[1] + 2
-    let tempArrayId = dataUsers.get(ctx.chat.id)[2]
-    tempArrayId.push(ctx.message.message_id)
-    tempArrayId.push(ctx.message.message_id + 1)
-    dataUsers.set(ctx.chat.id, [idioma, tempMessages, tempArrayId])
-
-    console.log(dataUsers);
-  } else {
-
-    dataUsers.set(ctx.chat.id, [idioma, 2, [ctx.message.message_id, ctx.message.message_id + 1]]);
-    console.log(dataUsers);
-
-  }
-
-  /*
-  ctx.chat.id
-  ctx.message.message_id
-  every time that app send or response messages, insert
-  chat.id and message_id on db
-  */
-  // DB
+function saveDataUsers(ctx) {
   let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1);
   dbfuncs.close(r2duocDB);
-
 }
 
 function saveMessageClearCommand(ctx) {
