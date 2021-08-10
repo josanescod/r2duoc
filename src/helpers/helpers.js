@@ -1,4 +1,5 @@
 const dbfuncs = require('../helpers/dbfuncs');
+const r2duocDB = dbfuncs.createConnection();
 
 function parseCommand(ctx) {
   const text = ctx.update.message.text.toLowerCase()
@@ -26,10 +27,10 @@ function clearHistory(ctx) {
 
   function firstFunction(){
     return new Promise((resolve,reject)=>{
-      const r2duocDB = dbfuncs.createConnection();
+      //const r2duocDB = dbfuncs.createConnection();
       r2duocDB.each(`SELECT messageid FROM messages WHERE chatid = ${ctx.chat.id}`, function (err, row) {
       ctx.deleteMessage(row.messageid);
-      dbfuncs.close(r2duocDB);  
+      //dbfuncs.close(r2duocDB);  
       });
         console.log('deleteMessages');
         resolve('ok');
@@ -44,7 +45,7 @@ async function secondFunction(){
   console.log('nex step');
   const r2duocDB = dbfuncs.createConnection();
   r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)// first time exist ctx.chat.id?
-  dbfuncs.close(r2duocDB);
+ // dbfuncs.close(r2duocDB);
   console.log('database messages deleted');
 }
 secondFunction()
@@ -62,16 +63,16 @@ function checkLanguage(ctx, dataUsers) {
 }
 
 function saveDataUsers(ctx) {
-  let r2duocDB = dbfuncs.createConnection();
+  //let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1);
-  dbfuncs.close(r2duocDB);
+  //dbfuncs.close(r2duocDB);
 }
 
 function saveOneMessage(ctx) {
-  let r2duocDB = dbfuncs.createConnection();
+  //let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
-  dbfuncs.close(r2duocDB);
+  //dbfuncs.close(r2duocDB);
 }
 
 module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers, saveOneMessage }
