@@ -26,7 +26,7 @@ node src/app.js
 ```
 ## Demo
 <p align="center">
-<img src="./src/assets/img/demo.gif" alt="alt text" width="40%" height="40%">
+<img src="./src/assets/img/demo.gif" alt="alt text" width="30%" height="30%">
 </p>
 
 
