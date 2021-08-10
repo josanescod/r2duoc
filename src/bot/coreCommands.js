@@ -205,9 +205,26 @@ bot.command(["/plan", "/p"], (ctx) => {
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-        //let idioma = helper.checkLanguage(ctx, dataUsers);        
-        helper.saveOneMessage(ctx)
-        helper.clearHistory(ctx);  
+        //let idioma = helper.checkLanguage(ctx, dataUsers);     
+       
+        function firstFunction(){
+            return new Promise((resolve,reject)=>{
+                helper.saveOneMessage(ctx);
+                console.log('task 1 completed');
+                resolve('ok');
+            })
+        }
+        
+        async function secondFunction(){
+            console.log('before promise call');
+            //await fot the first function to complete
+            let result = await firstFunction()
+            console.log('promise resolved:' + result);
+            console.log('nex step');
+            helper.clearHistory(ctx);
+        }
+      
+        secondFunction()   
 })
 
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
