@@ -20,7 +20,7 @@ git clone https://github.com/josanescod/r2duoc.git
 cd r2duoc
 npm install
 touch .env
-# edit the .env file with the variables: API_TOKEN, PORT, URL 
+# edit the .env file with the variables: API_TOKEN, PORT, URL , DATABASE
 node src/app.js 
 
 ```

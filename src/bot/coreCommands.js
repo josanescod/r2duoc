@@ -35,6 +35,7 @@ bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
 
     //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
+    //ctx.deleteMessage();
     helper.saveDataUsers(ctx);
 });
 
