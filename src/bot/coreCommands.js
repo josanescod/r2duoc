@@ -9,7 +9,7 @@ const idioma = 0;//temporal
 bot.start((ctx) => {
     //let idioma = helper.checkLanguage(ctx, dataUsers);
     let emoji = "🤖";
-    
+
     switch (idioma) {
         case 0:
             ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
@@ -60,8 +60,6 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
             ctx.replyWithPhoto(
                 { "source": photo },
                 { "caption": listItineraris })
-
-            //console.log(dataUsers, photo);
             break;
         case "si":
         case "sistemas":
@@ -144,7 +142,6 @@ http://www.josanweb.com`);
                         if (val.tipo === "Básica") {
                             listBasicas = `${val.nombre} -> [ ${val.referencia} ] \n${listBasicas}`;
                         }
-
                     }
                 }
                 ctx.replyWithMarkdown(`*Básicas*                
@@ -159,7 +156,6 @@ ${listBasicas}`)
                         if (val.tipo === "Obligatoria") {
                             listObligatorias = `${val.nombre} -> [ ${val.referencia} ] \n${listObligatorias}`;
                         }
-
                     }
                 }
                 ctx.replyWithMarkdown(`*Obligatorias*                
@@ -174,7 +170,6 @@ ${listObligatorias}`)
                         if (val.tipo === "Optativa") {
                             listOptativas = `${val.nombre} -> [ ${val.referencia} ] \n${listOptativas}`;
                         }
-
                     }
                 }
                 ctx.replyWithMarkdown(`*Optativas*                
@@ -192,7 +187,6 @@ ${listOptativas}`)
                 ctx.reply(selectedSubject);
                 break;
         }
-
     } else {
         ctx.reply(`porfavor elige una opción válida [ nombre | ba | ob | opt | all ]`);
     }
@@ -206,26 +200,23 @@ bot.command(["/plan", "/p"], (ctx) => {
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-        //let idioma = helper.checkLanguage(ctx, dataUsers);     
-       
-        function firstFunction(){
-            return new Promise((resolve,reject)=>{
-                helper.saveOneMessage(ctx);
-                console.log('task 1 completed');
-                resolve('ok');
-            })
-        }
-        
-        async function secondFunction(){
-            console.log('before promise call');
-            //await fot the first function to complete
-            let result = await firstFunction()
-            console.log('promise resolved:' + result);
-            console.log('nex step');
-            helper.clearHistory(ctx);
-        }
-      
-        secondFunction()   
+    //let idioma = helper.checkLanguage(ctx, dataUsers);  
+    function firstFunction() {
+        return new Promise((resolve, reject) => {
+            helper.saveOneMessage(ctx);
+            console.log('task 1 completed');
+            resolve('ok');
+        })
+    }
+    async function secondFunction() {
+        console.log('before promise call');
+        //await fot the first function to complete
+        let result = await firstFunction()
+        console.log('promise resolved:' + result);
+        console.log('nex step');
+        helper.clearHistory(ctx);
+    }
+    secondFunction()
 })
 
 bot.command(["/idioma", "/language", "/id"], (ctx) => {
@@ -261,7 +252,6 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
         ctx.reply(dataDegree.groups.telegram);
     } else if (arg === undefined) {
         ctx.reply(`porfavor elige una opción válida [ nombre | all ]`)
-
     }
     else {
         let obj = dataDegree.asignaturas;

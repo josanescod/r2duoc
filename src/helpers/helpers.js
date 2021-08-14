@@ -24,33 +24,30 @@ function parseCommand(ctx) {
 }
 
 function clearHistory(ctx) {
-
-  function firstFunction(){
-    return new Promise((resolve,reject)=>{
+  function firstFunction() {
+    return new Promise((resolve, reject) => {
       //const r2duocDB = dbfuncs.createConnection();
       r2duocDB.each(`SELECT messageid FROM messages WHERE chatid = ${ctx.chat.id}`, function (err, row) {
-      ctx.deleteMessage(row.messageid);
-      //dbfuncs.close(r2duocDB);  
+        ctx.deleteMessage(row.messageid);
+        //dbfuncs.close(r2duocDB);  
       });
-        console.log('deleteMessages');
-        resolve('ok');
+      console.log('deleteMessages');
+      resolve('ok');
     })
-}
-  
-async function secondFunction(){
-  console.log('before promise call');
-  //await fot the first function to complete
-  let result = await firstFunction()
-  console.log('promise resolved:' + result);
-  console.log('nex step');
-  const r2duocDB = dbfuncs.createConnection();
-  r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)// first time exist ctx.chat.id?
- // dbfuncs.close(r2duocDB);
-  console.log('database messages deleted');
-}
-secondFunction()
- 
+  }
 
+  async function secondFunction() {
+    console.log('before promise call');
+    //await fot the first function to complete
+    let result = await firstFunction()
+    console.log('promise resolved:' + result);
+    console.log('nex step');
+    const r2duocDB = dbfuncs.createConnection();
+    r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)// first time exist ctx.chat.id?
+    // dbfuncs.close(r2duocDB);
+    console.log('database messages deleted');
+  }
+  secondFunction();
 }
 
 /* Check Language select on database?*/
