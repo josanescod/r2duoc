@@ -3,44 +3,20 @@ const dataDegree = require('./dataDegree.json');
 const path = require('path');
 const menu = require('./menu');
 const helper = require('../helpers/helpers')
-const language = require("./language");
 
-const idioma = 0;//temporal
 bot.start((ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     let emoji = "🤖";
-
-    switch (idioma) {
-        case 0:
-            ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
-${language[idioma].start}`);
-            break;
-        case 1:
-            ctx.replyWithMarkdown(`Hola ${ctx.from.username}, sóc en ${ctx.botInfo.first_name} ${emoji}
-${language[idioma].start}`);
-            break;
-        case 2:
-            ctx.replyWithMarkdown(`Hi ${ctx.from.username}, i'm ${ctx.botInfo.first_name} ${emoji}
-${language[idioma].start}`);
-            break;
-        default:
-            console.log("language error");
-    }
+    ctx.replyWithMarkdown(`Hola ${ctx.from.username}, soy ${ctx.botInfo.first_name} ${emoji}
+Si quieres saber que puedo hacer por ti, escribe /help`);
     helper.saveDataUsers(ctx);
-
-
 });
 
 bot.command(["/help", "/ayuda", "/ajuda", "/h"], (ctx) => {
-
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`${menu.help}`);
-    //ctx.deleteMessage();
     helper.saveDataUsers(ctx);
 });
 
 bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     let listSubjectsItineraries = "";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -112,8 +88,8 @@ bot.command(["/itinerario", "/iti", "/it"], (ctx) => {
     }
     helper.saveDataUsers(ctx);
 });
+
 bot.command(["/asignatura", "/asig", "/a"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     var selectedSubject = "no existe";
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
@@ -194,13 +170,11 @@ ${listOptativas}`)
 });
 
 bot.command(["/plan", "/p"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.replyWithMarkdown(`*Plan de estudios*\n https://estudios.uoc.edu/es/grados/ingenieria-informatica/plan-estudios`);
     helper.saveDataUsers(ctx);
 });
 
 bot.command(["/clear", "/c"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);  
     function firstFunction() {
         return new Promise((resolve, reject) => {
             helper.saveOneMessage(ctx);
@@ -219,32 +193,8 @@ bot.command(["/clear", "/c"], (ctx) => {
     secondFunction()
 })
 
-bot.command(["/idioma", "/language", "/id"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
-    helper.parseCommand(ctx);
-    let arg = ctx.state.command.args[0];
-    switch (arg) {
-        case "es":
-            ctx.reply(`idioma: es [OK]`);
-            idioma = 0;
-            break;
-        case "ca":
-            ctx.reply(`idioma: ca [OK]`);
-            idioma = 1;
-            break;
-        case "en":
-            ctx.reply(`language: en [OK]`);
-            idioma = 2;
-            break;
-        default:
-            ctx.reply(`${language[idioma].helpLang}`);
-            break;
-    }
-    helper.saveDataUsers(ctx);
-})
 
 bot.command(["/telegram", "/tel", "/t"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
 
@@ -307,25 +257,21 @@ bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
 });
 
 bot.command(["/mega", "/m"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.mega);
     helper.saveDataUsers(ctx);
 });
 
 bot.command(["/wiki", "/wi"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply("https://github.com/josanescod/r2duoc/wiki");
     helper.saveDataUsers(ctx);
 });
 
 bot.command(["/github", "/git", "/g"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(dataDegree.storage.github);
     helper.saveDataUsers(ctx);
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     if (dataUsers.get(ctx.chat.id)) {
         idioma = dataUsers.get(ctx.chat.id)[0]
     }
@@ -334,7 +280,6 @@ bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
 });
 
 bot.on("text", ctx => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     ctx.reply(`${language[idioma].wrongText}`);
     helper.saveDataUsers(ctx);
 });

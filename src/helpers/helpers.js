@@ -26,10 +26,8 @@ function parseCommand(ctx) {
 function clearHistory(ctx) {
   function firstFunction() {
     return new Promise((resolve, reject) => {
-      //const r2duocDB = dbfuncs.createConnection();
       r2duocDB.each(`SELECT messageid FROM messages WHERE chatid = ${ctx.chat.id}`, function (err, row) {
         ctx.deleteMessage(row.messageid);
-        //dbfuncs.close(r2duocDB);  
       });
       console.log('deleteMessages');
       resolve('ok');
@@ -38,38 +36,23 @@ function clearHistory(ctx) {
 
   async function secondFunction() {
     console.log('before promise call');
-    //await fot the first function to complete
     let result = await firstFunction()
     console.log('promise resolved:' + result);
     console.log('nex step');
     const r2duocDB = dbfuncs.createConnection();
-    r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)// first time exist ctx.chat.id?
-    // dbfuncs.close(r2duocDB);
+    r2duocDB.run(`DELETE FROM messages WHERE chatid = ${ctx.chat.id}`)
     console.log('database messages deleted');
   }
   secondFunction();
 }
 
-/* Check Language select on database?*/
-function checkLanguage(ctx, dataUsers) {
-  let idioma = 0;// 0 es, 1 ca, 2 en
-  if (dataUsers.get(ctx.chat.id)) {
-    idioma = dataUsers.get(ctx.chat.id)[0]
-  }
-  return idioma;
-}
-
 function saveDataUsers(ctx) {
-  //let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id + 1);
-  //dbfuncs.close(r2duocDB);
 }
 
 function saveOneMessage(ctx) {
-  //let r2duocDB = dbfuncs.createConnection();
   dbfuncs.insertMessages(r2duocDB, ctx.chat.id, ctx.message.message_id);
-  //dbfuncs.close(r2duocDB);
 }
 
-module.exports = { parseCommand, clearHistory, checkLanguage, saveDataUsers, saveOneMessage }
+module.exports = { parseCommand, clearHistory, saveDataUsers, saveOneMessage }

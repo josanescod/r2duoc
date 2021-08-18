@@ -1,6 +1,5 @@
 require('dotenv').config()
 const { Telegraf } = require("telegraf");
-const db = require('../helpers/dbfuncs');
 
 const PORT = process.env.PORT;
 const URL = process.env.URL;

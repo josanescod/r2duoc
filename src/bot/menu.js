@@ -3,7 +3,6 @@ const help = `*Info*
 /asignatura \\[ asignatura | all\] - información sobre asignaturas
 /plan - enlace al plan de estudios
 /clear - borra el historial
-/idioma \\[ es | ca | en \]
 
 *Grupos*
 /telegram \\[ grupo | all \] - lista grupo(s) de telegram
