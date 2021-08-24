@@ -226,7 +226,6 @@ bot.command(["/telegram", "/tel", "/t"], (ctx) => {
 });
 
 bot.command(["/whatsapp", "/whats", "/w"], (ctx) => {
-    //let idioma = helper.checkLanguage(ctx, dataUsers);
     helper.parseCommand(ctx);
     let arg = ctx.state.command.args[0];
     if (arg === "all") {
@@ -267,14 +266,11 @@ bot.command(["/wiki", "/wi"], (ctx) => {
 });
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
-    if (dataUsers.get(ctx.chat.id)) {
-        //idioma = dataUsers.get(ctx.chat.id)[0]
-    }
-    ctx.reply(`${language[idioma].help}`);
+    ctx.replyWithMarkdown(`${menu.help}`);
     helper.saveDataUsers(ctx);
 });
 
 bot.on("text", ctx => {
-    ctx.reply(`${language[idioma].wrongText}`);
+    ctx.reply(`Comando incorrecto, escribe /help para ver que puedo hacer.`);
     helper.saveDataUsers(ctx);
 });
