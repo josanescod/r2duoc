@@ -268,7 +268,7 @@ bot.command(["/wiki", "/wi"], (ctx) => {
 
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
     if (dataUsers.get(ctx.chat.id)) {
-        idioma = dataUsers.get(ctx.chat.id)[0]
+        //idioma = dataUsers.get(ctx.chat.id)[0]
     }
     ctx.reply(`${language[idioma].help}`);
     helper.saveDataUsers(ctx);
