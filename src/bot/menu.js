@@ -10,7 +10,6 @@ const help = `*Info*
 
 *Recursos*
 /mega - cuenta en la nube con materiales 
-/github - repositorio con materiales
 /wiki - wiki de r2duoc
 `
 

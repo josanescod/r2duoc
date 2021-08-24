@@ -266,11 +266,6 @@ bot.command(["/wiki", "/wi"], (ctx) => {
     helper.saveDataUsers(ctx);
 });
 
-bot.command(["/github", "/git", "/g"], (ctx) => {
-    ctx.reply(dataDegree.storage.github);
-    helper.saveDataUsers(ctx);
-});
-
 bot.hears(["help", "ayuda", "ajuda"], (ctx) => {
     if (dataUsers.get(ctx.chat.id)) {
         idioma = dataUsers.get(ctx.chat.id)[0]
